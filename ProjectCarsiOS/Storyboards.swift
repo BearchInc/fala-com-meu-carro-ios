@@ -24,8 +24,8 @@ struct Storyboards {
             return self.storyboard.instantiateViewControllerWithIdentifier(identifier) as! UIViewController
         }
 
-        static func instantiateHOME_VIEW_CONTROLLER() -> HomeViewController! {
-            return self.storyboard.instantiateViewControllerWithIdentifier("HOME_VIEW_CONTROLLER") as! HomeViewController
+        static func instantiateHomeViewController() -> HomeViewController! {
+            return self.storyboard.instantiateViewControllerWithIdentifier("HomeViewController") as! HomeViewController
         }
     }
 }

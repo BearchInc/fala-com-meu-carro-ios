@@ -24,7 +24,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 	}
 	
 	private func plateButtonCallback(plate: String) {
-		let viewController = Storyboards.Main.instantiateViewControllerWithIdentifier("HOME_VIEW_CONTROLLER") as! HomeViewController
+		let viewController = Storyboards.Main.instantiateHomeViewController()
 		viewController.plate = plate
 		navigationController?.pushViewController(viewController, animated: true)
 	}
