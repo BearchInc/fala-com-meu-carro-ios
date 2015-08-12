@@ -29,6 +29,18 @@ class Post: Mappable {
 		}
 	}
 	
+	class func getAllPostsByCarPlate(carPlate: String, callback: [Post] -> Void) {
+		Alamofire.request(Router.ListPostByCarPlate(carPlate))
+			.responseArray { (response: [Post]?, error: NSError?) in
+				if error != nil {
+					println("Error in getAllPostsByCarPlate -> \(error)")
+					callback([])
+				} else {
+					callback(response!)
+				}
+		}
+	}
+	
 	class func createPost(carPlate: String, message: String, callback: Post? -> Void) {
 		Alamofire.request(Router.CreatePost(carPlate, message))
 			.responseObject { (response: Post?, error: NSError?) in

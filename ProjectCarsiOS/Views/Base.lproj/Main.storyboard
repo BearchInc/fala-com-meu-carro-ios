@@ -8,7 +8,7 @@
         <!--Latest Complains-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="HomeViewController" customModule="ProjectCarsiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HOME_VIEW_CONTROLLER" id="vXZ-lx-hvc" customClass="HomeViewController" customModule="ProjectCarsiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -26,14 +26,20 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2Mf-ho-VQY" id="NqJ-2e-dGM">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="IKG-2595" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWm-eJ-MEW" userLabel="Car Plate Label">
-                                                    <rect key="frame" x="8" y="11" width="74" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVK-Cs-hBC" userLabel="Message Label">
-                                                    <rect key="frame" x="92" y="11" width="500" height="20.5"/>
+                                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6lL-6S-Lam" userLabel="Car Plate Button">
+                                                    <rect key="frame" x="8" y="7" width="66" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="66" id="Z0G-ex-fmF"/>
+                                                    </constraints>
+                                                    <state key="normal" title="IKG-2595">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="plateButtonTouched:" destination="2Mf-ho-VQY" eventType="touchUpInside" id="gJt-uH-3y0"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVK-Cs-hBC" userLabel="Message Label">
+                                                    <rect key="frame" x="82" y="11" width="510" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -48,18 +54,18 @@
                                             </subviews>
                                             <color key="backgroundColor" red="0.61960784310000006" green="0.81176470590000005" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
-                                                <constraint firstItem="iVK-Cs-hBC" firstAttribute="leading" secondItem="BWm-eJ-MEW" secondAttribute="trailing" constant="10" id="9Fy-bH-zF6"/>
-                                                <constraint firstItem="BWm-eJ-MEW" firstAttribute="leading" secondItem="NqJ-2e-dGM" secondAttribute="leadingMargin" id="FAL-wn-3EJ"/>
+                                                <constraint firstItem="6lL-6S-Lam" firstAttribute="leading" secondItem="NqJ-2e-dGM" secondAttribute="leadingMargin" id="2gB-T7-wth"/>
+                                                <constraint firstAttribute="centerY" secondItem="6lL-6S-Lam" secondAttribute="centerY" id="A0L-Ja-Qh3"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="iVK-Cs-hBC" secondAttribute="trailing" id="NxI-iB-gIt"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="Ykg-Re-QN9" secondAttribute="bottom" constant="-8" id="Rf7-I1-q4k"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="Ykg-Re-QN9" secondAttribute="trailing" constant="-16" id="Ue8-zu-qA8"/>
                                                 <constraint firstItem="Ykg-Re-QN9" firstAttribute="leading" secondItem="NqJ-2e-dGM" secondAttribute="leadingMargin" constant="-16" id="Wg7-yz-xMG"/>
                                                 <constraint firstAttribute="centerY" secondItem="iVK-Cs-hBC" secondAttribute="centerY" id="g8M-am-yxr"/>
-                                                <constraint firstAttribute="centerY" secondItem="BWm-eJ-MEW" secondAttribute="centerY" id="nhf-vh-Lqq"/>
+                                                <constraint firstItem="iVK-Cs-hBC" firstAttribute="leading" secondItem="6lL-6S-Lam" secondAttribute="trailing" constant="8" id="oM6-pL-vBU"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="licencePlateLabel" destination="BWm-eJ-MEW" id="ovv-mr-fvS"/>
+                                            <outlet property="licencePlateLabel" destination="6lL-6S-Lam" id="u9b-QS-u1q"/>
                                             <outlet property="messageLabel" destination="iVK-Cs-hBC" id="9tI-T9-JER"/>
                                         </connections>
                                     </tableViewCell>
@@ -97,7 +103,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1333" y="374"/>
+            <point key="canvasLocation" x="1355" y="386"/>
         </scene>
         <!--Create a Post-->
         <scene sceneID="EN2-aB-b6D">

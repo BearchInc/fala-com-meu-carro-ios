@@ -5,13 +5,11 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 	@IBOutlet weak var postsTableView: UITableView!
 	
 	var posts = [Post]()
+	var plate = ""
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		Post.getAllPosts { (posts) in
-			self.posts = posts
-			self.postsTableView.reloadData()
-		}
+		fetchPosts()
 	}
 
 	func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -21,7 +19,24 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 	func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 		let postCell = tableView.dequeueReusableCellWithIdentifier("POST_CELL") as! PostCell
 		postCell.render(posts[indexPath.row])
+		postCell.plateButtonCallback = plateButtonCallback
 		return postCell
 	}
+	
+	private func plateButtonCallback(plate: String) {
+		let viewController = Storyboards.Main.instantiateViewControllerWithIdentifier("HOME_VIEW_CONTROLLER") as! HomeViewController
+		viewController.plate = plate
+		navigationController?.pushViewController(viewController, animated: true)
+	}
+	
+	private func fetchPosts() {
+		plate.isEmpty ? Post.getAllPosts(displayPosts) : Post.getAllPostsByCarPlate(plate, callback: displayPosts)
+	}
+	
+	private func displayPosts(posts: [Post]) {
+		self.posts = posts
+		postsTableView.reloadData()
+	}
+
 }
 
