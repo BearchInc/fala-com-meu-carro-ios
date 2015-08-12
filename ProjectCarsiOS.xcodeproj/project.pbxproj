@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		96420B731B7BA4A5004BB424 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96420B721B7BA4A5004BB424 /* AppDelegate.swift */; };
-		96420B751B7BA4A5004BB424 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96420B741B7BA4A5004BB424 /* ViewController.swift */; };
+		96420B751B7BA4A5004BB424 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96420B741B7BA4A5004BB424 /* HomeViewController.swift */; };
 		96420B781B7BA4A5004BB424 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96420B761B7BA4A5004BB424 /* Main.storyboard */; };
 		96420B7A1B7BA4A5004BB424 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96420B791B7BA4A5004BB424 /* Images.xcassets */; };
 		96420B7D1B7BA4A5004BB424 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96420B7B1B7BA4A5004BB424 /* LaunchScreen.xib */; };
@@ -31,7 +31,7 @@
 		96420B6D1B7BA4A5004BB424 /* ProjectCarsiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectCarsiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96420B711B7BA4A5004BB424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96420B721B7BA4A5004BB424 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		96420B741B7BA4A5004BB424 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		96420B741B7BA4A5004BB424 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		96420B771B7BA4A5004BB424 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		96420B791B7BA4A5004BB424 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		96420B7C1B7BA4A5004BB424 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -101,11 +101,11 @@
 		96420B6F1B7BA4A5004BB424 /* ProjectCarsiOS */ = {
 			isa = PBXGroup;
 			children = (
-				96420B941B7BA596004BB424 /* Views */,
-				96420B931B7BA591004BB424 /* Models */,
-				96420B921B7BA58D004BB424 /* Controllers */,
 				96420B721B7BA4A5004BB424 /* AppDelegate.swift */,
+				96420B921B7BA58D004BB424 /* Controllers */,
+				96420B931B7BA591004BB424 /* Models */,
 				96420B701B7BA4A5004BB424 /* Supporting Files */,
+				96420B941B7BA596004BB424 /* Views */,
 			);
 			path = ProjectCarsiOS;
 			sourceTree = "<group>";
@@ -139,7 +139,7 @@
 		96420B921B7BA58D004BB424 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				96420B741B7BA4A5004BB424 /* ViewController.swift */,
+				96420B741B7BA4A5004BB424 /* HomeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -311,7 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96420B751B7BA4A5004BB424 /* ViewController.swift in Sources */,
+				96420B751B7BA4A5004BB424 /* HomeViewController.swift in Sources */,
 				96420B731B7BA4A5004BB424 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
