@@ -3,6 +3,8 @@ import UIKit
 
 class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
 	
+	@IBOutlet weak var loginButton: FBSDKLoginButton!
+	
 	override func viewDidAppear(animated: Bool) {
 		super.viewDidAppear(animated)
 		
@@ -18,12 +20,8 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
 	}
 	
 	private func setupFacebookButton() {
-		let loginButton = FBSDKLoginButton()
 		loginButton.readPermissions = ["email"]
 		loginButton.delegate = self
-		loginButton.center = self.view.center
-		
-		self.view.addSubview(loginButton)
 	}
 	
 	func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {

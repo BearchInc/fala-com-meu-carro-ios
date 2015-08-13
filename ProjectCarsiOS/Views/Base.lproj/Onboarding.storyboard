@@ -15,10 +15,25 @@
                     <view key="view" contentMode="scaleToFill" id="chp-59-bUQ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1I7-AI-K8f" customClass="FBSDKLoginButton">
+                                <rect key="frame" x="212.5" y="100" width="175" height="30"/>
+                                <color key="backgroundColor" red="0.24313725489999999" green="0.61568627450000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="175" id="5nB-fY-5UA"/>
+                                    <constraint firstAttribute="height" constant="30" id="O5Y-EL-833"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.61960784310000006" green="0.81176470590000005" blue="0.3149414062" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="1I7-AI-K8f" secondAttribute="centerX" id="ApA-IU-avA"/>
+                            <constraint firstItem="1I7-AI-K8f" firstAttribute="top" secondItem="cuR-VW-0LB" secondAttribute="bottom" constant="80" id="Enz-JN-Qbg"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="i7x-bo-3lQ"/>
                     <connections>
+                        <outlet property="loginButton" destination="1I7-AI-K8f" id="oy2-oA-bQd"/>
                         <segue destination="FfP-Xc-6Fn" kind="custom" identifier="OCars" customClass="InterStoryboardsPresentSegue" customModule="ProjectCarsiOS" customModuleProvider="target" id="Pqe-bW-28L"/>
                     </connections>
                 </viewController>
