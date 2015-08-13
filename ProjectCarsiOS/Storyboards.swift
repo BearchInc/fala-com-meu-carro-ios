@@ -8,9 +8,9 @@ import UIKit
 //MARK: - Storyboards
 struct Storyboards {
 
-    struct Main {
+    struct Onboarding {
 
-        static let identifier = "Main"
+        static let identifier = "Onboarding"
 
         static var storyboard: UIStoryboard {
             return UIStoryboard(name: self.identifier, bundle: nil)
@@ -18,6 +18,19 @@ struct Storyboards {
 
         static func instantiateInitialViewController() -> UINavigationController! {
             return self.storyboard.instantiateInitialViewController() as! UINavigationController
+        }
+
+        static func instantiateViewControllerWithIdentifier(identifier: String) -> UIViewController {
+            return self.storyboard.instantiateViewControllerWithIdentifier(identifier) as! UIViewController
+        }
+    }
+
+    struct Cars {
+
+        static let identifier = "Cars"
+
+        static var storyboard: UIStoryboard {
+            return UIStoryboard(name: self.identifier, bundle: nil)
         }
 
         static func instantiateViewControllerWithIdentifier(identifier: String) -> UIViewController {
@@ -164,6 +177,45 @@ extension UITableView {
     }
 }
 
+
+//MARK: - LoginViewController
+extension UIStoryboardSegue {
+    func selection() -> LoginViewController.Segue? {
+        if let identifier = self.identifier {
+            return LoginViewController.Segue(rawValue: identifier)
+        }
+        return nil
+    }
+}
+
+extension LoginViewController { 
+
+    enum Segue: String, Printable, SegueProtocol {
+        case HomeViewControllerOCars = "HomeViewControllerOCars"
+
+        var kind: SegueKind? {
+            switch (self) {
+            case HomeViewControllerOCars:
+                return SegueKind(rawValue: "custom")
+            default:
+                preconditionFailure("Invalid value")
+                break
+            }
+        }
+
+        var destination: UIViewController.Type? {
+            switch (self) {
+            default:
+                assertionFailure("Unknown destination")
+                return nil
+            }
+        }
+
+        var identifier: String? { return self.description } 
+        var description: String { return self.rawValue }
+    }
+
+}
 
 //MARK: - HomeViewController
 extension HomeViewController { 

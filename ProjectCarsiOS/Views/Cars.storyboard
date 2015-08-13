@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Latest Complains-->
+        <scene sceneID="1PE-mj-8nY">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="rpJ-cz-tRw" customClass="HomeViewController" customModule="ProjectCarsiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Bxo-2y-HCA"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qxu-dh-tqD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DPg-Jf-LeD">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="9yG-RM-iMc">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.65776337029999998" green="0.78592360019999996" blue="0.30031378980000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="POST_CELL" id="8ov-vZ-z1y" customClass="PostCell" customModule="ProjectCarsiOS" customModuleProvider="target">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8ov-vZ-z1y" id="U6r-gc-b8b">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciR-PE-hwv" userLabel="Car Plate Button">
+                                                    <rect key="frame" x="8" y="7" width="66" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="66" id="PhT-fq-IKb"/>
+                                                    </constraints>
+                                                    <state key="normal" title="IKG-2595">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="plateButtonTouched:" destination="8ov-vZ-z1y" eventType="touchUpInside" id="uOz-M0-NyR"/>
+                                                    </connections>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mq5-dU-38R" userLabel="Message Label">
+                                                    <rect key="frame" x="82" y="11" width="510" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="llb-fR-ORK" userLabel="Cell Separator View">
+                                                    <rect key="frame" x="-8" y="43" width="616" height="1"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="2xf-lp-whJ"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.61960784310000006" green="0.81176470590000005" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="mq5-dU-38R" secondAttribute="trailing" id="Abq-dn-tDX"/>
+                                                <constraint firstItem="llb-fR-ORK" firstAttribute="leading" secondItem="U6r-gc-b8b" secondAttribute="leadingMargin" constant="-16" id="Ema-5a-8M6"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="llb-fR-ORK" secondAttribute="bottom" constant="-8" id="KZR-gT-fTU"/>
+                                                <constraint firstAttribute="centerY" secondItem="ciR-PE-hwv" secondAttribute="centerY" id="Yjl-fq-YOB"/>
+                                                <constraint firstItem="mq5-dU-38R" firstAttribute="leading" secondItem="ciR-PE-hwv" secondAttribute="trailing" constant="8" id="eE1-i5-xmc"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="llb-fR-ORK" secondAttribute="trailing" constant="-16" id="qvm-Yj-ls2"/>
+                                                <constraint firstItem="ciR-PE-hwv" firstAttribute="leading" secondItem="U6r-gc-b8b" secondAttribute="leadingMargin" id="ryg-SE-8Ae"/>
+                                                <constraint firstAttribute="centerY" secondItem="mq5-dU-38R" secondAttribute="centerY" id="wYT-yT-Yt2"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="licencePlateLabel" destination="ciR-PE-hwv" id="RKW-5L-w9P"/>
+                                            <outlet property="messageLabel" destination="mq5-dU-38R" id="lDc-7G-Ej2"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="rpJ-cz-tRw" id="hNq-nI-oPr"/>
+                                    <outlet property="delegate" destination="rpJ-cz-tRw" id="yQ7-l6-eW6"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9yG-RM-iMc" firstAttribute="leading" secondItem="DPg-Jf-LeD" secondAttribute="leadingMargin" constant="-16" id="2fK-T9-dFX"/>
+                            <constraint firstItem="9yG-RM-iMc" firstAttribute="top" secondItem="Bxo-2y-HCA" secondAttribute="bottom" id="Ego-hw-NM6"/>
+                            <constraint firstItem="9yG-RM-iMc" firstAttribute="top" secondItem="Bxo-2y-HCA" secondAttribute="bottom" constant="-64" id="GJQ-xd-jGE"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9yG-RM-iMc" secondAttribute="trailing" constant="-16" id="Ix7-s8-wHg"/>
+                            <constraint firstItem="Qxu-dh-tqD" firstAttribute="top" secondItem="9yG-RM-iMc" secondAttribute="bottom" id="MzV-Fp-ttu"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Ego-hw-NM6"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Latest Complains" id="MSS-Z1-Bn1">
+                        <barButtonItem key="rightBarButtonItem" title="Send Complain" id="J1H-fq-mHM">
+                            <connections>
+                                <segue destination="DcH-sR-zJc" kind="show" id="41v-GH-Y65"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="postsTableView" destination="9yG-RM-iMc" id="vHd-aX-NWt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V4Y-aQ-Z8F" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1835" y="378"/>
+        </scene>
+        <!--Create a Post-->
+        <scene sceneID="Ff7-TJ-pTy">
+            <objects>
+                <viewController id="DcH-sR-zJc" customClass="CreatePostViewController" customModule="ProjectCarsiOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FNV-7j-Taz"/>
+                        <viewControllerLayoutGuide type="bottom" id="mX1-3Q-R1s"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KzS-Jt-63A">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Car Plate:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svc-5K-PQW" userLabel="Car Plate Label">
+                                <rect key="frame" x="16" y="80" width="85" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="781-8n-uqF"/>
+                                    <constraint firstAttribute="height" constant="20.5" id="sXZ-um-ZKB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dYT-Wl-CrB" userLabel="Car Plate TextField">
+                                <rect key="frame" x="109" y="81.5" width="475" height="20.5"/>
+                                <color key="backgroundColor" red="0.61960784310000006" green="0.81176470590000005" blue="0.3149414062" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMT-y1-OuL">
+                                <rect key="frame" x="16" y="108" width="85" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F0e-yU-Ql0">
+                                <rect key="frame" x="16" y="136.5" width="568" height="447.5"/>
+                                <color key="backgroundColor" red="0.61960784310000006" green="0.81176470590000005" blue="0.3149414062" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.65776337029999998" green="0.78592360019999996" blue="0.30031378980000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="mX1-3Q-R1s" firstAttribute="top" secondItem="F0e-yU-Ql0" secondAttribute="bottom" constant="16" id="0ws-7d-MU1"/>
+                            <constraint firstItem="dYT-Wl-CrB" firstAttribute="height" secondItem="svc-5K-PQW" secondAttribute="height" id="8WI-bg-c75"/>
+                            <constraint firstItem="dYT-Wl-CrB" firstAttribute="leading" secondItem="svc-5K-PQW" secondAttribute="trailing" constant="8" id="F5y-PU-VxF"/>
+                            <constraint firstItem="svc-5K-PQW" firstAttribute="leading" secondItem="KzS-Jt-63A" secondAttribute="leadingMargin" id="S6B-2m-hC2"/>
+                            <constraint firstItem="dYT-Wl-CrB" firstAttribute="top" secondItem="svc-5K-PQW" secondAttribute="top" constant="1.5" id="Tj7-Dd-dRe"/>
+                            <constraint firstItem="dYT-Wl-CrB" firstAttribute="trailing" secondItem="KzS-Jt-63A" secondAttribute="trailingMargin" id="Vtb-1T-hKM"/>
+                            <constraint firstItem="rMT-y1-OuL" firstAttribute="top" secondItem="svc-5K-PQW" secondAttribute="bottom" constant="8" id="X5y-HB-GgF"/>
+                            <constraint firstItem="rMT-y1-OuL" firstAttribute="centerX" secondItem="svc-5K-PQW" secondAttribute="centerX" id="c9T-Qx-Zhc"/>
+                            <constraint firstItem="F0e-yU-Ql0" firstAttribute="top" secondItem="rMT-y1-OuL" secondAttribute="bottom" constant="8" id="dUd-UV-3tn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="F0e-yU-Ql0" secondAttribute="trailing" id="hHg-c6-Hsd"/>
+                            <constraint firstItem="rMT-y1-OuL" firstAttribute="width" secondItem="svc-5K-PQW" secondAttribute="width" id="j3J-wV-me3"/>
+                            <constraint firstItem="svc-5K-PQW" firstAttribute="top" secondItem="FNV-7j-Taz" secondAttribute="bottom" constant="16" id="vvK-sd-fiA"/>
+                            <constraint firstItem="F0e-yU-Ql0" firstAttribute="leading" secondItem="KzS-Jt-63A" secondAttribute="leadingMargin" id="xcT-TM-yXd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Create a Post" id="LOd-Qg-fJW">
+                        <barButtonItem key="rightBarButtonItem" title="Send" id="s0n-Ui-XhY">
+                            <connections>
+                                <action selector="createPostButtonTouched:" destination="DcH-sR-zJc" id="jDB-tF-jjh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="carplateTextField" destination="dYT-Wl-CrB" id="fp3-A9-xUW"/>
+                        <outlet property="messageTextView" destination="F0e-yU-Ql0" id="gPR-uA-YWs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qOw-e0-EoE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2551" y="366"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Iig-Xi-BUc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Rqh-2g-bkn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7K3-Gb-Vzg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rpJ-cz-tRw" kind="relationship" relationship="rootViewController" id="ZLZ-gx-E1R"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UQ4-mj-2KA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1026" y="378"/>
+        </scene>
+    </scenes>
+</document>
