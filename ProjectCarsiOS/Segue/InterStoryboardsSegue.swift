@@ -23,6 +23,6 @@ class InterStoryboardsSegue: UIStoryboardSegue {
 	}
 	
 	override func perform() {
+		exit(1)
 	}
-	
 }
