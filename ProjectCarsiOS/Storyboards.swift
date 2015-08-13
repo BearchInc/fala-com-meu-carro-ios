@@ -16,8 +16,8 @@ struct Storyboards {
             return UIStoryboard(name: self.identifier, bundle: nil)
         }
 
-        static func instantiateInitialViewController() -> UINavigationController! {
-            return self.storyboard.instantiateInitialViewController() as! UINavigationController
+        static func instantiateInitialViewController() -> LoginViewController! {
+            return self.storyboard.instantiateInitialViewController() as! LoginViewController
         }
 
         static func instantiateViewControllerWithIdentifier(identifier: String) -> UIViewController {
@@ -31,6 +31,10 @@ struct Storyboards {
 
         static var storyboard: UIStoryboard {
             return UIStoryboard(name: self.identifier, bundle: nil)
+        }
+
+        static func instantiateInitialViewController() -> UINavigationController! {
+            return self.storyboard.instantiateInitialViewController() as! UINavigationController
         }
 
         static func instantiateViewControllerWithIdentifier(identifier: String) -> UIViewController {
@@ -191,11 +195,11 @@ extension UIStoryboardSegue {
 extension LoginViewController { 
 
     enum Segue: String, Printable, SegueProtocol {
-        case HomeViewControllerOCars = "HomeViewControllerOCars"
+        case OCars = "OCars"
 
         var kind: SegueKind? {
             switch (self) {
-            case HomeViewControllerOCars:
+            case OCars:
                 return SegueKind(rawValue: "custom")
             default:
                 preconditionFailure("Invalid value")

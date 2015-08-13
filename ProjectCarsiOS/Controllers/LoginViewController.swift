@@ -8,7 +8,11 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
 		loginButton.delegate = self
 		loginButton.center = self.view.center
 		self.view.addSubview(loginButton)
-		performSegueWithIdentifier("HomeViewControllerOCars", sender: self)
+	}
+	
+	override func viewDidAppear(animated: Bool) {
+		super.viewDidAppear(animated)
+		performSegueWithIdentifier("OCars", sender: self)
 	}
 	
 	func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {

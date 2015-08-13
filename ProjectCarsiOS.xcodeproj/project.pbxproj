@@ -22,7 +22,9 @@
 		96C2A0AA1B7CCA71007F45E6 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96C2A0A81B7CCA71007F45E6 /* FBSDKLoginKit.framework */; };
 		96C2A0B01B7CCC71007F45E6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C2A0AF1B7CCC71007F45E6 /* LoginViewController.swift */; };
 		96C2A0B21B7CCDB2007F45E6 /* Cars.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96C2A0B11B7CCDB2007F45E6 /* Cars.storyboard */; };
-		96C2A0B51B7CD153007F45E6 /* InterStoryboardsSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C2A0B41B7CD153007F45E6 /* InterStoryboardsSegue.swift */; };
+		96C2A0B51B7CD153007F45E6 /* InterStoryboardsPushSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C2A0B41B7CD153007F45E6 /* InterStoryboardsPushSegue.swift */; };
+		96C2A0B71B7CD88B007F45E6 /* InterStoryboardsPresentSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C2A0B61B7CD88B007F45E6 /* InterStoryboardsPresentSegue.swift */; };
+		96C2A0B91B7CFF8D007F45E6 /* InterStoryboardsSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C2A0B81B7CFF8D007F45E6 /* InterStoryboardsSegue.swift */; };
 		CB07A6DA673919870DF48496 /* Pods_ProjectCarsiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5442C7B03FA00E27F3157D2 /* Pods_ProjectCarsiOS.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -58,7 +60,9 @@
 		96C2A0AB1B7CCB1C007F45E6 /* ProjectCarsiOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ProjectCarsiOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		96C2A0AF1B7CCC71007F45E6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		96C2A0B11B7CCDB2007F45E6 /* Cars.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Cars.storyboard; sourceTree = "<group>"; };
-		96C2A0B41B7CD153007F45E6 /* InterStoryboardsSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterStoryboardsSegue.swift; sourceTree = "<group>"; };
+		96C2A0B41B7CD153007F45E6 /* InterStoryboardsPushSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterStoryboardsPushSegue.swift; sourceTree = "<group>"; };
+		96C2A0B61B7CD88B007F45E6 /* InterStoryboardsPresentSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterStoryboardsPresentSegue.swift; sourceTree = "<group>"; };
+		96C2A0B81B7CFF8D007F45E6 /* InterStoryboardsSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterStoryboardsSegue.swift; sourceTree = "<group>"; };
 		D153D0C973F823101D9357E0 /* Pods-ProjectCarsiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectCarsiOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProjectCarsiOS/Pods-ProjectCarsiOS.release.xcconfig"; sourceTree = "<group>"; };
 		E5442C7B03FA00E27F3157D2 /* Pods_ProjectCarsiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectCarsiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -213,7 +217,9 @@
 		96C2A0B31B7CD127007F45E6 /* Segue */ = {
 			isa = PBXGroup;
 			children = (
-				96C2A0B41B7CD153007F45E6 /* InterStoryboardsSegue.swift */,
+				96C2A0B41B7CD153007F45E6 /* InterStoryboardsPushSegue.swift */,
+				96C2A0B61B7CD88B007F45E6 /* InterStoryboardsPresentSegue.swift */,
+				96C2A0B81B7CFF8D007F45E6 /* InterStoryboardsSegue.swift */,
 			);
 			path = Segue;
 			sourceTree = "<group>";
@@ -386,11 +392,13 @@
 			files = (
 				96C2A0981B7BAA32007F45E6 /* Post.swift in Sources */,
 				96420B751B7BA4A5004BB424 /* HomeViewController.swift in Sources */,
+				96C2A0B91B7CFF8D007F45E6 /* InterStoryboardsSegue.swift in Sources */,
 				96C2A09B1B7BAB4D007F45E6 /* Router.swift in Sources */,
-				96C2A0B51B7CD153007F45E6 /* InterStoryboardsSegue.swift in Sources */,
+				96C2A0B51B7CD153007F45E6 /* InterStoryboardsPushSegue.swift in Sources */,
 				96420B731B7BA4A5004BB424 /* AppDelegate.swift in Sources */,
 				96C2A0B01B7CCC71007F45E6 /* LoginViewController.swift in Sources */,
 				96C2A0A01B7BBC78007F45E6 /* CreatePostViewController.swift in Sources */,
+				96C2A0B71B7CD88B007F45E6 /* InterStoryboardsPresentSegue.swift in Sources */,
 				96C2A09E1B7BB250007F45E6 /* PostCell.swift in Sources */,
 				96C2A0A61B7BD984007F45E6 /* Storyboards.swift in Sources */,
 			);
