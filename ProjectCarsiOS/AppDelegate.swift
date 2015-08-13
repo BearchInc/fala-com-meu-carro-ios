@@ -16,6 +16,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 		FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+		
+		if (FBSDKAccessToken.currentAccessToken() != nil) {
+			self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+			self.window?.rootViewController = Storyboards.Cars.instantiateInitialViewController()
+		}
+		
 		return true
 	}
 

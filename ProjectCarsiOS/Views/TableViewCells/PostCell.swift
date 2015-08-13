@@ -9,7 +9,7 @@ class PostCell: UITableViewCell {
 	var plateButtonCallback: (String -> Void)?
 	
 	func render(post: Post) {
-		licencePlateLabel.setTitle(post.carPlate, forState: UIControlState.Normal)
+		licencePlateLabel.setTitle(post.carPlate.capitalizedString, forState: UIControlState.Normal)
 		messageLabel.text = post.message
 	}
 	

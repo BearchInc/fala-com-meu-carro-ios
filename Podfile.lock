@@ -3,14 +3,17 @@ PODS:
   - AlamofireObjectMapper (0.7):
     - Alamofire (~> 1.3)
     - ObjectMapper (~> 0.12)
+  - NSStringMask (1.2)
   - ObjectMapper (0.15)
 
 DEPENDENCIES:
   - AlamofireObjectMapper (~> 0.7)
+  - NSStringMask (~> 1.2)
 
 SPEC CHECKSUMS:
   Alamofire: e4ab637e3195b645c814b87a652373439e59f2a4
   AlamofireObjectMapper: b07339a5ce5f609230df61080e55c1f6fc9551ee
+  NSStringMask: 77f655efb20a9ccf098f0da0d64ff923f6bf58aa
   ObjectMapper: 0656dc1c155825897e5acfcd25362c6b61786dcb
 
 COCOAPODS: 0.38.2

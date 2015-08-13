@@ -8,7 +8,7 @@ inhibit_all_warnings!
 use_frameworks!
 
 target 'ProjectCarsiOS' do
-
+	pod 'NSStringMask', '~> 1.2'
 	pod 'AlamofireObjectMapper', '~> 0.7'
 
 end
