@@ -5,16 +5,11 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
 	
 	@IBOutlet weak var loginButton: FBSDKLoginButton!
 	
-	override func viewDidAppear(animated: Bool) {
-		super.viewDidAppear(animated)
-		
-		if (FBSDKAccessToken.currentAccessToken() != nil) {
-			goToHomeViewController()
-		} else {
-			setupFacebookButton()
-		}
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		setupFacebookButton()
 	}
-	
+
 	private func goToHomeViewController() {
 		performSegueWithIdentifier("OCars", sender: self)
 	}

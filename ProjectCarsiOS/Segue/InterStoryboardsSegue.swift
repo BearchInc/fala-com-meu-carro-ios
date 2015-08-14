@@ -9,7 +9,7 @@ class InterStoryboardsSegue: UIStoryboardSegue {
 	}
 	
 	class func sceneNamed(identifier: String) -> UIViewController {
-		let components = identifier.componentsSeparatedByString("O")
+		let components = identifier.componentsSeparatedByString("_")
 		let storyboardName = components[1]
 		let sceneName = components[0]
 		
@@ -25,4 +25,5 @@ class InterStoryboardsSegue: UIStoryboardSegue {
 	override func perform() {
 		exit(1)
 	}
+	
 }
