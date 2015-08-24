@@ -231,7 +231,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 96420B8C1B7BA4A5004BB424 /* Build configuration list for PBXNativeTarget "ProjectCarsiOS" */;
 			buildPhases = (
-				96C2A0A41B7BD945007F45E6 /* ShellScript */,
+				96C2A0A41B7BD945007F45E6 /* Run Script - Natalie */,
 				CACDF51FDA934EC85A7F4B64 /* Check Pods Manifest.lock */,
 				96420B691B7BA4A5004BB424 /* Sources */,
 				96420B6A1B7BA4A5004BB424 /* Frameworks */,
@@ -355,13 +355,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProjectCarsiOS/Pods-ProjectCarsiOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		96C2A0A41B7BD945007F45E6 /* ShellScript */ = {
+		96C2A0A41B7BD945007F45E6 /* Run Script - Natalie */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Run Script - Natalie";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;

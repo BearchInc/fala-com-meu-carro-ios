@@ -11,7 +11,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
 	}
 
 	private func goToHomeViewController() {
-		performSegueWithIdentifier("OCars", sender: self)
+        performSegue(LoginViewController.Segue.Cars)
 	}
 	
 	private func setupFacebookButton() {
@@ -23,7 +23,6 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
 		
 		if !result.isCancelled {
 			goToHomeViewController()
-//			performSegueWithIdentifier("HomeViewControllerOCars", sender: self)
 		} else {
 			UIAlertView(title: "Hey", message: "We need you to login, do it please", delegate: nil, cancelButtonTitle: "ok").show()
 		}

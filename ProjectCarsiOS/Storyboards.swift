@@ -118,6 +118,10 @@ extension UIViewController {
     func performSegue<T: SegueProtocol>(segue: T, sender: AnyObject?) {
        performSegueWithIdentifier(segue.identifier, sender: sender)
     }
+
+    func performSegue<T: SegueProtocol>(segue: T) {
+       performSegue(segue, sender: nil)
+    }
 }
 
 //MARK: - UICollectionView
@@ -195,11 +199,11 @@ extension UIStoryboardSegue {
 extension LoginViewController { 
 
     enum Segue: String, Printable, SegueProtocol {
-        case _Cars = "_Cars"
+        case Cars = "_Cars"
 
         var kind: SegueKind? {
             switch (self) {
-            case _Cars:
+            case Cars:
                 return SegueKind(rawValue: "custom")
             default:
                 preconditionFailure("Invalid value")
