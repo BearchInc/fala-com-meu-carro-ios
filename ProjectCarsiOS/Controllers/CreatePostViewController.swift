@@ -8,7 +8,8 @@ class CreatePostViewController: UIViewController {
 	@IBOutlet weak var messageTextView: UITextView!
 	
 	override func viewDidLoad() {
-		carplateTextField.mask = NSStringMask(pattern: "")
+		carplateTextField.mask = NSStringMask(pattern: "([A-Z]{3})-([0-9]{4})")
+		carplateTextField.placeholder = "AAAA-0000"
 	}
 	
 	@IBAction func createPostButtonTouched(sender: AnyObject) {

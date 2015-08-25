@@ -44,7 +44,7 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="llb-fR-ORK" userLabel="Cell Separator View">
+                                                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="llb-fR-ORK" userLabel="Cell Separator View">
                                                     <rect key="frame" x="-8" y="43" width="616" height="1"/>
                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
@@ -54,15 +54,29 @@
                                             </subviews>
                                             <color key="backgroundColor" red="0.61960784310000006" green="0.81176470590000005" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="llb-fR-ORK" secondAttribute="trailing" id="6oe-S0-G8j"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="mq5-dU-38R" secondAttribute="trailing" id="Abq-dn-tDX"/>
+                                                <constraint firstItem="llb-fR-ORK" firstAttribute="leading" secondItem="U6r-gc-b8b" secondAttribute="leading" id="BN3-XK-Tdo"/>
                                                 <constraint firstItem="llb-fR-ORK" firstAttribute="leading" secondItem="U6r-gc-b8b" secondAttribute="leadingMargin" constant="-16" id="Ema-5a-8M6"/>
+                                                <constraint firstAttribute="trailing" secondItem="mq5-dU-38R" secondAttribute="trailing" constant="8" id="Hbf-ed-25x"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="llb-fR-ORK" secondAttribute="bottom" constant="-8" id="KZR-gT-fTU"/>
+                                                <constraint firstAttribute="bottom" secondItem="llb-fR-ORK" secondAttribute="bottom" id="OSq-tq-IAc"/>
+                                                <constraint firstItem="ciR-PE-hwv" firstAttribute="leading" secondItem="U6r-gc-b8b" secondAttribute="leading" constant="8" id="VxT-sm-A4f"/>
                                                 <constraint firstAttribute="centerY" secondItem="ciR-PE-hwv" secondAttribute="centerY" id="Yjl-fq-YOB"/>
                                                 <constraint firstItem="mq5-dU-38R" firstAttribute="leading" secondItem="ciR-PE-hwv" secondAttribute="trailing" constant="8" id="eE1-i5-xmc"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="llb-fR-ORK" secondAttribute="trailing" constant="-16" id="qvm-Yj-ls2"/>
                                                 <constraint firstItem="ciR-PE-hwv" firstAttribute="leading" secondItem="U6r-gc-b8b" secondAttribute="leadingMargin" id="ryg-SE-8Ae"/>
                                                 <constraint firstAttribute="centerY" secondItem="mq5-dU-38R" secondAttribute="centerY" id="wYT-yT-Yt2"/>
                                             </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="ryg-SE-8Ae"/>
+                                                    <exclude reference="Ema-5a-8M6"/>
+                                                    <exclude reference="KZR-gT-fTU"/>
+                                                    <exclude reference="qvm-Yj-ls2"/>
+                                                    <exclude reference="Abq-dn-tDX"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="licencePlateLabel" destination="ciR-PE-hwv" id="RKW-5L-w9P"/>
@@ -83,10 +97,16 @@
                             <constraint firstItem="9yG-RM-iMc" firstAttribute="top" secondItem="Bxo-2y-HCA" secondAttribute="bottom" constant="-64" id="GJQ-xd-jGE"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9yG-RM-iMc" secondAttribute="trailing" constant="-16" id="Ix7-s8-wHg"/>
                             <constraint firstItem="Qxu-dh-tqD" firstAttribute="top" secondItem="9yG-RM-iMc" secondAttribute="bottom" id="MzV-Fp-ttu"/>
+                            <constraint firstItem="9yG-RM-iMc" firstAttribute="leading" secondItem="DPg-Jf-LeD" secondAttribute="leading" id="Q3n-Ok-SKK"/>
+                            <constraint firstAttribute="trailing" secondItem="9yG-RM-iMc" secondAttribute="trailing" id="evE-Ih-rmL"/>
+                            <constraint firstItem="9yG-RM-iMc" firstAttribute="top" secondItem="DPg-Jf-LeD" secondAttribute="top" id="uKS-Ap-uHu"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="2fK-T9-dFX"/>
                                 <exclude reference="Ego-hw-NM6"/>
+                                <exclude reference="GJQ-xd-jGE"/>
+                                <exclude reference="Ix7-s8-wHg"/>
                             </mask>
                         </variation>
                     </view>
@@ -132,7 +152,7 @@
                                 <rect key="frame" x="109" y="81.5" width="475" height="20.5"/>
                                 <color key="backgroundColor" red="0.61960784310000006" green="0.81176470590000005" blue="0.3149414062" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMT-y1-OuL">
                                 <rect key="frame" x="16" y="108" width="85" height="20.5"/>
@@ -143,7 +163,6 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F0e-yU-Ql0">
                                 <rect key="frame" x="16" y="136.5" width="568" height="447.5"/>
                                 <color key="backgroundColor" red="0.61960784310000006" green="0.81176470590000005" blue="0.3149414062" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
