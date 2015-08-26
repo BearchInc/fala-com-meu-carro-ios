@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Latest Complains-->
+        <!--Complains-->
         <scene sceneID="1PE-mj-8nY">
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" id="rpJ-cz-tRw" customClass="HomeViewController" customModule="ProjectCarsiOS" customModuleProvider="target" sceneMemberID="viewController">
@@ -110,8 +110,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Latest Complains" id="MSS-Z1-Bn1">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="hvf-sf-xGy"/>
+                    <navigationItem key="navigationItem" title="Complains" id="MSS-Z1-Bn1">
                         <barButtonItem key="rightBarButtonItem" title="Send Complain" id="J1H-fq-mHM">
                             <connections>
                                 <segue destination="DcH-sR-zJc" kind="show" id="41v-GH-Y65"/>
@@ -126,7 +125,7 @@
             </objects>
             <point key="canvasLocation" x="1835" y="378"/>
         </scene>
-        <!--Create a Post-->
+        <!--New Post-->
         <scene sceneID="Ff7-TJ-pTy">
             <objects>
                 <viewController id="DcH-sR-zJc" customClass="CreatePostViewController" customModule="ProjectCarsiOS" customModuleProvider="target" sceneMemberID="viewController">
@@ -184,7 +183,7 @@
                             <constraint firstItem="F0e-yU-Ql0" firstAttribute="leading" secondItem="KzS-Jt-63A" secondAttribute="leadingMargin" id="xcT-TM-yXd"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Create a Post" id="LOd-Qg-fJW">
+                    <navigationItem key="navigationItem" title="New Post" id="LOd-Qg-fJW">
                         <barButtonItem key="rightBarButtonItem" title="Send" id="s0n-Ui-XhY">
                             <connections>
                                 <action selector="createPostButtonTouched:" destination="DcH-sR-zJc" id="jDB-tF-jjh"/>
