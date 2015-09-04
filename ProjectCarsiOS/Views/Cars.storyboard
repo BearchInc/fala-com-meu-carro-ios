@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Complains-->
+        <!--Reports-->
         <scene sceneID="1PE-mj-8nY">
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" id="rpJ-cz-tRw" customClass="HomeViewController" customModule="ProjectCarsiOS" customModuleProvider="target" sceneMemberID="viewController">
@@ -89,33 +89,33 @@
                                     <outlet property="delegate" destination="rpJ-cz-tRw" id="yQ7-l6-eW6"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0d8-eg-IfT">
+                                <rect key="frame" x="545" y="565" width="50" height="30"/>
+                                <color key="backgroundColor" red="0.98745888159999995" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="F0s-DG-nbw"/>
+                                    <constraint firstAttribute="width" constant="50" id="Gje-yR-0c7"/>
+                                </constraints>
+                                <state key="normal" title="Add!!!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="DcH-sR-zJc" kind="show" id="7ar-Gc-h7B"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="9yG-RM-iMc" firstAttribute="leading" secondItem="DPg-Jf-LeD" secondAttribute="leadingMargin" constant="-16" id="2fK-T9-dFX"/>
-                            <constraint firstItem="9yG-RM-iMc" firstAttribute="top" secondItem="Bxo-2y-HCA" secondAttribute="bottom" id="Ego-hw-NM6"/>
-                            <constraint firstItem="9yG-RM-iMc" firstAttribute="top" secondItem="Bxo-2y-HCA" secondAttribute="bottom" constant="-64" id="GJQ-xd-jGE"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="9yG-RM-iMc" secondAttribute="trailing" constant="-16" id="Ix7-s8-wHg"/>
+                            <constraint firstItem="Qxu-dh-tqD" firstAttribute="top" secondItem="0d8-eg-IfT" secondAttribute="bottom" constant="5" id="9Py-my-GOz"/>
                             <constraint firstItem="Qxu-dh-tqD" firstAttribute="top" secondItem="9yG-RM-iMc" secondAttribute="bottom" id="MzV-Fp-ttu"/>
                             <constraint firstItem="9yG-RM-iMc" firstAttribute="leading" secondItem="DPg-Jf-LeD" secondAttribute="leading" id="Q3n-Ok-SKK"/>
                             <constraint firstAttribute="trailing" secondItem="9yG-RM-iMc" secondAttribute="trailing" id="evE-Ih-rmL"/>
+                            <constraint firstAttribute="trailing" secondItem="0d8-eg-IfT" secondAttribute="trailing" constant="5" id="lDf-m1-gEi"/>
                             <constraint firstItem="9yG-RM-iMc" firstAttribute="top" secondItem="DPg-Jf-LeD" secondAttribute="top" id="uKS-Ap-uHu"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="2fK-T9-dFX"/>
-                                <exclude reference="Ego-hw-NM6"/>
-                                <exclude reference="GJQ-xd-jGE"/>
-                                <exclude reference="Ix7-s8-wHg"/>
-                            </mask>
-                        </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Complains" id="MSS-Z1-Bn1">
-                        <barButtonItem key="rightBarButtonItem" title="Send Complain" id="J1H-fq-mHM">
-                            <connections>
-                                <segue destination="DcH-sR-zJc" kind="show" id="41v-GH-Y65"/>
-                            </connections>
-                        </barButtonItem>
+                    <navigationItem key="navigationItem" title="Reports" id="MSS-Z1-Bn1">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="J1H-fq-mHM"/>
                     </navigationItem>
                     <connections>
                         <outlet property="postsTableView" destination="9yG-RM-iMc" id="vHd-aX-NWt"/>
