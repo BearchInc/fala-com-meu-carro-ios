@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		960CA92B1B98BB9D00023702 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960CA92A1B98BB9D00023702 /* Response.swift */; };
+		960CA92B1B98BB9D00023702 /* ResponseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960CA92A1B98BB9D00023702 /* ResponseObject.swift */; };
+		960CA92D1B99CD1F00023702 /* ResponseArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960CA92C1B99CD1F00023702 /* ResponseArray.swift */; };
 		96420B731B7BA4A5004BB424 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96420B721B7BA4A5004BB424 /* AppDelegate.swift */; };
 		96420B751B7BA4A5004BB424 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96420B741B7BA4A5004BB424 /* HomeViewController.swift */; };
 		96420B781B7BA4A5004BB424 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96420B761B7BA4A5004BB424 /* Onboarding.storyboard */; };
@@ -41,7 +42,8 @@
 
 /* Begin PBXFileReference section */
 		84B00DA64B23109C00F37F80 /* Pods-ProjectCarsiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectCarsiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProjectCarsiOS/Pods-ProjectCarsiOS.debug.xcconfig"; sourceTree = "<group>"; };
-		960CA92A1B98BB9D00023702 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		960CA92A1B98BB9D00023702 /* ResponseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseObject.swift; sourceTree = "<group>"; };
+		960CA92C1B99CD1F00023702 /* ResponseArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseArray.swift; sourceTree = "<group>"; };
 		96420B6D1B7BA4A5004BB424 /* ProjectCarsiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectCarsiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96420B711B7BA4A5004BB424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96420B721B7BA4A5004BB424 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -185,7 +187,8 @@
 			isa = PBXGroup;
 			children = (
 				96C2A0971B7BAA32007F45E6 /* Post.swift */,
-				960CA92A1B98BB9D00023702 /* Response.swift */,
+				960CA92A1B98BB9D00023702 /* ResponseObject.swift */,
+				960CA92C1B99CD1F00023702 /* ResponseArray.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -398,7 +401,8 @@
 				96420B751B7BA4A5004BB424 /* HomeViewController.swift in Sources */,
 				96C2A0B91B7CFF8D007F45E6 /* InterStoryboardsSegue.swift in Sources */,
 				96C2A09B1B7BAB4D007F45E6 /* Router.swift in Sources */,
-				960CA92B1B98BB9D00023702 /* Response.swift in Sources */,
+				960CA92D1B99CD1F00023702 /* ResponseArray.swift in Sources */,
+				960CA92B1B98BB9D00023702 /* ResponseObject.swift in Sources */,
 				96C2A0B51B7CD153007F45E6 /* InterStoryboardsPushSegue.swift in Sources */,
 				96420B731B7BA4A5004BB424 /* AppDelegate.swift in Sources */,
 				96C2A0B01B7CCC71007F45E6 /* LoginViewController.swift in Sources */,
