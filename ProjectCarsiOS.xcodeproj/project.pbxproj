@@ -240,13 +240,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 96420B8C1B7BA4A5004BB424 /* Build configuration list for PBXNativeTarget "ProjectCarsiOS" */;
 			buildPhases = (
-				96C2A0A41B7BD945007F45E6 /* Run Script - Natalie */,
 				CACDF51FDA934EC85A7F4B64 /* Check Pods Manifest.lock */,
+				96C2A0A41B7BD945007F45E6 /* Run Script - Natalie */,
 				96420B691B7BA4A5004BB424 /* Sources */,
 				96420B6A1B7BA4A5004BB424 /* Frameworks */,
 				96420B6B1B7BA4A5004BB424 /* Resources */,
 				319C860B3DDF69F6E8A88F47 /* Embed Pods Frameworks */,
 				5BFD8E9AA91EDE4D2248213E /* Copy Pods Resources */,
+				960CA9301B9A0F1000023702 /* Run Script - Fabric */,
 			);
 			buildRules = (
 			);
@@ -286,6 +287,7 @@
 				TargetAttributes = {
 					96420B6C1B7BA4A5004BB424 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = ATB5PVNS89;
 					};
 					96420B811B7BA4A5004BB424 = {
 						CreatedOnToolsVersion = 6.4;
@@ -363,6 +365,20 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProjectCarsiOS/Pods-ProjectCarsiOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		960CA9301B9A0F1000023702 /* Run Script - Fabric */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script - Fabric";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/Fabric.framework/run\" d755fc6afce425dd611af6e6129b210edaa514ba 8cc8bb27b7b0cca83f23953ccd681dea7a61dc8e36791ce88768da1c16b4042b";
 		};
 		96C2A0A41B7BD945007F45E6 /* Run Script - Natalie */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -544,7 +560,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Fernando Heck (L9XU4P5769)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Fernando Heck (L9XU4P5769)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -565,6 +581,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",

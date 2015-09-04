@@ -10,6 +10,8 @@ use_frameworks!
 target 'ProjectCarsiOS' do
 	pod 'NSStringMask', '~> 1.2'
 	pod 'AlamofireObjectMapper', '~> 0.7'
+	pod 'Fabric', '~> 1.4'
+	pod 'Crashlytics', '~> 3.2'
 end
 
 target 'ProjectCarsiOSTests' do

@@ -1,12 +1,6 @@
-//
-//  AppDelegate.swift
-//  ProjectCarsiOS
-//
-//  Created by Fernando Heck on 8/12/15.
-//  Copyright (c) 2015 HB. All rights reserved.
-//
-
 import UIKit
+import Fabric
+import Crashlytics
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +10,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 		FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+		
+		Fabric.with([Crashlytics.self()])
 		
 		if (FBSDKAccessToken.currentAccessToken() != nil) {
 			self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
