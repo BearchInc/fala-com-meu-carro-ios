@@ -32,12 +32,12 @@ class Post: Mappable {
 	
 	class func getAllPostsByCarPlate(carPlate: String, callback: [Post] -> Void) {
 		Alamofire.request(Router.ListPostByCarPlate(carPlate))
-			.responseArray { (response: [Post]?, error: NSError?) in
+			.responseObject { (response: ResponseArray<Post>?, error: NSError?) in
 				if error != nil {
 					println("Error in getAllPostsByCarPlate -> \(error)")
 					callback([])
 				} else {
-					callback(response!)
+					callback(response!.data)
 				}
 		}
 	}
