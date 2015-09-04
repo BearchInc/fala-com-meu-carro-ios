@@ -2,6 +2,7 @@ import Foundation
 import ObjectMapper
 import Alamofire
 import AlamofireObjectMapper
+import Crashlytics
 
 class Post: Mappable {
 	
@@ -37,6 +38,7 @@ class Post: Mappable {
 					println("Error in getAllPostsByCarPlate -> \(error)")
 					callback([])
 				} else {
+					Answers.logCustomEventWithName("Get carplate", customAttributes: ["plate": carPlate])
 					callback(response!.data)
 				}
 		}
@@ -49,6 +51,7 @@ class Post: Mappable {
 					println("Error in createPost -> \(error)")
 					callback(nil)
 				} else {
+					Answers.logCustomEventWithName("Create post", customAttributes: ["plate": carPlate])
 					callback(response!.data)
 				}
 		}

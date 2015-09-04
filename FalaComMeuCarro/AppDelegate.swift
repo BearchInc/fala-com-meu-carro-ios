@@ -10,9 +10,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 		FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
-		
 		Fabric.with([Crashlytics.self()])
-		Answers.logLevelStart("Level 2A", customAttributes: nil)
 		
 		if (FBSDKAccessToken.currentAccessToken() != nil) {
 			self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
