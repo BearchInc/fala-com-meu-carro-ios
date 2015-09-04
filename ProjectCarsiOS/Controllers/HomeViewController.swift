@@ -24,9 +24,12 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 	}
 	
 	private func plateButtonCallback(plate: String) {
-		let viewController = Storyboards.Cars.instantiateHomeViewController()
-		viewController.plate = plate
-		navigationController?.pushViewController(viewController, animated: true)
+		if title != plate {
+			let viewController = Storyboards.Cars.instantiateHomeViewController()
+			viewController.plate = plate
+			viewController.title = plate
+			navigationController?.pushViewController(viewController, animated: true)
+		}
 	}
 	
 	private func fetchPosts() {
