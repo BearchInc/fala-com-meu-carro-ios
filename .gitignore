@@ -32,4 +32,5 @@ Pods/
 
 Carthage/Build
 
+IPAddress.swift
 .DS_Store
