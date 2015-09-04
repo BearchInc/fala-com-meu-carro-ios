@@ -19,12 +19,13 @@ class Post: Mappable {
 	
 	class func getAllPosts(callback: [Post] -> Void) {
 		Alamofire.request(Router.ListAllPosts())
-			.responseArray { (response: [Post]?, error: NSError?) in
+			.responseObject { (response: ResponseArray<Post>?, error: NSError?) in
 				if error != nil {
 					println("Error in getAllPosts -> \(error)")
 					callback([])
 				} else {
-					callback(response!)
+					println("getAllPosts -> \(response!.errorCode); \(response!.message)")
+					callback(response!.data)
 				}
 		}
 	}
