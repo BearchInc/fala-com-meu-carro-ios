@@ -115,7 +115,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Reports" id="MSS-Z1-Bn1">
-                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="J1H-fq-mHM"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="J1H-fq-mHM">
+                            <connections>
+                                <action selector="goToPlate:" destination="rpJ-cz-tRw" id="LC1-z2-01R"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="postsTableView" destination="9yG-RM-iMc" id="vHd-aX-NWt"/>

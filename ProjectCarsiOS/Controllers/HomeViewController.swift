@@ -41,5 +41,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 		postsTableView.reloadData()
 	}
 
+	@IBAction func goToPlate(sender: AnyObject) {
+		let builder = GoToPlateViewController(sentCallback: plateButtonCallback)
+		presentViewController(builder.alert, animated: true, completion: nil)
+	}
 }
 
