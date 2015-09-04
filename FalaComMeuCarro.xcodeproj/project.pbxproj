@@ -15,7 +15,6 @@
 		96420B781B7BA4A5004BB424 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96420B761B7BA4A5004BB424 /* Onboarding.storyboard */; };
 		96420B7A1B7BA4A5004BB424 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96420B791B7BA4A5004BB424 /* Images.xcassets */; };
 		96420B7D1B7BA4A5004BB424 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96420B7B1B7BA4A5004BB424 /* LaunchScreen.xib */; };
-		96420B891B7BA4A5004BB424 /* ProjectCarsiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96420B881B7BA4A5004BB424 /* ProjectCarsiOSTests.swift */; };
 		96C2A0981B7BAA32007F45E6 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C2A0971B7BAA32007F45E6 /* Post.swift */; };
 		96C2A09B1B7BAB4D007F45E6 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C2A09A1B7BAB4D007F45E6 /* Router.swift */; };
 		96C2A09E1B7BB250007F45E6 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C2A09D1B7BB250007F45E6 /* PostCell.swift */; };
@@ -28,32 +27,23 @@
 		96C2A0B51B7CD153007F45E6 /* InterStoryboardsPushSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C2A0B41B7CD153007F45E6 /* InterStoryboardsPushSegue.swift */; };
 		96C2A0B71B7CD88B007F45E6 /* InterStoryboardsPresentSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C2A0B61B7CD88B007F45E6 /* InterStoryboardsPresentSegue.swift */; };
 		96C2A0B91B7CFF8D007F45E6 /* InterStoryboardsSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C2A0B81B7CFF8D007F45E6 /* InterStoryboardsSegue.swift */; };
-		CB07A6DA673919870DF48496 /* Pods_ProjectCarsiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5442C7B03FA00E27F3157D2 /* Pods_ProjectCarsiOS.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		BA68FB31E460CB62994E8CB0 /* Pods_FalaComMeuCarro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6BCFE844937C8674A26BB59 /* Pods_FalaComMeuCarro.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		96420B831B7BA4A5004BB424 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 96420B651B7BA4A5004BB424 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 96420B6C1B7BA4A5004BB424;
-			remoteInfo = ProjectCarsiOS;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		08275B905E911FAE3176747F /* Pods-FalaComMeuCarro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FalaComMeuCarro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FalaComMeuCarro/Pods-FalaComMeuCarro.debug.xcconfig"; sourceTree = "<group>"; };
+		621D447816203B459B48FB2E /* Pods-FalaComMeuCarro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FalaComMeuCarro.release.xcconfig"; path = "Pods/Target Support Files/Pods-FalaComMeuCarro/Pods-FalaComMeuCarro.release.xcconfig"; sourceTree = "<group>"; };
 		84B00DA64B23109C00F37F80 /* Pods-ProjectCarsiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectCarsiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProjectCarsiOS/Pods-ProjectCarsiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		960CA92A1B98BB9D00023702 /* ResponseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseObject.swift; sourceTree = "<group>"; };
 		960CA92C1B99CD1F00023702 /* ResponseArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseArray.swift; sourceTree = "<group>"; };
 		960CA92E1B99E10800023702 /* GoToPlateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoToPlateViewController.swift; sourceTree = "<group>"; };
-		96420B6D1B7BA4A5004BB424 /* ProjectCarsiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectCarsiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96420B6D1B7BA4A5004BB424 /* FalaComMeuCarro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FalaComMeuCarro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96420B711B7BA4A5004BB424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96420B721B7BA4A5004BB424 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96420B741B7BA4A5004BB424 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		96420B771B7BA4A5004BB424 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Onboarding.storyboard; sourceTree = "<group>"; };
 		96420B791B7BA4A5004BB424 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		96420B7C1B7BA4A5004BB424 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		96420B821B7BA4A5004BB424 /* ProjectCarsiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectCarsiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96420B871B7BA4A5004BB424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96420B881B7BA4A5004BB424 /* ProjectCarsiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCarsiOSTests.swift; sourceTree = "<group>"; };
 		96C2A0971B7BAA32007F45E6 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
@@ -63,7 +53,7 @@
 		96C2A0A51B7BD984007F45E6 /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
 		96C2A0A71B7CCA71007F45E6 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		96C2A0A81B7CCA71007F45E6 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
-		96C2A0AB1B7CCB1C007F45E6 /* ProjectCarsiOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ProjectCarsiOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		96C2A0AB1B7CCB1C007F45E6 /* FalaComMeuCarro-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FalaComMeuCarro-Bridging-Header.h"; sourceTree = "<group>"; };
 		96C2A0AF1B7CCC71007F45E6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		96C2A0B11B7CCDB2007F45E6 /* Cars.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Cars.storyboard; sourceTree = "<group>"; };
 		96C2A0B41B7CD153007F45E6 /* InterStoryboardsPushSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterStoryboardsPushSegue.swift; sourceTree = "<group>"; };
@@ -71,6 +61,7 @@
 		96C2A0B81B7CFF8D007F45E6 /* InterStoryboardsSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterStoryboardsSegue.swift; sourceTree = "<group>"; };
 		D153D0C973F823101D9357E0 /* Pods-ProjectCarsiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectCarsiOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProjectCarsiOS/Pods-ProjectCarsiOS.release.xcconfig"; sourceTree = "<group>"; };
 		E5442C7B03FA00E27F3157D2 /* Pods_ProjectCarsiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ProjectCarsiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6BCFE844937C8674A26BB59 /* Pods_FalaComMeuCarro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FalaComMeuCarro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,16 +69,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB07A6DA673919870DF48496 /* Pods_ProjectCarsiOS.framework in Frameworks */,
 				96C2A0A91B7CCA71007F45E6 /* FBSDKCoreKit.framework in Frameworks */,
 				96C2A0AA1B7CCA71007F45E6 /* FBSDKLoginKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		96420B7F1B7BA4A5004BB424 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				BA68FB31E460CB62994E8CB0 /* Pods_FalaComMeuCarro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +83,8 @@
 			children = (
 				84B00DA64B23109C00F37F80 /* Pods-ProjectCarsiOS.debug.xcconfig */,
 				D153D0C973F823101D9357E0 /* Pods-ProjectCarsiOS.release.xcconfig */,
+				08275B905E911FAE3176747F /* Pods-FalaComMeuCarro.debug.xcconfig */,
+				621D447816203B459B48FB2E /* Pods-FalaComMeuCarro.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -109,6 +95,7 @@
 				96C2A0A71B7CCA71007F45E6 /* FBSDKCoreKit.framework */,
 				96C2A0A81B7CCA71007F45E6 /* FBSDKLoginKit.framework */,
 				E5442C7B03FA00E27F3157D2 /* Pods_ProjectCarsiOS.framework */,
+				E6BCFE844937C8674A26BB59 /* Pods_FalaComMeuCarro.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -116,8 +103,8 @@
 		96420B641B7BA4A5004BB424 = {
 			isa = PBXGroup;
 			children = (
-				96420B6F1B7BA4A5004BB424 /* ProjectCarsiOS */,
-				96420B851B7BA4A5004BB424 /* ProjectCarsiOSTests */,
+				96420B6F1B7BA4A5004BB424 /* FalaComMeuCarro */,
+				96420B851B7BA4A5004BB424 /* FalaComMeuCarroTests */,
 				96420B6E1B7BA4A5004BB424 /* Products */,
 				132A7A45EA27A6C9AD61DCD2 /* Pods */,
 				836034216C051BA26474C33C /* Frameworks */,
@@ -127,13 +114,12 @@
 		96420B6E1B7BA4A5004BB424 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				96420B6D1B7BA4A5004BB424 /* ProjectCarsiOS.app */,
-				96420B821B7BA4A5004BB424 /* ProjectCarsiOSTests.xctest */,
+				96420B6D1B7BA4A5004BB424 /* FalaComMeuCarro.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		96420B6F1B7BA4A5004BB424 /* ProjectCarsiOS */ = {
+		96420B6F1B7BA4A5004BB424 /* FalaComMeuCarro */ = {
 			isa = PBXGroup;
 			children = (
 				96420B721B7BA4A5004BB424 /* AppDelegate.swift */,
@@ -145,26 +131,26 @@
 				96420B701B7BA4A5004BB424 /* Supporting Files */,
 				96420B941B7BA596004BB424 /* Views */,
 			);
-			path = ProjectCarsiOS;
+			path = FalaComMeuCarro;
 			sourceTree = "<group>";
 		};
 		96420B701B7BA4A5004BB424 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				96C2A0AB1B7CCB1C007F45E6 /* ProjectCarsiOS-Bridging-Header.h */,
+				96C2A0AB1B7CCB1C007F45E6 /* FalaComMeuCarro-Bridging-Header.h */,
 				96420B791B7BA4A5004BB424 /* Images.xcassets */,
 				96420B711B7BA4A5004BB424 /* Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		96420B851B7BA4A5004BB424 /* ProjectCarsiOSTests */ = {
+		96420B851B7BA4A5004BB424 /* FalaComMeuCarroTests */ = {
 			isa = PBXGroup;
 			children = (
 				96420B881B7BA4A5004BB424 /* ProjectCarsiOSTests.swift */,
 				96420B861B7BA4A5004BB424 /* Supporting Files */,
 			);
-			path = ProjectCarsiOSTests;
+			path = FalaComMeuCarroTests;
 			sourceTree = "<group>";
 		};
 		96420B861B7BA4A5004BB424 /* Supporting Files */ = {
@@ -236,9 +222,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		96420B6C1B7BA4A5004BB424 /* ProjectCarsiOS */ = {
+		96420B6C1B7BA4A5004BB424 /* FalaComMeuCarro */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 96420B8C1B7BA4A5004BB424 /* Build configuration list for PBXNativeTarget "ProjectCarsiOS" */;
+			buildConfigurationList = 96420B8C1B7BA4A5004BB424 /* Build configuration list for PBXNativeTarget "FalaComMeuCarro" */;
 			buildPhases = (
 				CACDF51FDA934EC85A7F4B64 /* Check Pods Manifest.lock */,
 				96C2A0A41B7BD945007F45E6 /* Run Script - Natalie */,
@@ -253,28 +239,10 @@
 			);
 			dependencies = (
 			);
-			name = ProjectCarsiOS;
+			name = FalaComMeuCarro;
 			productName = ProjectCarsiOS;
-			productReference = 96420B6D1B7BA4A5004BB424 /* ProjectCarsiOS.app */;
+			productReference = 96420B6D1B7BA4A5004BB424 /* FalaComMeuCarro.app */;
 			productType = "com.apple.product-type.application";
-		};
-		96420B811B7BA4A5004BB424 /* ProjectCarsiOSTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 96420B8F1B7BA4A5004BB424 /* Build configuration list for PBXNativeTarget "ProjectCarsiOSTests" */;
-			buildPhases = (
-				96420B7E1B7BA4A5004BB424 /* Sources */,
-				96420B7F1B7BA4A5004BB424 /* Frameworks */,
-				96420B801B7BA4A5004BB424 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				96420B841B7BA4A5004BB424 /* PBXTargetDependency */,
-			);
-			name = ProjectCarsiOSTests;
-			productName = ProjectCarsiOSTests;
-			productReference = 96420B821B7BA4A5004BB424 /* ProjectCarsiOSTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -289,13 +257,9 @@
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = ATB5PVNS89;
 					};
-					96420B811B7BA4A5004BB424 = {
-						CreatedOnToolsVersion = 6.4;
-						TestTargetID = 96420B6C1B7BA4A5004BB424;
-					};
 				};
 			};
-			buildConfigurationList = 96420B681B7BA4A5004BB424 /* Build configuration list for PBXProject "ProjectCarsiOS" */;
+			buildConfigurationList = 96420B681B7BA4A5004BB424 /* Build configuration list for PBXProject "FalaComMeuCarro" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -308,8 +272,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				96420B6C1B7BA4A5004BB424 /* ProjectCarsiOS */,
-				96420B811B7BA4A5004BB424 /* ProjectCarsiOSTests */,
+				96420B6C1B7BA4A5004BB424 /* FalaComMeuCarro */,
 			);
 		};
 /* End PBXProject section */
@@ -323,13 +286,6 @@
 				96420B7D1B7BA4A5004BB424 /* LaunchScreen.xib in Resources */,
 				96420B7A1B7BA4A5004BB424 /* Images.xcassets in Resources */,
 				96C2A0B21B7CCDB2007F45E6 /* Cars.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		96420B801B7BA4A5004BB424 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,7 +304,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProjectCarsiOS/Pods-ProjectCarsiOS-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FalaComMeuCarro/Pods-FalaComMeuCarro-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		5BFD8E9AA91EDE4D2248213E /* Copy Pods Resources */ = {
@@ -363,7 +319,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProjectCarsiOS/Pods-ProjectCarsiOS-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FalaComMeuCarro/Pods-FalaComMeuCarro-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		960CA9301B9A0F1000023702 /* Run Script - Fabric */ = {
@@ -433,23 +389,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		96420B7E1B7BA4A5004BB424 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				96420B891B7BA4A5004BB424 /* ProjectCarsiOSTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		96420B841B7BA4A5004BB424 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 96420B6C1B7BA4A5004BB424 /* ProjectCarsiOS */;
-			targetProxy = 96420B831B7BA4A5004BB424 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		96420B761B7BA4A5004BB424 /* Onboarding.storyboard */ = {
@@ -556,7 +496,7 @@
 		};
 		96420B8D1B7BA4A5004BB424 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84B00DA64B23109C00F37F80 /* Pods-ProjectCarsiOS.debug.xcconfig */;
+			baseConfigurationReference = 08275B905E911FAE3176747F /* Pods-FalaComMeuCarro.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -566,18 +506,18 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = "ProjectCarsiOS/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/FalaComMeuCarro/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = FalaComMeuCarro;
 				PROVISIONING_PROFILE = "309da352-d96a-47e2-b46b-f01ad767235e";
-				SWIFT_OBJC_BRIDGING_HEADER = "ProjectCarsiOS/Supporting Files/ProjectCarsiOS-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "FalaComMeuCarro/Supporting Files/FalaComMeuCarro-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		96420B8E1B7BA4A5004BB424 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D153D0C973F823101D9357E0 /* Pods-ProjectCarsiOS.release.xcconfig */;
+			baseConfigurationReference = 621D447816203B459B48FB2E /* Pods-FalaComMeuCarro.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -586,51 +526,17 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = "ProjectCarsiOS/Supporting Files/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/FalaComMeuCarro/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "ProjectCarsiOS/Supporting Files/ProjectCarsiOS-Bridging-Header.h";
-			};
-			name = Release;
-		};
-		96420B901B7BA4A5004BB424 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "ProjectCarsiOSTests/Supporting Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProjectCarsiOS.app/ProjectCarsiOS";
-			};
-			name = Debug;
-		};
-		96420B911B7BA4A5004BB424 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "ProjectCarsiOSTests/Supporting Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ProjectCarsiOS.app/ProjectCarsiOS";
+				PRODUCT_NAME = FalaComMeuCarro;
+				SWIFT_OBJC_BRIDGING_HEADER = "FalaComMeuCarro/Supporting Files/FalaComMeuCarro-Bridging-Header.h";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		96420B681B7BA4A5004BB424 /* Build configuration list for PBXProject "ProjectCarsiOS" */ = {
+		96420B681B7BA4A5004BB424 /* Build configuration list for PBXProject "FalaComMeuCarro" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				96420B8A1B7BA4A5004BB424 /* Debug */,
@@ -639,20 +545,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		96420B8C1B7BA4A5004BB424 /* Build configuration list for PBXNativeTarget "ProjectCarsiOS" */ = {
+		96420B8C1B7BA4A5004BB424 /* Build configuration list for PBXNativeTarget "FalaComMeuCarro" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				96420B8D1B7BA4A5004BB424 /* Debug */,
 				96420B8E1B7BA4A5004BB424 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		96420B8F1B7BA4A5004BB424 /* Build configuration list for PBXNativeTarget "ProjectCarsiOSTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				96420B901B7BA4A5004BB424 /* Debug */,
-				96420B911B7BA4A5004BB424 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
