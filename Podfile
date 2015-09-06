@@ -7,15 +7,10 @@ inhibit_all_warnings!
 # use swift pods
 use_frameworks!
 
-target ‘FalaComMeuCarro’ do
+target 'FalaComMeuCarro' do
 	pod 'NSStringMask', '~> 1.2'
 	pod 'AlamofireObjectMapper', '~> 0.7'
 	pod 'Fabric', '~> 1.4'
 	pod 'Crashlytics', '~> 3.2'
 	pod 'MaterialKit', '~> 0.3'
 end
-
-target 'FalaComMeuCarroTests' do
-
-end
-
