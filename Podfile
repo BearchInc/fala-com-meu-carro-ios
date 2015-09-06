@@ -12,5 +12,4 @@ target 'FalaComMeuCarro' do
 	pod 'AlamofireObjectMapper', '~> 0.7'
 	pod 'Fabric', '~> 1.4'
 	pod 'Crashlytics', '~> 3.2'
-	pod 'MaterialKit', '~> 0.3'
 end

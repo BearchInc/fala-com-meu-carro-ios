@@ -7,7 +7,6 @@ PODS:
   - Fabric (1.4.1):
     - Fabric/Base (= 1.4.1)
   - Fabric/Base (1.4.1)
-  - MaterialKit (0.3.5)
   - NSStringMask (1.2)
   - ObjectMapper (0.15)
 
@@ -15,7 +14,6 @@ DEPENDENCIES:
   - AlamofireObjectMapper (~> 0.7)
   - Crashlytics (~> 3.2)
   - Fabric (~> 1.4)
-  - MaterialKit (~> 0.3)
   - NSStringMask (~> 1.2)
 
 SPEC CHECKSUMS:
@@ -23,7 +21,6 @@ SPEC CHECKSUMS:
   AlamofireObjectMapper: b07339a5ce5f609230df61080e55c1f6fc9551ee
   Crashlytics: a29e4f820aa401482b26043dc5d78adf08ac7573
   Fabric: 4f718eeca4c02c7d6f6f4e5f0e5f87c63aa38458
-  MaterialKit: 6f1e9382f89593df768bc0c31ded9952a6d8ad46
   NSStringMask: 77f655efb20a9ccf098f0da0d64ff923f6bf58aa
   ObjectMapper: 0656dc1c155825897e5acfcd25362c6b61786dcb
 

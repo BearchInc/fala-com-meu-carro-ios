@@ -2,7 +2,7 @@ import Foundation
 import Alamofire
 
 enum Router: URLRequestConvertible {
-	static let baseURLString = "http://localhost:8080"
+	static let baseURLString = Config.get(.BaseUrl)
 	static var OAuthToken: String?
 	
 	case CreatePost(String, String)
