@@ -26,20 +26,26 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8ov-vZ-z1y" id="U6r-gc-b8b">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciR-PE-hwv" userLabel="Car Plate Button">
-                                                    <rect key="frame" x="8" y="7" width="66" height="30"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciR-PE-hwv" userLabel="Car Plate Button">
+                                                    <rect key="frame" x="8" y="7" width="80" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="66" id="PhT-fq-IKb"/>
+                                                        <constraint firstAttribute="width" constant="80" id="Tpx-46-f8Q"/>
                                                     </constraints>
-                                                    <state key="normal" title="IKG-2595">
+                                                    <state key="normal" title="MMM-8888">
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="PhT-fq-IKb"/>
+                                                        </mask>
+                                                    </variation>
                                                     <connections>
                                                         <action selector="plateButtonTouched:" destination="8ov-vZ-z1y" eventType="touchUpInside" id="uOz-M0-NyR"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mq5-dU-38R" userLabel="Message Label">
-                                                    <rect key="frame" x="82" y="11" width="510" height="20.5"/>
+                                                    <rect key="frame" x="92" y="11" width="500" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -55,28 +61,14 @@
                                             <color key="backgroundColor" red="0.61960784310000006" green="0.81176470590000005" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="llb-fR-ORK" secondAttribute="trailing" id="6oe-S0-G8j"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="mq5-dU-38R" secondAttribute="trailing" id="Abq-dn-tDX"/>
                                                 <constraint firstItem="llb-fR-ORK" firstAttribute="leading" secondItem="U6r-gc-b8b" secondAttribute="leading" id="BN3-XK-Tdo"/>
-                                                <constraint firstItem="llb-fR-ORK" firstAttribute="leading" secondItem="U6r-gc-b8b" secondAttribute="leadingMargin" constant="-16" id="Ema-5a-8M6"/>
                                                 <constraint firstAttribute="trailing" secondItem="mq5-dU-38R" secondAttribute="trailing" constant="8" id="Hbf-ed-25x"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="llb-fR-ORK" secondAttribute="bottom" constant="-8" id="KZR-gT-fTU"/>
                                                 <constraint firstAttribute="bottom" secondItem="llb-fR-ORK" secondAttribute="bottom" id="OSq-tq-IAc"/>
                                                 <constraint firstItem="ciR-PE-hwv" firstAttribute="leading" secondItem="U6r-gc-b8b" secondAttribute="leading" constant="8" id="VxT-sm-A4f"/>
                                                 <constraint firstAttribute="centerY" secondItem="ciR-PE-hwv" secondAttribute="centerY" id="Yjl-fq-YOB"/>
-                                                <constraint firstItem="mq5-dU-38R" firstAttribute="leading" secondItem="ciR-PE-hwv" secondAttribute="trailing" constant="8" id="eE1-i5-xmc"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="llb-fR-ORK" secondAttribute="trailing" constant="-16" id="qvm-Yj-ls2"/>
-                                                <constraint firstItem="ciR-PE-hwv" firstAttribute="leading" secondItem="U6r-gc-b8b" secondAttribute="leadingMargin" id="ryg-SE-8Ae"/>
+                                                <constraint firstItem="mq5-dU-38R" firstAttribute="leading" secondItem="ciR-PE-hwv" secondAttribute="trailing" constant="4" id="eE1-i5-xmc"/>
                                                 <constraint firstAttribute="centerY" secondItem="mq5-dU-38R" secondAttribute="centerY" id="wYT-yT-Yt2"/>
                                             </constraints>
-                                            <variation key="default">
-                                                <mask key="constraints">
-                                                    <exclude reference="ryg-SE-8Ae"/>
-                                                    <exclude reference="Ema-5a-8M6"/>
-                                                    <exclude reference="KZR-gT-fTU"/>
-                                                    <exclude reference="qvm-Yj-ls2"/>
-                                                    <exclude reference="Abq-dn-tDX"/>
-                                                </mask>
-                                            </variation>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="licencePlateLabel" destination="ciR-PE-hwv" id="RKW-5L-w9P"/>
