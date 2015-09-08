@@ -9,7 +9,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 		didSet {
 			self.refreshControl = UIRefreshControl()
 			self.refreshControl.addTarget(self, action: "refresh", forControlEvents: UIControlEvents.ValueChanged)
-			self.postsTableView.estimatedRowHeight = 100
+			self.postsTableView.estimatedRowHeight = 120
 			self.postsTableView.rowHeight = UITableViewAutomaticDimension
 			self.postsTableView.addSubview(self.refreshControl)
 		}
@@ -54,11 +54,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 		postsTableView.endUpdates()
 	}
 	
-	override func viewDidAppear(animated: Bool) {
-		super.viewDidAppear(animated)
-		postsTableView.reloadData()
-	}
-	
+
 	func refresh() {
 		fetchPosts()
 	}

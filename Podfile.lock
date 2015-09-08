@@ -9,6 +9,7 @@ PODS:
   - Fabric/Base (1.4.1)
   - NSStringMask (1.2)
   - ObjectMapper (0.15)
+  - SwiftDate (1.0.11)
   - SwiftEventBus (1.1.0)
 
 DEPENDENCIES:
@@ -16,6 +17,7 @@ DEPENDENCIES:
   - Crashlytics (~> 3.2)
   - Fabric (~> 1.4)
   - NSStringMask (~> 1.2)
+  - SwiftDate (~> 1.0)
   - SwiftEventBus (from `https://github.com/cesarferreira/SwiftEventBus.git`)
 
 EXTERNAL SOURCES:
@@ -34,6 +36,7 @@ SPEC CHECKSUMS:
   Fabric: 4f718eeca4c02c7d6f6f4e5f0e5f87c63aa38458
   NSStringMask: 77f655efb20a9ccf098f0da0d64ff923f6bf58aa
   ObjectMapper: 0656dc1c155825897e5acfcd25362c6b61786dcb
+  SwiftDate: c2fdcd66c327c799749a435a05521b20a4074009
   SwiftEventBus: d334f7aecbddbd995c3de5c262cf35c72db550f3
 
 COCOAPODS: 0.38.2

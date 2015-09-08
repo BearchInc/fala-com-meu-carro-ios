@@ -8,6 +8,8 @@ class Post: Mappable {
 	
 	var carPlate: String!
 	var message: String!
+	var userName: String!
+	var createdAt: NSDate!
 	
 	class func newInstance(map: Map) -> Mappable? {
 		return Post()
@@ -16,6 +18,8 @@ class Post: Mappable {
 	func mapping(map: Map) {
 		carPlate <- map["car_plate"]
 		message <- map["message"]
+		userName <- map["user_name"]
+		createdAt <- (map["created_at"], DateTransform())
 	}
 	
 	class func getAllPosts(callback: [Post] -> Void) {
