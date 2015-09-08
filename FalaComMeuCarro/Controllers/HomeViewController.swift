@@ -1,4 +1,5 @@
 import UIKit
+import SwiftEventBus
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 	
@@ -17,9 +18,40 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 	var posts = [Post]()
 	var plate = ""
 
+	deinit {
+		SwiftEventBus.unregister(self)
+	}
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		fetchPosts()
+		setupEvents()
+	}
+	
+	func setupEvents() {
+		SwiftEventBus.onMainThread(self, name: "postCreated", handler: appendPostHandler)
+	}
+	
+	func isInitialController() -> Bool {
+		return plate.isEmpty
+	}
+	
+	func isControllerFromSamePlate(post: Post) -> Bool {
+		return plate == post.carPlate
+	}
+	
+	func appendPostHandler(notification: NSNotification!) {
+		let post = notification.object as! Post
+		
+		if !isControllerFromSamePlate(post) && !isInitialController() {
+			return
+		}
+		
+		posts.insert(post, atIndex: 0)
+		
+		postsTableView.beginUpdates()
+		postsTableView.insertRowsAtIndexPaths([NSIndexPath(forRow: 0, inSection: 0)], withRowAnimation: UITableViewRowAnimation.Automatic)
+		postsTableView.endUpdates()
 	}
 	
 	override func viewDidAppear(animated: Bool) {

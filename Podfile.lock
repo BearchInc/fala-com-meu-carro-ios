@@ -9,12 +9,23 @@ PODS:
   - Fabric/Base (1.4.1)
   - NSStringMask (1.2)
   - ObjectMapper (0.15)
+  - SwiftEventBus (1.1.0)
 
 DEPENDENCIES:
   - AlamofireObjectMapper (~> 0.7)
   - Crashlytics (~> 3.2)
   - Fabric (~> 1.4)
   - NSStringMask (~> 1.2)
+  - SwiftEventBus (from `https://github.com/cesarferreira/SwiftEventBus.git`)
+
+EXTERNAL SOURCES:
+  SwiftEventBus:
+    :git: https://github.com/cesarferreira/SwiftEventBus.git
+
+CHECKOUT OPTIONS:
+  SwiftEventBus:
+    :commit: 4b8cbb5a8227b3c29af75e0416689d26178733d8
+    :git: https://github.com/cesarferreira/SwiftEventBus.git
 
 SPEC CHECKSUMS:
   Alamofire: e4ab637e3195b645c814b87a652373439e59f2a4
@@ -23,5 +34,6 @@ SPEC CHECKSUMS:
   Fabric: 4f718eeca4c02c7d6f6f4e5f0e5f87c63aa38458
   NSStringMask: 77f655efb20a9ccf098f0da0d64ff923f6bf58aa
   ObjectMapper: 0656dc1c155825897e5acfcd25362c6b61786dcb
+  SwiftEventBus: d334f7aecbddbd995c3de5c262cf35c72db550f3
 
 COCOAPODS: 0.38.2

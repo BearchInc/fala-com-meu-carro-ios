@@ -1,6 +1,7 @@
 import Foundation
 import UIKit
 import NSStringMask
+import SwiftEventBus
 
 class CreatePostViewController: UIViewController {
 	
@@ -21,8 +22,8 @@ class CreatePostViewController: UIViewController {
 		let userName = FBSDKProfile.currentProfile().name
 		
 		Post.createPost(plate, message: message, userId: userId, userName: userName) { (post) in
-			println("Successfully sent \(post)")
 			self.navigationController?.popViewControllerAnimated(true)
+			SwiftEventBus.post("postCreated", sender: post)
 		}
 	}
 }
