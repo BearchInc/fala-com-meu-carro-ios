@@ -2,10 +2,15 @@ import UIKit
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 	
+	var refreshControl: UIRefreshControl!
+	
 	@IBOutlet weak var postsTableView: UITableView! {
 		didSet {
+			self.refreshControl = UIRefreshControl()
+			self.refreshControl.addTarget(self, action: "refresh", forControlEvents: UIControlEvents.ValueChanged)
 			self.postsTableView.estimatedRowHeight = 100
 			self.postsTableView.rowHeight = UITableViewAutomaticDimension
+			self.postsTableView.addSubview(self.refreshControl)
 		}
 	}
 	
@@ -20,6 +25,10 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 	override func viewDidAppear(animated: Bool) {
 		super.viewDidAppear(animated)
 		postsTableView.reloadData()
+	}
+	
+	func refresh() {
+		fetchPosts()
 	}
 
 	func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -49,6 +58,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 	private func displayPosts(posts: [Post]) {
 		self.posts = posts
 		postsTableView.reloadData()
+		refreshControl.endRefreshing()
 	}
 
 	@IBAction func goToPlate(sender: AnyObject) {
