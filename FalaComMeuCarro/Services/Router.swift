@@ -5,7 +5,7 @@ enum Router: URLRequestConvertible {
 	static let baseURLString = Config.get(.BaseUrl)
 	static var OAuthToken: String?
 	
-	case CreatePost(String, String)
+	case CreatePost(String, String, String, String)
 	case ListAllPosts()
 	case ListPostByCarPlate(String)
 	
@@ -22,7 +22,7 @@ enum Router: URLRequestConvertible {
 	
 	var path: String {
 		switch self {
-		case .CreatePost(let carPlate, let message):
+		case .CreatePost(let carPlate, let message, let userId, let userName):
 			return "/posts/create"
 		case .ListAllPosts():
 			return "/posts/list"
@@ -43,8 +43,8 @@ enum Router: URLRequestConvertible {
 		}
 		
 		switch self {
-		case .CreatePost(let carPlate, let message):
-			let parameters = ["car_plate" : carPlate, "message" : message]
+		case .CreatePost(let carPlate, let message, let userId, let userName):
+			let parameters = ["car_plate" : carPlate, "message" : message, "user_id" : userId, "user_name" : userName]
 			return Alamofire.ParameterEncoding.JSON.encode(mutableURLRequest, parameters: parameters).0
 		case .ListAllPosts():
 			return Alamofire.ParameterEncoding.URL.encode(mutableURLRequest, parameters: nil).0

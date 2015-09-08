@@ -27,8 +27,8 @@ class GoToPlateViewController {
 	}
 	
 	func textFieldChanged(textField: UITextField!) {
+		textField.autocapitalizationType = UITextAutocapitalizationType.AllCharacters
 		textField.placeholder = "AAA-0000"
-
 		textField.addTarget(self, action: "textChanged:", forControlEvents: UIControlEvents.EditingChanged)
 	}
 	

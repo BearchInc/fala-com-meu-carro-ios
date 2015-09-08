@@ -11,13 +11,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 		FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
 		Fabric.with([Crashlytics.self()])
-        
+		
 		if (FBSDKAccessToken.currentAccessToken() != nil) {
 			self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
 			self.window?.rootViewController = Storyboards.Cars.instantiateInitialViewController()
 		}
-		println(FLAVOR)
-        println(Config.get(.BaseUrl))
+
 		return true
 	}
 
@@ -44,9 +43,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	}
 	
 	func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
+
 		return FBSDKApplicationDelegate.sharedInstance().application(application, openURL: url, sourceApplication: sourceApplication, annotation: annotation)
 	}
-
 
 }
 

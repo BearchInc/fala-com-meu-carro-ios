@@ -16,8 +16,11 @@ class CreatePostViewController: UIViewController {
 		
 		let plate = carplateTextField.text
 		let message = messageTextView.text
+
+		let userId = FBSDKProfile.currentProfile().userID
+		let userName = FBSDKProfile.currentProfile().name
 		
-		Post.createPost(plate, message: message) { (post) in
+		Post.createPost(plate, message: message, userId: userId, userName: userName) { (post) in
 			println("Successfully sent \(post)")
 			self.navigationController?.popViewControllerAnimated(true)
 		}
