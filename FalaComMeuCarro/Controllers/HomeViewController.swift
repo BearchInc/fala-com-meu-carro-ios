@@ -2,7 +2,12 @@ import UIKit
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 	
-	@IBOutlet weak var postsTableView: UITableView!
+	@IBOutlet weak var postsTableView: UITableView! {
+		didSet {
+			self.postsTableView.estimatedRowHeight = 100
+			self.postsTableView.rowHeight = UITableViewAutomaticDimension
+		}
+	}
 	
 	var posts = [Post]()
 	var plate = ""
@@ -10,6 +15,11 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		fetchPosts()
+	}
+	
+	override func viewDidAppear(animated: Bool) {
+		super.viewDidAppear(animated)
+		postsTableView.reloadData()
 	}
 
 	func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

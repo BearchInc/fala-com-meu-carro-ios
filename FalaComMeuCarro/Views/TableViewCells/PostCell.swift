@@ -11,6 +11,8 @@ class PostCell: UITableViewCell {
 	func render(post: Post) {
 		licencePlateLabel.setTitle(post.carPlate, forState: UIControlState.Normal)
 		messageLabel.text = post.message
+		messageLabel.preferredMaxLayoutWidth = self.messageLabel.bounds.width
+		println(self.messageLabel.bounds.width)
 	}
 	
 	override func setSelected(selected: Bool, animated: Bool) {

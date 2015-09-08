@@ -21,13 +21,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" red="0.65776337029999998" green="0.78592360019999996" blue="0.30031378980000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="POST_CELL" id="8ov-vZ-z1y" customClass="PostCell" customModule="FalaComMeuCarro" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="POST_CELL" rowHeight="46" id="8ov-vZ-z1y" customClass="PostCell" customModule="FalaComMeuCarro" customModuleProvider="target">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8ov-vZ-z1y" id="U6r-gc-b8b">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciR-PE-hwv" userLabel="Car Plate Button">
-                                                    <rect key="frame" x="8" y="7" width="80" height="30"/>
+                                                    <rect key="frame" x="8" y="8" width="80" height="30"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="66" id="PhT-fq-IKb"/>
                                                         <constraint firstAttribute="width" constant="80" id="Tpx-46-f8Q"/>
@@ -44,14 +44,17 @@
                                                         <action selector="plateButtonTouched:" destination="8ov-vZ-z1y" eventType="touchUpInside" id="uOz-M0-NyR"/>
                                                     </connections>
                                                 </button>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mq5-dU-38R" userLabel="Message Label">
-                                                    <rect key="frame" x="92" y="11" width="500" height="20.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mq5-dU-38R" userLabel="Message Label">
+                                                    <rect key="frame" x="92" y="8" width="500" height="29.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="yDw-pR-ddN"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="llb-fR-ORK" userLabel="Cell Separator View">
-                                                    <rect key="frame" x="0.0" y="43" width="600" height="1"/>
+                                                    <rect key="frame" x="0.0" y="45" width="600" height="1"/>
                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="2xf-lp-whJ"/>
@@ -60,15 +63,26 @@
                                             </subviews>
                                             <color key="backgroundColor" red="0.61960784310000006" green="0.81176470590000005" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="mq5-dU-38R" secondAttribute="bottom" id="0pF-HJ-DEF"/>
                                                 <constraint firstAttribute="trailing" secondItem="llb-fR-ORK" secondAttribute="trailing" id="6oe-S0-G8j"/>
                                                 <constraint firstItem="llb-fR-ORK" firstAttribute="leading" secondItem="U6r-gc-b8b" secondAttribute="leading" id="BN3-XK-Tdo"/>
                                                 <constraint firstAttribute="trailing" secondItem="mq5-dU-38R" secondAttribute="trailing" constant="8" id="Hbf-ed-25x"/>
+                                                <constraint firstItem="ciR-PE-hwv" firstAttribute="top" secondItem="U6r-gc-b8b" secondAttribute="topMargin" id="IeX-iy-VUr"/>
+                                                <constraint firstItem="mq5-dU-38R" firstAttribute="top" secondItem="U6r-gc-b8b" secondAttribute="topMargin" id="L83-dS-cjK"/>
                                                 <constraint firstAttribute="bottom" secondItem="llb-fR-ORK" secondAttribute="bottom" id="OSq-tq-IAc"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="mq5-dU-38R" secondAttribute="bottom" id="PNc-9B-uja"/>
                                                 <constraint firstItem="ciR-PE-hwv" firstAttribute="leading" secondItem="U6r-gc-b8b" secondAttribute="leading" constant="8" id="VxT-sm-A4f"/>
                                                 <constraint firstAttribute="centerY" secondItem="ciR-PE-hwv" secondAttribute="centerY" id="Yjl-fq-YOB"/>
                                                 <constraint firstItem="mq5-dU-38R" firstAttribute="leading" secondItem="ciR-PE-hwv" secondAttribute="trailing" constant="4" id="eE1-i5-xmc"/>
                                                 <constraint firstAttribute="centerY" secondItem="mq5-dU-38R" secondAttribute="centerY" id="wYT-yT-Yt2"/>
                                             </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="Yjl-fq-YOB"/>
+                                                    <exclude reference="0pF-HJ-DEF"/>
+                                                    <exclude reference="wYT-yT-Yt2"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="licencePlateLabel" destination="ciR-PE-hwv" id="RKW-5L-w9P"/>
