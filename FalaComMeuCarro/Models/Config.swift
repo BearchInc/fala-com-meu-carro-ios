@@ -10,7 +10,7 @@ class Config {
     ]
     
     private static let staging: [ConfigKey:String] = [
-        .BaseUrl: "https://staging.com",
+        .BaseUrl: "https://fala-com-meu-carro-dot-staging-api-getunseen.appspot.com",
     ]
     
     private static let appstore: [ConfigKey:String] = [
