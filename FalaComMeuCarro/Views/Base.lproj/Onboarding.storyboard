@@ -1,45 +1,111 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="JgK-VF-XJx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="CUt-Uc-XU3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
+        <!--Login-->
         <scene sceneID="Y4A-5d-YCP">
             <objects>
-                <viewController id="JgK-VF-XJx" customClass="LoginViewController" customModule="ProjectCarsiOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="JgK-VF-XJx" customClass="LoginViewController" customModule="FalaComMeuCarro" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cuR-VW-0LB"/>
                         <viewControllerLayoutGuide type="bottom" id="JNP-aw-d3U"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="chp-59-bUQ">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1I7-AI-K8f" customClass="FBSDKLoginButton">
-                                <rect key="frame" x="212.5" y="100" width="175" height="30"/>
+                                <rect key="frame" x="72" y="164" width="175" height="30"/>
                                 <color key="backgroundColor" red="0.24313725489999999" green="0.61568627450000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="175" id="5nB-fY-5UA"/>
                                     <constraint firstAttribute="height" constant="30" id="O5Y-EL-833"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ao fazer login você declara que está de acordo os termos de uso" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDp-rV-f4D" userLabel="Instruction">
+                                <rect key="frame" x="8" y="290" width="304" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JfW-BR-az1" userLabel="Terms and Conditions Button">
+                                <rect key="frame" x="108" y="371" width="104" height="30"/>
+                                <state key="normal" title="Termos de Uso">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="EhQ-7o-VN4" kind="push" id="ohM-Z9-wnt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.61960784310000006" green="0.81176470590000005" blue="0.3149414062" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="JfW-BR-az1" firstAttribute="top" secondItem="QDp-rV-f4D" secondAttribute="bottom" constant="40" id="1ux-Rl-iPr"/>
                             <constraint firstAttribute="centerX" secondItem="1I7-AI-K8f" secondAttribute="centerX" id="ApA-IU-avA"/>
-                            <constraint firstItem="1I7-AI-K8f" firstAttribute="top" secondItem="cuR-VW-0LB" secondAttribute="bottom" constant="80" id="Enz-JN-Qbg"/>
+                            <constraint firstAttribute="trailing" secondItem="QDp-rV-f4D" secondAttribute="trailing" constant="8" id="Avp-qh-RJ9"/>
+                            <constraint firstItem="1I7-AI-K8f" firstAttribute="top" secondItem="cuR-VW-0LB" secondAttribute="bottom" constant="100" id="Enz-JN-Qbg"/>
+                            <constraint firstAttribute="centerX" secondItem="JfW-BR-az1" secondAttribute="centerX" id="Kiz-ma-jAt"/>
+                            <constraint firstItem="QDp-rV-f4D" firstAttribute="leading" secondItem="chp-59-bUQ" secondAttribute="leading" constant="8" id="cab-iz-Jj2"/>
+                            <constraint firstItem="QDp-rV-f4D" firstAttribute="top" secondItem="1I7-AI-K8f" secondAttribute="bottom" constant="96" id="yOb-oW-4OT"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="i7x-bo-3lQ"/>
+                    <navigationItem key="navigationItem" title="Login" id="i7x-bo-3lQ"/>
                     <connections>
                         <outlet property="loginButton" destination="1I7-AI-K8f" id="oy2-oA-bQd"/>
-                        <segue destination="FfP-Xc-6Fn" kind="custom" identifier="_Cars" customClass="InterStoryboardsPresentSegue" customModule="ProjectCarsiOS" customModuleProvider="target" id="Pqe-bW-28L"/>
+                        <segue destination="FfP-Xc-6Fn" kind="custom" identifier="_Cars" customClass="InterStoryboardsPresentSegue" customModule="FalaComMeuCarro" customModuleProvider="target" id="Pqe-bW-28L"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7zc-0k-n4s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="718" y="365"/>
+            <point key="canvasLocation" x="816" y="345.5333333333333"/>
+        </scene>
+        <!--Termos de Uso-->
+        <scene sceneID="3Vr-cl-B2h">
+            <objects>
+                <viewController title="Termos de Uso" id="EhQ-7o-VN4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="toD-gw-XHc"/>
+                        <viewControllerLayoutGuide type="bottom" id="1sP-kX-OFe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RCm-az-Ygl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9n-kW-o9x">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="567.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Fala com meu carro é uma forma completamente diferente de interagir e compartilhar informações com outras pessoas. Nós somos uma plataforma bastante aberta, mas ainda assim temos regras.
+
+O seguinte conteúdo será removido:
+
+Insultos raciais ou sexuais;
+Incentivo à violência ou danos auto-infligidos;
+Postar informações pessoais;
+Intenção maliciosa;
+SPAM &amp; Propaganda;
+Solicitação de favores sexuais;
+ Bearch, Inc. não é de forma alguma responsável por conteúdo gerado pelo usuário.
+
+Estaremos sempre fazendo o nosso melhor para melhorar o seu app, se você tem alguma idéia sobre coisas novas que podemos fazer por favor nos contate pelo support@getunseen.com a qualquer momento!</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.61960784310000006" green="0.81176470590000005" blue="0.3149414062" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="m9n-kW-o9x" firstAttribute="leading" secondItem="RCm-az-Ygl" secondAttribute="leading" id="NpW-LF-Nsm"/>
+                            <constraint firstItem="m9n-kW-o9x" firstAttribute="top" secondItem="RCm-az-Ygl" secondAttribute="top" id="TaU-BC-T0K"/>
+                            <constraint firstAttribute="trailing" secondItem="m9n-kW-o9x" secondAttribute="trailing" id="mad-RB-SJO"/>
+                            <constraint firstItem="1sP-kX-OFe" firstAttribute="top" secondItem="m9n-kW-o9x" secondAttribute="bottom" id="sez-Rf-V9S"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Termos de Uso" id="afG-8x-tOH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6De-z1-nfX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1195.7333333333333" y="-419.37333333333333"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Kbd-g7-IAA">
@@ -50,14 +116,37 @@
                         <viewControllerLayoutGuide type="bottom" id="0hZ-cc-Amz"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="HMC-po-Ebf">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Agu-gz-otO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1408" y="365"/>
+            <point key="canvasLocation" x="1195.7333333333333" y="345.5333333333333"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jGg-3Z-AWe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CUt-Uc-XU3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1H9-m5-5co">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JgK-VF-XJx" kind="relationship" relationship="rootViewController" id="gqL-5W-rDr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u04-e8-wij" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="382.93333333333334" y="345.5333333333333"/>
         </scene>
     </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>

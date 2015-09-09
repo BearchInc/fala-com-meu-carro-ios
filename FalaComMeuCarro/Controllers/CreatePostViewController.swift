@@ -47,6 +47,5 @@ class CreatePostViewController: UIViewController {
 		alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
 		presentViewController(alertController, animated: true, completion: nil)
 	}
-	
-	
+
 }
