@@ -6,8 +6,9 @@ class PostCell: UITableViewCell {
 	
 	@IBOutlet weak var licencePlateLabel: UIButton!
 	@IBOutlet weak var messageLabel: UILabel!
-	@IBOutlet weak var authorAndDate: UILabel!
-	
+    @IBOutlet weak var authorLabel: UILabel!
+    @IBOutlet weak var dateLabel: UILabel!
+    
 	var plateButtonCallback: (String -> Void)?
     var optionsCallback: (Post! -> Void)!
     
@@ -20,7 +21,8 @@ class PostCell: UITableViewCell {
 		messageLabel.preferredMaxLayoutWidth = self.messageLabel.bounds.width
 		
 		let relativeString = post.createdAt.toRelativeString(fromDate: NSDate(), abbreviated: true, maxUnits: 1)
-		authorAndDate.text = "\(post.userName) - \(relativeString)"
+		authorLabel.text = post.userName
+        dateLabel.text = relativeString
 	}
 	
 	override func setSelected(selected: Bool, animated: Bool) {
