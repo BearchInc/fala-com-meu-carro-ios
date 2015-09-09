@@ -4,7 +4,7 @@ import ObjectMapper
 class ResponseObject<T: Mappable>: Mappable {
 
 	var errorCode: Int!
-	var message: String!
+	var message: [String]!
 	var data: T!
 	
 	static func newInstance(map: Map) -> Mappable? {
