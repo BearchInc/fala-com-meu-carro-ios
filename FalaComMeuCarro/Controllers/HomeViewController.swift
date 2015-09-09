@@ -91,14 +91,16 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 	}
     
     private func flagPost(post: Post!) {
-        let postAction = UIAlertController(title: "What action?", message: "Some random message.", preferredStyle: UIAlertControllerStyle.ActionSheet)
-        postAction.addAction(UIAlertAction(title: "Inn", style: UIAlertActionStyle.Default, handler: { alertAction in
+        let postAction = UIAlertController(title: nil, message: nil, preferredStyle: UIAlertControllerStyle.ActionSheet)
+        postAction.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: nil))
+        postAction.addAction(UIAlertAction(title: "Inn", style: UIAlertActionStyle.Destructive, handler: { alertAction in
             Post.flagPost(post) { response in
-                let conrimationAction = UIAlertController(title: "Sucesso!", message: "Post reportado!", preferredStyle: UIAlertControllerStyle.Alert)
-                conrimationAction.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
+                let conrimationAction = UIAlertController(title: "Post reportado!", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
+                conrimationAction.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Cancel, handler: nil))
                 self.presentViewController(conrimationAction, animated: true, completion: nil)
             }
         }))
+        
         presentViewController(postAction, animated: true, completion: nil)
     }
 
