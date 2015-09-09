@@ -67,6 +67,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 		let postCell = tableView.dequeueReusableCellWithIdentifier("POST_CELL") as! PostCell
 		postCell.render(posts[indexPath.row])
 		postCell.plateButtonCallback = plateButtonCallback
+        postCell.optionsCallback = flagPost
 		return postCell
 	}
 	
@@ -88,6 +89,18 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 		postsTableView.reloadData()
 		refreshControl.endRefreshing()
 	}
+    
+    private func flagPost(post: Post!) {
+        let postAction = UIAlertController(title: "What action?", message: "Some random message.", preferredStyle: UIAlertControllerStyle.ActionSheet)
+        postAction.addAction(UIAlertAction(title: "Inn", style: UIAlertActionStyle.Default, handler: { alertAction in
+            Post.flagPost(post) { response in
+                let conrimationAction = UIAlertController(title: "Sucesso!", message: "Post reportado!", preferredStyle: UIAlertControllerStyle.Alert)
+                conrimationAction.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
+                self.presentViewController(conrimationAction, animated: true, completion: nil)
+            }
+        }))
+        presentViewController(postAction, animated: true, completion: nil)
+    }
 
 	@IBAction func goToPlate(sender: AnyObject) {
 		let builder = GoToPlateViewController(sentCallback: plateButtonCallback)

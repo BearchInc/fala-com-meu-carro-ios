@@ -9,8 +9,12 @@ class PostCell: UITableViewCell {
 	@IBOutlet weak var authorAndDate: UILabel!
 	
 	var plateButtonCallback: (String -> Void)?
+    var optionsCallback: (Post! -> Void)!
+    
+    var post: Post!
 	
 	func render(post: Post) {
+        self.post = post
 		licencePlateLabel.setTitle(post.carPlate, forState: UIControlState.Normal)
 		messageLabel.text = post.message
 		messageLabel.preferredMaxLayoutWidth = self.messageLabel.bounds.width
@@ -30,4 +34,7 @@ class PostCell: UITableViewCell {
 		}
 	}
 	
+    @IBAction func optionsButtonTouched(sender: AnyObject) {
+        optionsCallback(post!)
+    }
 }

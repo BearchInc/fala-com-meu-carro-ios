@@ -8,6 +8,7 @@ enum Router: URLRequestConvertible {
 	case CreatePost(String, String, String, String)
 	case ListAllPosts()
 	case ListPostByCarPlate(String)
+    case FlagPost(postId: String)
 	
 	var method: Alamofire.Method {
 		switch self {
@@ -17,6 +18,8 @@ enum Router: URLRequestConvertible {
 			return .GET
 		case .ListPostByCarPlate:
 			return .GET
+        case .FlagPost:
+            return .PUT
 		}
 	}
 	
@@ -28,6 +31,8 @@ enum Router: URLRequestConvertible {
 			return "/posts/list"
 		case .ListPostByCarPlate(let carplate):
 			return "/posts/list/\(carplate)"
+        case .FlagPost(let postId):
+            return "/posts/\(postId)"
 		}
 	}
 	
@@ -50,6 +55,9 @@ enum Router: URLRequestConvertible {
 			return Alamofire.ParameterEncoding.URL.encode(mutableURLRequest, parameters: nil).0
 		case .ListPostByCarPlate(let carPlate):
 			return Alamofire.ParameterEncoding.URL.encode(mutableURLRequest, parameters: nil).0
+        case .FlagPost(let postId):
+            return Alamofire.ParameterEncoding.URL.encode(mutableURLRequest, parameters: nil).0
+            
 		default:
 			return mutableURLRequest
 		}

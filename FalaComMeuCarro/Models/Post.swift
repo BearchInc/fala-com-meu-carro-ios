@@ -6,6 +6,7 @@ import Crashlytics
 
 class Post: Mappable {
 	
+    var postId: String!
 	var carPlate: String!
 	var message: String!
 	var userName: String!
@@ -20,6 +21,7 @@ class Post: Mappable {
 		message <- map["message"]
 		userName <- map["user_name"]
 		createdAt <- (map["created_at"], DateTransform())
+        postId <- map["id"]
 	}
 	
 	class func getAllPosts(callback: [Post] -> Void) {
@@ -60,4 +62,17 @@ class Post: Mappable {
 				}
 		}
 	}
+
+    class func flagPost(post: Post, callback: (post: Post?) -> Void) {
+        Alamofire.request(Router.FlagPost(postId: post.postId))
+            .responseObject { (response: ResponseObject<Post>?, error: NSError?) in
+                if error != nil {
+                    println("Error in createPost -> \(error)")
+                    callback(post: nil)
+                } else {
+                    Answers.logCustomEventWithName("Post flagged", customAttributes: ["id": post.postId])
+                    callback(post: response!.data)
+                }
+        }
+    }
 }
