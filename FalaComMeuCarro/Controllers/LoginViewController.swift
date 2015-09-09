@@ -1,5 +1,6 @@
 import Foundation
 import UIKit
+import Crashlytics
 
 class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
 	
@@ -20,7 +21,12 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
 	}
 	
 	func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
-		if !result.isCancelled {
+        if result == nil {
+            CLSLogv("Error: %@", getVaList([error]))
+            CLSLogv("Result: %@", getVaList([result.description]))
+        }
+        
+    	if !result.isCancelled {
 			
 			FBSDKGraphRequest(graphPath: "me", parameters: ["fields" : "id,name"]).startWithCompletionHandler() {
 				(connection, result, error) in
