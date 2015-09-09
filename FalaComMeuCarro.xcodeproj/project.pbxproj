@@ -271,7 +271,6 @@
 				TargetAttributes = {
 					96420B6C1B7BA4A5004BB424 = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = ATB5PVNS89;
 					};
 				};
 			};
@@ -549,7 +548,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D FLAVOR";
 				PRODUCT_NAME = FalaComMeuCarro;
-				PROVISIONING_PROFILE = "a92d791b-f213-4887-85ae-c9f791401f97";
+				PROVISIONING_PROFILE = "93f3c650-1bbc-440a-a87e-fe720839f4fc";
 				SWIFT_OBJC_BRIDGING_HEADER = "FalaComMeuCarro/Supporting Files/FalaComMeuCarro-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -576,7 +575,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D FLAVOR";
 				PRODUCT_NAME = FalaComMeuCarro;
-				PROVISIONING_PROFILE = "a92d791b-f213-4887-85ae-c9f791401f97";
+				PROVISIONING_PROFILE = "fe848af6-af50-435c-9ad4-a0af633494ee";
 				SWIFT_OBJC_BRIDGING_HEADER = "FalaComMeuCarro/Supporting Files/FalaComMeuCarro-Bridging-Header.h";
 			};
 			name = AppStore;
@@ -647,7 +646,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D FLAVOR";
 				PRODUCT_NAME = FalaComMeuCarro;
-				PROVISIONING_PROFILE = "a92d791b-f213-4887-85ae-c9f791401f97";
+				PROVISIONING_PROFILE = "9276763d-a73c-41e6-b72e-56c6a845cb1a";
 				SWIFT_OBJC_BRIDGING_HEADER = "FalaComMeuCarro/Supporting Files/FalaComMeuCarro-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
