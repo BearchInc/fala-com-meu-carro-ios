@@ -27,7 +27,7 @@ extension Analytics {
 extension Analytics {
 	
 	class func logPostCreated(carPlate: String) {
-		Answers.logCustomEventWithName("Create post", customAttributes: ["plate": carPlate])
+		Answers.logCustomEventWithName("Post created", customAttributes: ["plate": carPlate])
 	}
 	
 	class func logPostFlagged(postId: String) {
@@ -39,13 +39,16 @@ extension Analytics {
 extension Analytics {
 	
 	class func logCreatePostOpened(carPlate: String) {
-		Answers.logContentViewWithName("Screen - Create post", contentType: nil, contentId: nil, customAttributes: nil)
+		Answers.logContentViewWithName("Create post view",
+			contentType: "Create Post",
+			contentId: nil,
+			customAttributes: nil)
 	}
 	
 	class func logViewAllPlates() {
-		Answers.logContentViewWithName("Home view",
+		Answers.logContentViewWithName("All Plates view",
 			contentType: "Plates",
-			contentId: "All",
+			contentId: nil,
 			customAttributes: nil)
 	}
 	

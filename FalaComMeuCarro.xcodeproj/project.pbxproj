@@ -43,7 +43,7 @@
 		960CA92A1B98BB9D00023702 /* ResponseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseObject.swift; sourceTree = "<group>"; };
 		960CA92C1B99CD1F00023702 /* ResponseArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseArray.swift; sourceTree = "<group>"; };
 		960CA92E1B99E10800023702 /* GoToPlateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoToPlateViewController.swift; sourceTree = "<group>"; };
-		96420B6D1B7BA4A5004BB424 /* FalaComMeuCarro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FalaComMeuCarro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		96420B6D1B7BA4A5004BB424 /* Fala de Carro Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fala de Carro Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96420B711B7BA4A5004BB424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96420B721B7BA4A5004BB424 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96420B741B7BA4A5004BB424 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -117,7 +117,7 @@
 		96420B6E1B7BA4A5004BB424 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				96420B6D1B7BA4A5004BB424 /* FalaComMeuCarro.app */,
+				96420B6D1B7BA4A5004BB424 /* Fala de Carro Dev.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -241,7 +241,7 @@
 			);
 			name = FalaComMeuCarro;
 			productName = ProjectCarsiOS;
-			productReference = 96420B6D1B7BA4A5004BB424 /* FalaComMeuCarro.app */;
+			productReference = 96420B6D1B7BA4A5004BB424 /* Fala de Carro Dev.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -534,8 +534,8 @@
 				INFOPLIST_FILE = "$(SRCROOT)/FalaComMeuCarro/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D FLAVOR";
-				PRODUCT_NAME = FalaComMeuCarro;
-				PROVISIONING_PROFILE = "2eb4055b-37c1-44c9-be01-517d04be27a7";
+				PRODUCT_NAME = "Fala de Carro Dev";
+				PROVISIONING_PROFILE = "65c933f9-bd1b-45f8-ba6d-20f97f224b4f";
 				SWIFT_OBJC_BRIDGING_HEADER = "FalaComMeuCarro/Supporting Files/FalaComMeuCarro-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -561,8 +561,8 @@
 				INFOPLIST_FILE = "$(SRCROOT)/FalaComMeuCarro/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D FLAVOR";
-				PRODUCT_NAME = FalaComMeuCarro;
-				PROVISIONING_PROFILE = "a68c465a-9c88-497e-92b3-5f4fea2f1523";
+				PRODUCT_NAME = "Fala de Carro";
+				PROVISIONING_PROFILE = "7aa82d2e-0546-4555-88ae-b57a9f1ca4ad";
 				SWIFT_OBJC_BRIDGING_HEADER = "FalaComMeuCarro/Supporting Files/FalaComMeuCarro-Bridging-Header.h";
 			};
 			name = AppStore;
@@ -632,8 +632,8 @@
 				INFOPLIST_FILE = "$(SRCROOT)/FalaComMeuCarro/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D FLAVOR";
-				PRODUCT_NAME = FalaComMeuCarro;
-				PROVISIONING_PROFILE = "6454aaf3-0e00-48bf-8543-ff02c8151356";
+				PRODUCT_NAME = "Fala de Carro Staging";
+				PROVISIONING_PROFILE = "65c933f9-bd1b-45f8-ba6d-20f97f224b4f";
 				SWIFT_OBJC_BRIDGING_HEADER = "FalaComMeuCarro/Supporting Files/FalaComMeuCarro-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
