@@ -19,7 +19,9 @@ class CreatePostViewController: UIViewController {
 		let message = messageTextView.text
 
 		let userId = FBSDKProfile.currentProfile().userID
-		let userName = FBSDKProfile.currentProfile().name
+		let lastName = FBSDKProfile.currentProfile().lastName
+		
+		let userName = "\(FBSDKProfile.currentProfile().firstName) \(lastName[lastName.startIndex])."
 		
 		if isPostValid() {
 			Post.createPost(plate, message: message, userId: userId, userName: userName) { (post) in

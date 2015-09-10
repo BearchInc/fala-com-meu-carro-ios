@@ -8,7 +8,7 @@
         <!--Reports-->
         <scene sceneID="1PE-mj-8nY">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" id="rpJ-cz-tRw" customClass="HomeViewController" customModule="FalaComMeuCarro" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="rpJ-cz-tRw" customClass="HomeViewController" customModule="Fala_de_Carro" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Bxo-2y-HCA"/>
                         <viewControllerLayoutGuide type="bottom" id="Qxu-dh-tqD"/>
@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" red="0.31764705879999999" green="0.63137254899999995" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="POST_CELL" rowHeight="76" id="8ov-vZ-z1y" customClass="PostCell" customModule="FalaComMeuCarro" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="POST_CELL" rowHeight="76" id="8ov-vZ-z1y" customClass="PostCell" customModule="Fala_de_Carro" customModuleProvider="target">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8ov-vZ-z1y" id="U6r-gc-b8b">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -172,7 +172,7 @@
         <!--New Post-->
         <scene sceneID="Ff7-TJ-pTy">
             <objects>
-                <viewController id="DcH-sR-zJc" customClass="CreatePostViewController" customModule="FalaComMeuCarro" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="DcH-sR-zJc" customClass="CreatePostViewController" customModule="Fala_de_Carro" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FNV-7j-Taz"/>
                         <viewControllerLayoutGuide type="bottom" id="mX1-3Q-R1s"/>
