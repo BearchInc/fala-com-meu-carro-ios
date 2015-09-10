@@ -121,6 +121,12 @@
                                     <outlet property="delegate" destination="rpJ-cz-tRw" id="yQ7-l6-eW6"/>
                                 </connections>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Não foram encontradas informações" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bH-CS-QUz" userLabel="Blank State View">
+                                <rect key="frame" x="20" y="274" width="280.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0d8-eg-IfT">
                                 <rect key="frame" x="240" y="488" width="50" height="50"/>
                                 <constraints>
@@ -135,12 +141,14 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.65776337029999998" green="0.78592360019999996" blue="0.30031378980000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Qxu-dh-tqD" firstAttribute="top" secondItem="0d8-eg-IfT" secondAttribute="bottom" constant="30" id="9Py-my-GOz"/>
+                            <constraint firstAttribute="centerX" secondItem="3bH-CS-QUz" secondAttribute="centerX" id="G9Q-KC-uxF"/>
                             <constraint firstItem="Qxu-dh-tqD" firstAttribute="top" secondItem="9yG-RM-iMc" secondAttribute="bottom" id="MzV-Fp-ttu"/>
                             <constraint firstItem="9yG-RM-iMc" firstAttribute="leading" secondItem="DPg-Jf-LeD" secondAttribute="leading" id="Q3n-Ok-SKK"/>
                             <constraint firstAttribute="trailing" secondItem="9yG-RM-iMc" secondAttribute="trailing" id="evE-Ih-rmL"/>
+                            <constraint firstAttribute="centerY" secondItem="3bH-CS-QUz" secondAttribute="centerY" constant="-0.5" id="h10-Mr-Vs4"/>
                             <constraint firstAttribute="trailing" secondItem="0d8-eg-IfT" secondAttribute="trailing" constant="30" id="lDf-m1-gEi"/>
                             <constraint firstItem="9yG-RM-iMc" firstAttribute="top" secondItem="DPg-Jf-LeD" secondAttribute="top" id="uKS-Ap-uHu"/>
                         </constraints>
@@ -153,6 +161,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="blankStateView" destination="3bH-CS-QUz" id="vUm-dr-RUW"/>
                         <outlet property="postsTableView" destination="9yG-RM-iMc" id="vHd-aX-NWt"/>
                     </connections>
                 </viewController>

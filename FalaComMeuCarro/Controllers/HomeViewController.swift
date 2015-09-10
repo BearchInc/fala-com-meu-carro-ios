@@ -3,8 +3,7 @@ import SwiftEventBus
 
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 	
-	var refreshControl: UIRefreshControl!
-	
+	@IBOutlet weak var blankStateView: UILabel!
 	@IBOutlet weak var postsTableView: UITableView! {
 		didSet {
 			self.refreshControl = UIRefreshControl()
@@ -14,6 +13,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 			self.postsTableView.addSubview(self.refreshControl)
 		}
 	}
+
+	var refreshControl: UIRefreshControl!
+	var tableViewLoader: TableViewLoader!
 	
 	var posts = [Post]()
 	var plate = ""
@@ -26,6 +28,16 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 		super.viewDidLoad()
 		fetchPosts()
 		setupEvents()
+		setupTableViewLoader()
+	}
+	
+	override func viewWillAppear(animated: Bool) {
+		super.viewWillAppear(animated)
+		tableViewLoader.redisplay()
+	}
+	
+	private func setupTableViewLoader() {
+		tableViewLoader = TableViewLoader(tableView: postsTableView, emptyMessageView: blankStateView)
 	}
 	
 	func setupEvents() {
@@ -86,8 +98,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 	
 	private func displayPosts(posts: [Post]) {
 		self.posts = posts
-		postsTableView.reloadData()
 		refreshControl.endRefreshing()
+		tableViewLoader.loadFinished(posts.count == 0)
 	}
     
     private func flagPost(post: Post!) {
