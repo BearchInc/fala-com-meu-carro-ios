@@ -26,9 +26,9 @@ enum Router: URLRequestConvertible {
 	var path: String {
 		switch self {
 		case .CreatePost(let carPlate, let message, let userId, let userName):
-			return "/posts/"
+			return "/posts"
 		case .ListAllPosts():
-			return "/posts/"
+			return "/posts"
 		case .ListPostByCarPlate(let carplate):
 			return "/posts/\(carplate)"
         case .FlagPost(let postId):
