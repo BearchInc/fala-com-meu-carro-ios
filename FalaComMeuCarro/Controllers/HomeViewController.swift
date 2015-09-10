@@ -92,8 +92,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     private func flagPost(post: Post!) {
         let postAction = UIAlertController(title: nil, message: nil, preferredStyle: UIAlertControllerStyle.ActionSheet)
-        postAction.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel, handler: nil))
-        postAction.addAction(UIAlertAction(title: "Inn", style: UIAlertActionStyle.Destructive, handler: { alertAction in
+        postAction.addAction(UIAlertAction(title: "Cancelar", style: UIAlertActionStyle.Cancel, handler: nil))
+        postAction.addAction(UIAlertAction(title: "Impróprio/Spam", style: UIAlertActionStyle.Destructive, handler: { alertAction in
             Post.flagPost(post) { response in
                 let conrimationAction = UIAlertController(title: "Post reportado!", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
                 conrimationAction.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Cancel, handler: nil))
