@@ -19,7 +19,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="9yG-RM-iMc">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <color key="backgroundColor" red="0.65776337029999998" green="0.78592360019999996" blue="0.30031378980000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.31764705879999999" green="0.63137254899999995" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="POST_CELL" rowHeight="76" id="8ov-vZ-z1y" customClass="PostCell" customModule="FalaComMeuCarro" customModuleProvider="target">
                                         <autoresizingMask key="autoresizingMask"/>
@@ -46,7 +46,7 @@
                                                         <constraint firstAttribute="height" constant="15" id="JsE-Lu-mfu"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
-                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 days ago" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNK-uh-rXR" userLabel="Date">
@@ -55,7 +55,7 @@
                                                         <constraint firstAttribute="height" constant="15" id="eBl-Ym-zRe"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
-                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mq5-dU-38R" userLabel="Message Label">
@@ -87,7 +87,7 @@
                                                     </connections>
                                                 </button>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.53333333333333333" green="0.53333333333333333" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="mNK-uh-rXR" firstAttribute="leading" secondItem="ciR-PE-hwv" secondAttribute="trailing" constant="4" id="1aT-JJ-dCc"/>
                                                 <constraint firstAttribute="trailing" secondItem="llb-fR-ORK" secondAttribute="trailing" id="6oe-S0-G8j"/>
@@ -141,7 +141,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.65776337029999998" green="0.78592360019999996" blue="0.30031378980000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.31764705879999999" green="0.63137254899999995" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Qxu-dh-tqD" firstAttribute="top" secondItem="0d8-eg-IfT" secondAttribute="bottom" constant="30" id="9Py-my-GOz"/>
                             <constraint firstAttribute="centerX" secondItem="3bH-CS-QUz" secondAttribute="centerX" id="G9Q-KC-uxF"/>
@@ -193,7 +193,7 @@
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="AAA-0000" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dYT-Wl-CrB" userLabel="Car Plate TextField" customClass="UITextFieldMask">
                                 <rect key="frame" x="109" y="81" width="195" height="20.5"/>
-                                <color key="backgroundColor" red="0.61960784310000006" green="0.81176470590000005" blue="0.3149414062" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.31764705879999999" green="0.63137254899999995" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
@@ -205,12 +205,12 @@
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F0e-yU-Ql0">
                                 <rect key="frame" x="16" y="136" width="288" height="415.5"/>
-                                <color key="backgroundColor" red="0.61960784310000006" green="0.81176470590000005" blue="0.3149414062" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.31764705879999999" green="0.63137254899999995" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" red="0.65776337029999998" green="0.78592360019999996" blue="0.30031378980000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="mX1-3Q-R1s" firstAttribute="top" secondItem="F0e-yU-Ql0" secondAttribute="bottom" constant="16" id="0ws-7d-MU1"/>
                             <constraint firstItem="dYT-Wl-CrB" firstAttribute="height" secondItem="svc-5K-PQW" secondAttribute="height" id="8WI-bg-c75"/>

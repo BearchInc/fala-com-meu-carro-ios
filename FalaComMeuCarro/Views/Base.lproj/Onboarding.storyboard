@@ -40,7 +40,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.61960784310000006" green="0.81176470590000005" blue="0.3149414062" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="JfW-BR-az1" firstAttribute="top" secondItem="QDp-rV-f4D" secondAttribute="bottom" constant="40" id="1ux-Rl-iPr"/>
                             <constraint firstAttribute="centerX" secondItem="1I7-AI-K8f" secondAttribute="centerX" id="ApA-IU-avA"/>
@@ -76,7 +76,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9n-kW-o9x">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="567.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">Fala com meu carro é uma forma completamente diferente de interagir e compartilhar informações com outras pessoas. Nós somos uma plataforma bastante aberta, mas ainda assim temos regras.
+                                <string key="text">Fala com meu carro é uma forma completamente diferente de interagir e compartilhar informações com outras pessoas. Nós somos uma plataforma bastante aberta, mas ainda assim temos regras.
 
 O seguinte conteúdo será removido:
 
@@ -88,12 +88,12 @@ SPAM &amp; Propaganda;
 Solicitação de favores sexuais;
  Bearch, Inc. não é de forma alguma responsável por conteúdo gerado pelo usuário.
 
-Estaremos sempre fazendo o nosso melhor para melhorar o seu app, se você tem alguma idéia sobre coisas novas que podemos fazer por favor nos contate pelo support@getunseen.com a qualquer momento!</mutableString>
+Estaremos sempre fazendo o nosso melhor para melhorar o seu app, se você tem alguma idéia sobre coisas novas que podemos fazer por favor nos contate pelo support@getunseen.com a qualquer momento!</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" red="0.61960784310000006" green="0.81176470590000005" blue="0.3149414062" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="m9n-kW-o9x" firstAttribute="leading" secondItem="RCm-az-Ygl" secondAttribute="leading" id="NpW-LF-Nsm"/>
                             <constraint firstItem="m9n-kW-o9x" firstAttribute="top" secondItem="RCm-az-Ygl" secondAttribute="top" id="TaU-BC-T0K"/>
