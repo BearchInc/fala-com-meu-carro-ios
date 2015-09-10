@@ -41,7 +41,7 @@ class GoToPlateViewController {
 	
 	func sendButtonAction(alertAction: UIAlertAction!) {
         let plate = (self.alert.textFields![0] as! UITextField).text
-        Answers.logSearchWithQuery(plate, customAttributes: [:])
+		Analytics.logPlateSearch(plate)
 		feedBackSent(plate)
 	}
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F3112EEA32221C481D9794F /* Pods_FalaComMeuCarro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 923B12E2842EAB307EE1CFE4 /* Pods_FalaComMeuCarro.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		960CA92B1B98BB9D00023702 /* ResponseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960CA92A1B98BB9D00023702 /* ResponseObject.swift */; };
 		960CA92D1B99CD1F00023702 /* ResponseArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960CA92C1B99CD1F00023702 /* ResponseArray.swift */; };
 		960CA92F1B99E10800023702 /* GoToPlateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960CA92E1B99E10800023702 /* GoToPlateViewController.swift */; };
@@ -16,6 +17,7 @@
 		96420B7A1B7BA4A5004BB424 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96420B791B7BA4A5004BB424 /* Images.xcassets */; };
 		96420B7D1B7BA4A5004BB424 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96420B7B1B7BA4A5004BB424 /* LaunchScreen.xib */; };
 		9656BE3F1BA1BD2C001270B2 /* TableViewLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9656BE3E1BA1BD2C001270B2 /* TableViewLoader.swift */; };
+		9656BE411BA2123E001270B2 /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9656BE401BA2123E001270B2 /* Analytics.swift */; };
 		969D18F51B9A3914000E1779 /* IPAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969D18F41B9A3914000E1779 /* IPAddress.swift */; };
 		96B9DA311B9F4BAC00350483 /* DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B9DA301B9F4BAC00350483 /* DateTransform.swift */; };
 		96C2A0981B7BAA32007F45E6 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96C2A0971B7BAA32007F45E6 /* Post.swift */; };
@@ -49,6 +51,7 @@
 		96420B791B7BA4A5004BB424 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		96420B7C1B7BA4A5004BB424 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		9656BE3E1BA1BD2C001270B2 /* TableViewLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewLoader.swift; sourceTree = "<group>"; };
+		9656BE401BA2123E001270B2 /* Analytics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
 		969D18F41B9A3914000E1779 /* IPAddress.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPAddress.swift; sourceTree = "<group>"; };
 		96B9DA301B9F4BAC00350483 /* DateTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTransform.swift; sourceTree = "<group>"; };
 		96C2A0971B7BAA32007F45E6 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
@@ -74,6 +77,7 @@
 			files = (
 				96C2A0A91B7CCA71007F45E6 /* FBSDKCoreKit.framework in Frameworks */,
 				96C2A0AA1B7CCA71007F45E6 /* FBSDKLoginKit.framework in Frameworks */,
+				3F3112EEA32221C481D9794F /* Pods_FalaComMeuCarro.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				9656BE3E1BA1BD2C001270B2 /* TableViewLoader.swift */,
+				9656BE401BA2123E001270B2 /* Analytics.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -387,6 +392,7 @@
 				96C2A0B91B7CFF8D007F45E6 /* InterStoryboardsSegue.swift in Sources */,
 				96C2A09B1B7BAB4D007F45E6 /* Router.swift in Sources */,
 				960CA92D1B99CD1F00023702 /* ResponseArray.swift in Sources */,
+				9656BE411BA2123E001270B2 /* Analytics.swift in Sources */,
 				960CA92B1B98BB9D00023702 /* ResponseObject.swift in Sources */,
 				96C2A0B51B7CD153007F45E6 /* InterStoryboardsPushSegue.swift in Sources */,
 				96420B731B7BA4A5004BB424 /* AppDelegate.swift in Sources */,

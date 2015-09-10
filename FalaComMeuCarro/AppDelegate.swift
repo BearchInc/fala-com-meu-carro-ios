@@ -13,13 +13,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		Fabric.with([Crashlytics()])
 		
 		if (FBSDKAccessToken.currentAccessToken() != nil) {
+			Analytics.logFacebookLogin()
 			self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
 			self.window?.rootViewController = Storyboards.Cars.instantiateInitialViewController()
-        } else {
-            Answers.logLoginWithMethod("Facebook",
-                success: true,
-                customAttributes: [:])
-        }
+		}
 
 		return true
 	}
