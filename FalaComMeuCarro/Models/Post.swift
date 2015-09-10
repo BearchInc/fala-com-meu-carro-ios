@@ -2,7 +2,6 @@ import Foundation
 import ObjectMapper
 import Alamofire
 import AlamofireObjectMapper
-import Crashlytics
 
 class Post: Mappable {
 	
@@ -31,11 +30,7 @@ class Post: Mappable {
 					println("Error in getAllPosts -> \(error)")
 					callback([])
 				} else {
-                    Answers.logContentViewWithName("Home view",
-                        contentType: "Plates",
-                        contentId: "All",
-                        customAttributes: [:])
-                    
+					Analytics.logViewAllPlates()
 					callback(response!.data)
 				}
 		}
@@ -48,11 +43,7 @@ class Post: Mappable {
 					println("Error in getAllPostsByCarPlate -> \(error)")
 					callback([])
 				} else {
-                    Answers.logContentViewWithName("Specific Plate View",
-                        contentType: "Plates",
-                        contentId: carPlate,
-                        customAttributes: [:])
-                    
+					Analytics.logViewPlate(carPlate)
 					callback(response!.data)
 				}
 		}
@@ -65,7 +56,7 @@ class Post: Mappable {
 					println("Error in createPost -> \(error)")
 					callback(nil)
 				} else {
-					Answers.logCustomEventWithName("Create post", customAttributes: ["plate": carPlate])
+					Analytics.logPostCreated(carPlate)
 					callback(response!.data)
 				}
 		}
@@ -78,7 +69,7 @@ class Post: Mappable {
                     println("Error in createPost -> \(error)")
                     callback(post: nil)
                 } else {
-                    Answers.logCustomEventWithName("Post flagged", customAttributes: ["id": post.postId])
+					Analytics.logPostFlagged(post.postId)
                     callback(post: response!.data)
                 }
         }

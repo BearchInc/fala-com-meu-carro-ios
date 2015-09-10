@@ -8,6 +8,8 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		
+		
 		setupFacebookButton()
 	}
 
@@ -28,24 +30,42 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
         
     	if !result.isCancelled {
             //Check whether it is first login (aka signup) or if the user is comming back
-            Answers.logSignUpWithMethod("Digits",
-                success: true,
-                customAttributes: [:])
+			Analytics.logSignUp()
+			fetchUserProfile()
 			
-			FBSDKGraphRequest(graphPath: "me", parameters: ["fields" : "id,name"]).startWithCompletionHandler() {
-				(connection, result, error) in
-				let profile = FBSDKProfile(userID: result["id"] as! String, firstName: nil, middleName: nil, lastName: nil, name: result["name"] as! String, linkURL: nil, refreshDate: nil)
-				FBSDKProfile.setCurrentProfile(profile)
-			}
-			
-			goToHomeViewController()
 		} else {
-			UIAlertView(title: "Hey", message: "We need you to login, do it please", delegate: nil, cancelButtonTitle: "ok").show()
+			showAlertController("Nós precisamos que você faça login.",
+				action: UIAlertAction(title: "Ok",
+				style: UIAlertActionStyle.Cancel, handler: nil))
 		}
 	}
 	
 	func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
-		print("")
+		println("Estamos tristes de te ver partir :(")
+	}
+	
+	private func fetchUserProfile() {
+		FBSDKGraphRequest(graphPath: "me", parameters: ["fields" : "id,name"]).startWithCompletionHandler() {
+			(connection, result, error) in
+			
+			if error != nil {
+				self.showAlertController("Algum problema aconteceu, tente de novo por favor :)", action: UIAlertAction(title: "Tentar novamente", style: UIAlertActionStyle.Default, handler: { (action) -> Void in
+					self.fetchUserProfile()
+				}))
+				return
+			}
+			
+			let profile = FBSDKProfile(userID: result["id"] as! String, firstName: nil, middleName: nil, lastName: nil, name: result["name"] as! String, linkURL: nil, refreshDate: nil)
+			FBSDKProfile.setCurrentProfile(profile)
+			
+			self.goToHomeViewController()
+		}
+	}
+	
+	private func showAlertController(message: String, action: UIAlertAction) {
+		let alertController = UIAlertController(title: "Opa", message: message, preferredStyle: UIAlertControllerStyle.Alert)
+		alertController.addAction(action)
+		presentViewController(alertController, animated: true, completion: nil)
 	}
 	
 }
