@@ -15,7 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		if (FBSDKAccessToken.currentAccessToken() != nil) {
 			self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
 			self.window?.rootViewController = Storyboards.Cars.instantiateInitialViewController()
-		}
+        } else {
+            Answers.logLoginWithMethod("Facebook",
+                success: true,
+                customAttributes: [:])
+        }
 
 		return true
 	}

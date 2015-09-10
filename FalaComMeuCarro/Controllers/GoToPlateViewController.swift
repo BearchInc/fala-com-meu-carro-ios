@@ -1,6 +1,7 @@
 import Foundation
 import Alamofire
 import NSStringMask
+import Crashlytics
 
 @objc
 class GoToPlateViewController {
@@ -39,7 +40,8 @@ class GoToPlateViewController {
 	}
 	
 	func sendButtonAction(alertAction: UIAlertAction!) {
-		let plate = (self.alert.textFields![0] as! UITextField).text
+        let plate = (self.alert.textFields![0] as! UITextField).text
+        Answers.logSearchWithQuery(plate, customAttributes: [:])
 		feedBackSent(plate)
 	}
 }

@@ -27,6 +27,10 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
         }
         
     	if !result.isCancelled {
+            //Check whether it is first login (aka signup) or if the user is comming back
+            Answers.logSignUpWithMethod("Digits",
+                success: true,
+                customAttributes: [:])
 			
 			FBSDKGraphRequest(graphPath: "me", parameters: ["fields" : "id,name"]).startWithCompletionHandler() {
 				(connection, result, error) in

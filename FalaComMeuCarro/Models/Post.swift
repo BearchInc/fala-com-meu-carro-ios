@@ -31,7 +31,11 @@ class Post: Mappable {
 					println("Error in getAllPosts -> \(error)")
 					callback([])
 				} else {
-					println("getAllPosts -> \(response!.errorCode); \(response!.message)")
+                    Answers.logContentViewWithName("Home view",
+                        contentType: "Plates",
+                        contentId: "All",
+                        customAttributes: [:])
+                    
 					callback(response!.data)
 				}
 		}
@@ -44,7 +48,11 @@ class Post: Mappable {
 					println("Error in getAllPostsByCarPlate -> \(error)")
 					callback([])
 				} else {
-					Answers.logCustomEventWithName("Get carplate", customAttributes: ["plate": carPlate])
+                    Answers.logContentViewWithName("Specific Plate View",
+                        contentType: "Plates",
+                        contentId: carPlate,
+                        customAttributes: [:])
+                    
 					callback(response!.data)
 				}
 		}
