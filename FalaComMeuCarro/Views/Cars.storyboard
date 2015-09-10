@@ -69,7 +69,7 @@
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="llb-fR-ORK" userLabel="Cell Separator View">
                                                     <rect key="frame" x="0.0" y="75" width="320" height="1"/>
-                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="backgroundColor" red="0.31764705879999999" green="0.63137254899999995" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="1" id="2xf-lp-whJ"/>
                                                     </constraints>
@@ -193,24 +193,24 @@
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="AAA-0000" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dYT-Wl-CrB" userLabel="Car Plate TextField" customClass="UITextFieldMask">
                                 <rect key="frame" x="109" y="81" width="195" height="20.5"/>
-                                <color key="backgroundColor" red="0.31764705879999999" green="0.63137254899999995" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMT-y1-OuL">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMT-y1-OuL" userLabel="Message Label">
                                 <rect key="frame" x="16" y="108" width="85" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F0e-yU-Ql0">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F0e-yU-Ql0" userLabel="User Message Text View">
                                 <rect key="frame" x="16" y="136" width="288" height="415.5"/>
-                                <color key="backgroundColor" red="0.31764705879999999" green="0.63137254899999995" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.31764705879999999" green="0.63137254899999995" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="mX1-3Q-R1s" firstAttribute="top" secondItem="F0e-yU-Ql0" secondAttribute="bottom" constant="16" id="0ws-7d-MU1"/>
                             <constraint firstItem="dYT-Wl-CrB" firstAttribute="height" secondItem="svc-5K-PQW" secondAttribute="height" id="8WI-bg-c75"/>
