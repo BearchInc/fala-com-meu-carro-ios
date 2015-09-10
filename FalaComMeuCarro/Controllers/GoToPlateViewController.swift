@@ -17,7 +17,7 @@ class GoToPlateViewController {
 	}
 	
 	func setup() {
-		let alert = UIAlertController(title: "Ver placa", message: "Qual a placa?", preferredStyle: UIAlertControllerStyle.Alert)
+		let alert = UIAlertController(title: "Busca", message: "Ver boatos de qual placa?", preferredStyle: UIAlertControllerStyle.Alert)
 		alert.addTextFieldWithConfigurationHandler(textFieldChanged)
 		alert.addAction(UIAlertAction(title: "Cancelar", style: UIAlertActionStyle.Cancel, handler: nil))
 		alert.addAction(UIAlertAction(title: "Ir", style: UIAlertActionStyle.Default, handler: sendButtonAction))

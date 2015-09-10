@@ -7,7 +7,7 @@
         <!--Login-->
         <scene sceneID="Y4A-5d-YCP">
             <objects>
-                <viewController id="JgK-VF-XJx" customClass="LoginViewController" customModule="FalaComMeuCarro" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="JgK-VF-XJx" customClass="LoginViewController" customModule="Fala_de_Carro" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cuR-VW-0LB"/>
                         <viewControllerLayoutGuide type="bottom" id="JNP-aw-d3U"/>
@@ -27,12 +27,13 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ao fazer login você declara que está de acordo os termos de uso" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDp-rV-f4D" userLabel="Instruction">
                                 <rect key="frame" x="8" y="290" width="304" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JfW-BR-az1" userLabel="Terms and Conditions Button">
-                                <rect key="frame" x="108" y="371" width="104" height="30"/>
-                                <state key="normal" title="Termos de Uso">
+                                <rect key="frame" x="27" y="371" width="266" height="30"/>
+                                <state key="normal" title="Clique aqui para ver os Termos de Uso">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -40,7 +41,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.31764705879999999" green="0.63137254899999995" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="JfW-BR-az1" firstAttribute="top" secondItem="QDp-rV-f4D" secondAttribute="bottom" constant="40" id="1ux-Rl-iPr"/>
                             <constraint firstAttribute="centerX" secondItem="1I7-AI-K8f" secondAttribute="centerX" id="ApA-IU-avA"/>
@@ -54,7 +55,7 @@
                     <navigationItem key="navigationItem" title="Login" id="i7x-bo-3lQ"/>
                     <connections>
                         <outlet property="loginButton" destination="1I7-AI-K8f" id="oy2-oA-bQd"/>
-                        <segue destination="FfP-Xc-6Fn" kind="custom" identifier="_Cars" customClass="InterStoryboardsPresentSegue" customModule="FalaComMeuCarro" customModuleProvider="target" id="Pqe-bW-28L"/>
+                        <segue destination="FfP-Xc-6Fn" kind="custom" identifier="_Cars" customClass="InterStoryboardsPresentSegue" customModule="Fala_de_Carro" customModuleProvider="target" id="Pqe-bW-28L"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7zc-0k-n4s" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -75,20 +76,20 @@
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9n-kW-o9x">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="567.5"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <string key="text">Fala com meu carro é uma forma completamente diferente de interagir e compartilhar informações com outras pessoas. Nós somos uma plataforma bastante aberta, mas ainda assim temos regras.
+                                <color key="backgroundColor" red="0.31764705879999999" green="0.63137254899999995" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <mutableString key="text">Boatos é uma forma completamente diferente de interagir e espalhar informações de carros. Nós somos uma plataforma bastante aberta, mas ainda assim temos regras importantes.
 
 O seguinte conteúdo será removido:
 
-Insultos raciais ou sexuais;
-Incentivo à violência ou danos auto-infligidos;
-Postar informações pessoais;
-Intenção maliciosa;
-SPAM &amp; Propaganda;
-Solicitação de favores sexuais;
- Bearch, Inc. não é de forma alguma responsável por conteúdo gerado pelo usuário.
+- Insultos raciais ou sexuais;
+- Incentivo à violência ou danos auto-infligidos;
+- Criar boatos contendo informações pessoais além da placa;
+- Intenção maliciosa;
+- SPAM ou Propaganda;
+- Solicitação de favores sexuais;
+ Bearch, Inc. não é de forma alguma responsável por boatos gerados pelos usuários.
 
-Estaremos sempre fazendo o nosso melhor para melhorar o seu app, se você tem alguma idéia sobre coisas novas que podemos fazer por favor nos contate pelo support@getunseen.com a qualquer momento!</string>
+Estaremos sempre fazendo o nosso melhor para melhorar o seu app, se você tem alguma idéia sobre coisas novas que podemos fazer por favor nos contate pelo support@getbearch.com a qualquer momento!</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>

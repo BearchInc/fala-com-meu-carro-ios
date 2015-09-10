@@ -5,7 +5,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Reports-->
+        <!--Há boatos que…-->
         <scene sceneID="1PE-mj-8nY">
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" id="rpJ-cz-tRw" customClass="HomeViewController" customModule="Fala_de_Carro" customModuleProvider="target" sceneMemberID="viewController">
@@ -121,7 +121,7 @@
                                     <outlet property="delegate" destination="rpJ-cz-tRw" id="yQ7-l6-eW6"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Não foram encontradas informações" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bH-CS-QUz" userLabel="Blank State View">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Não foram encontrados boatos :(" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bH-CS-QUz" userLabel="Blank State View">
                                 <rect key="frame" x="20" y="274" width="280.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -153,7 +153,7 @@
                             <constraint firstItem="9yG-RM-iMc" firstAttribute="top" secondItem="DPg-Jf-LeD" secondAttribute="top" id="uKS-Ap-uHu"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Reports" id="MSS-Z1-Bn1">
+                    <navigationItem key="navigationItem" title="Há boatos que…" id="MSS-Z1-Bn1">
                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="J1H-fq-mHM">
                             <connections>
                                 <action selector="goToPlate:" destination="rpJ-cz-tRw" id="LC1-z2-01R"/>
@@ -169,7 +169,7 @@
             </objects>
             <point key="canvasLocation" x="978.66666666666663" y="357.83999999999997"/>
         </scene>
-        <!--New Post-->
+        <!--Criar um Boato-->
         <scene sceneID="Ff7-TJ-pTy">
             <objects>
                 <viewController id="DcH-sR-zJc" customClass="CreatePostViewController" customModule="Fala_de_Carro" customModuleProvider="target" sceneMemberID="viewController">
@@ -181,10 +181,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Car Plate:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svc-5K-PQW" userLabel="Car Plate Label">
-                                <rect key="frame" x="16" y="80" width="85" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Placa do carro" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svc-5K-PQW" userLabel="Car Plate Label">
+                                <rect key="frame" x="16" y="80" width="120" height="20.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="85" id="781-8n-uqF"/>
+                                    <constraint firstAttribute="width" constant="120" id="781-8n-uqF"/>
                                     <constraint firstAttribute="height" constant="20.5" id="sXZ-um-ZKB"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -192,13 +192,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="AAA-0000" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dYT-Wl-CrB" userLabel="Car Plate TextField" customClass="UITextFieldMask">
-                                <rect key="frame" x="109" y="81" width="195" height="20.5"/>
+                                <rect key="frame" x="144" y="81" width="160" height="20.5"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMT-y1-OuL" userLabel="Message Label">
-                                <rect key="frame" x="16" y="108" width="85" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Boato" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMT-y1-OuL" userLabel="Message Label">
+                                <rect key="frame" x="16" y="108" width="120" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -227,8 +227,8 @@
                             <constraint firstItem="F0e-yU-Ql0" firstAttribute="leading" secondItem="KzS-Jt-63A" secondAttribute="leadingMargin" id="xcT-TM-yXd"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="New Post" id="LOd-Qg-fJW">
-                        <barButtonItem key="rightBarButtonItem" title="Send" id="s0n-Ui-XhY">
+                    <navigationItem key="navigationItem" title="Criar um Boato" id="LOd-Qg-fJW">
+                        <barButtonItem key="rightBarButtonItem" title="Espalhar" id="s0n-Ui-XhY">
                             <connections>
                                 <action selector="createPostButtonTouched:" destination="DcH-sR-zJc" id="jDB-tF-jjh"/>
                             </connections>
@@ -241,7 +241,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qOw-e0-EoE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1366.9333333333334" y="357.83999999999997"/>
+            <point key="canvasLocation" x="1366" y="357"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Iig-Xi-BUc">
