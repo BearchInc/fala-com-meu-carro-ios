@@ -16,3 +16,8 @@ O seguinte conteúdo será removido:
 Bearch, Inc. não é de forma alguma responsável por boatos gerados pelos usuários.
 
 Estaremos sempre fazendo o nosso melhor para melhorar o seu app, se você tem alguma idéia sobre coisas novas que podemos fazer por favor nos contate pelo support@getbearch.com a qualquer momento!";
+
+"HOME_TITLE" = "Há boatos que…";
+"HOME_ACTION_SHEET_CANCEL" = "Cancelar";
+"HOME_ACTION_SHEET_INAPROPRIATE" = "Inapropriado/SPAM";
+"HOME_ACTION_SHEET_POST_REPORTED" = "Boato Reportado!";

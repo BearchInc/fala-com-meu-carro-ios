@@ -29,6 +29,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 		fetchPosts()
 		setupEvents()
 		setupTableViewLoader()
+        title = NSLocalizedString("HOME_TITLE", comment: "")
 	}
 	
 	override func viewWillAppear(animated: Bool) {
@@ -103,11 +104,15 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 	}
     
     private func flagPost(post: Post!) {
+        let cancel = NSLocalizedString("HOME_ACTION_SHEET_CANCEL", comment: "")
+        let inapropriate = NSLocalizedString("HOME_ACTION_SHEET_INAPROPRIATE", comment: "")
+        let postReported = NSLocalizedString("HOME_ACTION_SHEET_POST_REPORTED", comment: "")
+        
         let postAction = UIAlertController(title: nil, message: nil, preferredStyle: UIAlertControllerStyle.ActionSheet)
-        postAction.addAction(UIAlertAction(title: "Cancelar", style: UIAlertActionStyle.Cancel, handler: nil))
-        postAction.addAction(UIAlertAction(title: "Impróprio/Spam", style: UIAlertActionStyle.Destructive, handler: { alertAction in
+        postAction.addAction(UIAlertAction(title: cancel, style: UIAlertActionStyle.Cancel, handler: nil))
+        postAction.addAction(UIAlertAction(title: inapropriate, style: UIAlertActionStyle.Destructive, handler: { alertAction in
             Post.flagPost(post) { response in
-                let conrimationAction = UIAlertController(title: "Post reportado!", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
+                let conrimationAction = UIAlertController(title: postReported, message: nil, preferredStyle: UIAlertControllerStyle.Alert)
                 conrimationAction.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Cancel, handler: nil))
                 self.presentViewController(conrimationAction, animated: true, completion: nil)
             }

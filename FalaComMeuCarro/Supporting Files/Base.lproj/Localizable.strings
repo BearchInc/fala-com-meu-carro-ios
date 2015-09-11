@@ -16,3 +16,8 @@ The following content will be removed:
 Bearch, Inc. is in no way responsible for user-generated content. Content posted on this app is subject to: 1st Amendment: Freedom/Anonymity of speech is protected under the 1st Amendment Communications Decency Act: Operators of Internet services are not to be construed as publishers and thus not legally liable for the words of third parties who use their services.
 
 We will always be doing our best to improve your app, if you have any ideas on additional things we can do please contact us at support@getbearch.com anytime!";
+
+"HOME_TITLE" = "Rumors says that…";
+"HOME_ACTION_SHEET_CANCEL" = "Cancel";
+"HOME_ACTION_SHEET_INAPROPRIATE" = "Inappropriate/SPAM";
+"HOME_ACTION_SHEET_POST_REPORTED" = "Rumor Reported!";
