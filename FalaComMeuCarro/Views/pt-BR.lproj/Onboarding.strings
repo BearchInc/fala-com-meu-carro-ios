@@ -1,0 +1,18 @@
+
+/* Class = "UIViewController"; title = "Termos de Uso"; ObjectID = "EhQ-7o-VN4"; */
+"EhQ-7o-VN4.title" = "Termos de Uso";
+
+/* Class = "UIButton"; normalTitle = "Clique aqui para ver os Termos de Uso"; ObjectID = "JfW-BR-az1"; */
+"JfW-BR-az1.normalTitle" = "Clique aqui para ver os Termos de Uso";
+
+/* Class = "UILabel"; text = "Ao fazer login você declara que está de acordo os termos de uso"; ObjectID = "QDp-rV-f4D"; */
+"QDp-rV-f4D.text" = "Ao fazer login você declara que está de acordo os termos de uso";
+
+/* Class = "UINavigationItem"; title = "Termos de Uso"; ObjectID = "afG-8x-tOH"; */
+"afG-8x-tOH.title" = "Termos de Uso";
+
+/* Class = "UINavigationItem"; title = "Login"; ObjectID = "i7x-bo-3lQ"; */
+"i7x-bo-3lQ.title" = "Login";
+
+/* Class = "UITextView"; text = "Boatos é uma forma completamente diferente de interagir e espalhar informações de carros. Nós somos uma plataforma bastante aberta, mas ainda assim temos regras importantes.\n\nO seguinte conteúdo será removido:\n\n- Insultos raciais ou sexuais;\n- Incentivo à violência ou danos auto-infligidos;\n- Criar boatos contendo informações pessoais além da placa;\n- Intenção maliciosa;\n- SPAM ou Propaganda;\n- Solicitação de favores sexuais;\n Bearch, Inc. não é de forma alguma responsável por boatos gerados pelos usuários.\n\nEstaremos sempre fazendo o nosso melhor para melhorar o seu app, se você tem alguma idéia sobre coisas novas que podemos fazer por favor nos contate pelo support@getbearch.com a qualquer momento!"; ObjectID = "m9n-kW-o9x"; */
+"m9n-kW-o9x.text" = "Boatos é uma forma completamente diferente de interagir e espalhar informações de carros. Nós somos uma plataforma bastante aberta, mas ainda assim temos regras importantes.\n\nO seguinte conteúdo será removido:\n\n- Insultos raciais ou sexuais;\n- Incentivo à violência ou danos auto-infligidos;\n- Criar boatos contendo informações pessoais além da placa;\n- Intenção maliciosa;\n- SPAM ou Propaganda;\n- Solicitação de favores sexuais;\n Bearch, Inc. não é de forma alguma responsável por boatos gerados pelos usuários.\n\nEstaremos sempre fazendo o nosso melhor para melhorar o seu app, se você tem alguma idéia sobre coisas novas que podemos fazer por favor nos contate pelo support@getbearch.com a qualquer momento!";

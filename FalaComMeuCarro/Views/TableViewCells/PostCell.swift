@@ -1,6 +1,6 @@
 import Foundation
 import UIKit
-import SwiftDate
+import DateTools
 
 class PostCell: UITableViewCell {
 	
@@ -20,9 +20,8 @@ class PostCell: UITableViewCell {
 		messageLabel.text = post.message
 		messageLabel.preferredMaxLayoutWidth = self.messageLabel.bounds.width
 		
-		let relativeString = post.createdAt.toRelativeString(fromDate: NSDate(), abbreviated: true, maxUnits: 1)
 		authorLabel.text = post.userName
-        dateLabel.text = relativeString
+        dateLabel.text = post.createdAt.timeAgoSinceNow()
 	}
 	
 	override func setSelected(selected: Bool, animated: Bool) {

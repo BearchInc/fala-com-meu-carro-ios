@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3F3112EEA32221C481D9794F /* Pods_FalaComMeuCarro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 923B12E2842EAB307EE1CFE4 /* Pods_FalaComMeuCarro.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		823343941BA312540021B483 /* FacebookProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823343931BA312540021B483 /* FacebookProfile.swift */; };
+		823343991BA35BC20021B483 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8233439B1BA35BC20021B483 /* Localizable.strings */; };
 		960CA92B1B98BB9D00023702 /* ResponseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960CA92A1B98BB9D00023702 /* ResponseObject.swift */; };
 		960CA92D1B99CD1F00023702 /* ResponseArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960CA92C1B99CD1F00023702 /* ResponseArray.swift */; };
 		960CA92F1B99E10800023702 /* GoToPlateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960CA92E1B99E10800023702 /* GoToPlateViewController.swift */; };
@@ -41,6 +42,10 @@
 		593AEEFCFE510D743254AC6E /* Pods-FalaComMeuCarro.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FalaComMeuCarro.appstore.xcconfig"; path = "Pods/Target Support Files/Pods-FalaComMeuCarro/Pods-FalaComMeuCarro.appstore.xcconfig"; sourceTree = "<group>"; };
 		721E292DBBAE5D1F394E5738 /* Pods-FalaComMeuCarro.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FalaComMeuCarro.staging.xcconfig"; path = "Pods/Target Support Files/Pods-FalaComMeuCarro/Pods-FalaComMeuCarro.staging.xcconfig"; sourceTree = "<group>"; };
 		823343931BA312540021B483 /* FacebookProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookProfile.swift; sourceTree = "<group>"; };
+		823343951BA35B120021B483 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Onboarding.strings"; sourceTree = "<group>"; };
+		823343961BA35B120021B483 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		8233439A1BA35BC20021B483 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		8233439C1BA35BC50021B483 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		923B12E2842EAB307EE1CFE4 /* Pods_FalaComMeuCarro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FalaComMeuCarro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		960CA92A1B98BB9D00023702 /* ResponseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseObject.swift; sourceTree = "<group>"; };
 		960CA92C1B99CD1F00023702 /* ResponseArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseArray.swift; sourceTree = "<group>"; };
@@ -146,6 +151,7 @@
 				96C2A0AB1B7CCB1C007F45E6 /* FalaComMeuCarro-Bridging-Header.h */,
 				96420B791B7BA4A5004BB424 /* Images.xcassets */,
 				96420B711B7BA4A5004BB424 /* Info.plist */,
+				8233439B1BA35BC20021B483 /* Localizable.strings */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -269,6 +275,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"pt-BR",
 			);
 			mainGroup = 96420B641B7BA4A5004BB424;
 			productRefGroup = 96420B6E1B7BA4A5004BB424 /* Products */;
@@ -285,6 +292,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				823343991BA35BC20021B483 /* Localizable.strings in Resources */,
 				96420B781B7BA4A5004BB424 /* Onboarding.storyboard in Resources */,
 				96420B7D1B7BA4A5004BB424 /* LaunchScreen.xib in Resources */,
 				96420B7A1B7BA4A5004BB424 /* Images.xcassets in Resources */,
@@ -415,10 +423,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		8233439B1BA35BC20021B483 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8233439A1BA35BC20021B483 /* Base */,
+				8233439C1BA35BC50021B483 /* pt-BR */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		96420B761B7BA4A5004BB424 /* Onboarding.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				96420B771B7BA4A5004BB424 /* Base */,
+				823343951BA35B120021B483 /* pt-BR */,
 			);
 			name = Onboarding.storyboard;
 			path = .;
@@ -428,6 +446,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				96420B7C1B7BA4A5004BB424 /* Base */,
+				823343961BA35B120021B483 /* pt-BR */,
 			);
 			name = LaunchScreen.xib;
 			path = .;
