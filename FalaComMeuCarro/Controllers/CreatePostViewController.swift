@@ -12,6 +12,11 @@ class CreatePostViewController: UIViewController {
 		super.viewDidLoad()
 		carplateTextField.mask = NSStringMask(pattern: "([A-Z]{3})-([0-9]{4})")
 	}
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        carplateTextField.becomeFirstResponder()
+    }
 	
 	@IBAction func createPostButtonTouched(sender: AnyObject) {
 		
