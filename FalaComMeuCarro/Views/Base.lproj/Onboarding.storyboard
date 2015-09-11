@@ -55,6 +55,8 @@
                     <navigationItem key="navigationItem" title="Login" id="i7x-bo-3lQ"/>
                     <connections>
                         <outlet property="loginButton" destination="1I7-AI-K8f" id="oy2-oA-bQd"/>
+                        <outlet property="termsAndConditionsButton" destination="JfW-BR-az1" id="YpD-d7-enh"/>
+                        <outlet property="termsAndConditionsLabel" destination="QDp-rV-f4D" id="0ba-i0-2Hh"/>
                         <segue destination="FfP-Xc-6Fn" kind="custom" identifier="_Cars" customClass="InterStoryboardsPresentSegue" customModule="Fala_de_Carro" customModuleProvider="target" id="Pqe-bW-28L"/>
                     </connections>
                 </viewController>

@@ -5,11 +5,21 @@ import Crashlytics
 class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
 	
 	@IBOutlet weak var loginButton: FBSDKLoginButton!
+    
+    @IBOutlet weak var termsAndConditionsLabel: UILabel! {
+        didSet {
+            self.termsAndConditionsLabel.text = NSLocalizedString("LOGIN_TERMS_AND_CONDITIONS_LABEL", comment: "")
+        }
+    }
+    
+    @IBOutlet weak var termsAndConditionsButton: UIButton! {
+        didSet {
+            self.termsAndConditionsButton.setTitle(NSLocalizedString("LOGIN_TERMS_AND_CONDITIONS_BUTTON", comment: ""), forState: UIControlState.Normal)
+        }
+    }
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		
-		
 		setupFacebookButton()
 	}
 

@@ -1,7 +1,2 @@
-/* 
-  Localizable.strings
-  FalaComMeuCarro
-
-  Created by Ygor Bruxel on 9/11/15.
-  Copyright (c) 2015 HB. All rights reserved.
-*/
+"LOGIN_TERMS_AND_CONDITIONS_LABEL" = "By login in you are accepting our Terms of Service";
+"LOGIN_TERMS_AND_CONDITIONS_BUTTON"  = "Tap here to view our Terms of Service";

@@ -1,7 +1,2 @@
-/* 
-  Localizable.strings
-  FalaComMeuCarro
-
-  Created by Ygor Bruxel on 9/11/15.
-  Copyright (c) 2015 HB. All rights reserved.
-*/
+"LOGIN_TERMS_AND_CONDITIONS_LABEL" = "Ao fazer login você declara que está de acordo os Termos de Uso";
+"LOGIN_TERMS_AND_CONDITIONS_BUTTON"  = "Clique aqui para ver os Termos de Uso";
