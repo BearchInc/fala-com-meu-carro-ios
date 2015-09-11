@@ -21,3 +21,8 @@ Estaremos sempre fazendo o nosso melhor para melhorar o seu app, se você tem al
 "HOME_ACTION_SHEET_CANCEL" = "Cancelar";
 "HOME_ACTION_SHEET_INAPROPRIATE" = "Inapropriado/SPAM";
 "HOME_ACTION_SHEET_POST_REPORTED" = "Boato Reportado!";
+
+"CREATE_POST_TITLE" = "Criar boato";
+"CREATE_POST_CAR_PLATE_LABEL" = "Placa do carro";
+"CREATE_POST_MESSAGE_LABEL" = "Boato";
+"CREATE_POST_SEND_BUTTON" = "Espalhar";

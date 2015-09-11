@@ -236,7 +236,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="carplateLabel" destination="svc-5K-PQW" id="eCT-nA-cwU"/>
                         <outlet property="carplateTextField" destination="dYT-Wl-CrB" id="fp3-A9-xUW"/>
+                        <outlet property="messageLabel" destination="rMT-y1-OuL" id="MpK-h8-WTH"/>
                         <outlet property="messageTextView" destination="F0e-yU-Ql0" id="gPR-uA-YWs"/>
                     </connections>
                 </viewController>

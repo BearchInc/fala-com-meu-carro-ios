@@ -5,11 +5,25 @@ import SwiftEventBus
 
 class CreatePostViewController: UIViewController {
 	
+    @IBOutlet weak var carplateLabel: UILabel! {
+        didSet {
+            self.carplateLabel.text = NSLocalizedString("CREATE_POST_CAR_PLATE_LABEL", comment: "")
+        }
+    }
+    
+    @IBOutlet weak var messageLabel: UILabel! {
+        didSet {
+            self.messageLabel.text = NSLocalizedString("CREATE_POST_MESSAGE_LABEL", comment: "")
+        }
+    }
+    
 	@IBOutlet weak var carplateTextField: UITextFieldMask!
 	@IBOutlet weak var messageTextView: UITextView!
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
+        title = NSLocalizedString("CREATE_POST_TITLE", comment: "")
+        navigationItem.rightBarButtonItem?.title = NSLocalizedString("CREATE_POST_SEND_BUTTON", comment: "")
 		carplateTextField.mask = NSStringMask(pattern: "([A-Z]{3})-([0-9]{4})")
 	}
     
