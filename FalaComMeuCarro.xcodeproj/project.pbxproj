@@ -42,8 +42,6 @@
 		593AEEFCFE510D743254AC6E /* Pods-FalaComMeuCarro.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FalaComMeuCarro.appstore.xcconfig"; path = "Pods/Target Support Files/Pods-FalaComMeuCarro/Pods-FalaComMeuCarro.appstore.xcconfig"; sourceTree = "<group>"; };
 		721E292DBBAE5D1F394E5738 /* Pods-FalaComMeuCarro.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FalaComMeuCarro.staging.xcconfig"; path = "Pods/Target Support Files/Pods-FalaComMeuCarro/Pods-FalaComMeuCarro.staging.xcconfig"; sourceTree = "<group>"; };
 		823343931BA312540021B483 /* FacebookProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookProfile.swift; sourceTree = "<group>"; };
-		823343951BA35B120021B483 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Onboarding.strings"; sourceTree = "<group>"; };
-		823343961BA35B120021B483 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		8233439A1BA35BC20021B483 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8233439C1BA35BC50021B483 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		923B12E2842EAB307EE1CFE4 /* Pods_FalaComMeuCarro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FalaComMeuCarro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -430,13 +428,13 @@
 				8233439C1BA35BC50021B483 /* pt-BR */,
 			);
 			name = Localizable.strings;
+			path = .;
 			sourceTree = "<group>";
 		};
 		96420B761B7BA4A5004BB424 /* Onboarding.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				96420B771B7BA4A5004BB424 /* Base */,
-				823343951BA35B120021B483 /* pt-BR */,
 			);
 			name = Onboarding.storyboard;
 			path = .;
@@ -446,7 +444,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				96420B7C1B7BA4A5004BB424 /* Base */,
-				823343961BA35B120021B483 /* pt-BR */,
 			);
 			name = LaunchScreen.xib;
 			path = .;
