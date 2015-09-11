@@ -1,2 +1,18 @@
 "LOGIN_TERMS_AND_CONDITIONS_LABEL" = "Ao fazer login você declara que está de acordo os Termos de Uso";
 "LOGIN_TERMS_AND_CONDITIONS_BUTTON"  = "Clique aqui para ver os Termos de Uso";
+
+"TERMS_OF_SERVICE_TITLE" = "Termos de Uso";
+"TERMS_OF_SERVICE_EULA" = "Boatos é uma forma completamente diferente de interagir e espalhar informações de carros. Nós somos uma plataforma bastante aberta, mas ainda assim temos regras importantes.
+
+O seguinte conteúdo será removido:
+
+- Insultos raciais ou sexuais;
+- Incentivo à violência ou danos auto-infligidos;
+- Criar boatos contendo informações pessoais além da placa;
+- Intenção maliciosa;
+- SPAM ou Propaganda;
+- Solicitação de favores sexuais;
+
+Bearch, Inc. não é de forma alguma responsável por boatos gerados pelos usuários.
+
+Estaremos sempre fazendo o nosso melhor para melhorar o seu app, se você tem alguma idéia sobre coisas novas que podemos fazer por favor nos contate pelo support@getbearch.com a qualquer momento!";

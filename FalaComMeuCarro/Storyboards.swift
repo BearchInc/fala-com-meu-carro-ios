@@ -225,6 +225,8 @@ extension LoginViewController {
 
 }
 
+//MARK: - TermsOfServiceViewController
+
 //MARK: - HomeViewController
 extension HomeViewController { 
 

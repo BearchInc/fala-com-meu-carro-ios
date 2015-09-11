@@ -67,7 +67,7 @@
         <!--Termos de Uso-->
         <scene sceneID="3Vr-cl-B2h">
             <objects>
-                <viewController title="Termos de Uso" id="EhQ-7o-VN4" sceneMemberID="viewController">
+                <viewController title="Termos de Uso" id="EhQ-7o-VN4" customClass="TermsOfServiceViewController" customModule="Fala_de_Carro" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="toD-gw-XHc"/>
                         <viewControllerLayoutGuide type="bottom" id="1sP-kX-OFe"/>
@@ -105,6 +105,9 @@ Estaremos sempre fazendo o nosso melhor para melhorar o seu app, se você tem al
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Termos de Uso" id="afG-8x-tOH"/>
+                    <connections>
+                        <outlet property="eulaTextView" destination="m9n-kW-o9x" id="IeY-mx-hcU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6De-z1-nfX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
