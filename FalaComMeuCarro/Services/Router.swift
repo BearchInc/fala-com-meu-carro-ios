@@ -5,7 +5,7 @@ enum Router: URLRequestConvertible {
 	static let baseURLString = Config.get(.BaseUrl)
 	static var OAuthToken: String?
 	
-	case CreatePost(String, String, String, String)
+	case CreatePost(String, String, String, String, String)
 	case ListAllPosts()
 	case ListPostByCarPlate(String)
     case FlagPost(postId: String)
@@ -25,7 +25,7 @@ enum Router: URLRequestConvertible {
 	
 	var path: String {
 		switch self {
-		case .CreatePost(let carPlate, let message, let userId, let userName):
+		case .CreatePost(let carPlate, let message, let userId, let userName, let email):
 			return "/posts"
 		case .ListAllPosts():
 			return "/posts"
@@ -35,8 +35,6 @@ enum Router: URLRequestConvertible {
             return "/posts/\(postId)"
 		}
 	}
-	
-	// MARK: URLRequestConvertible
 	
 	var URLRequest: NSURLRequest {
 		let URL = NSURL(string: Router.baseURLString)!
@@ -48,8 +46,8 @@ enum Router: URLRequestConvertible {
 		}
 		
 		switch self {
-		case .CreatePost(let carPlate, let message, let userId, let userName):
-			let parameters = ["car_plate" : carPlate, "message" : message, "user_id" : userId, "user_name" : userName]
+		case .CreatePost(let carPlate, let message, let userId, let userName, let email):
+			let parameters = ["car_plate" : carPlate, "message" : message, "user_id" : userId, "user_name" : userName, "email": email]
 			return Alamofire.ParameterEncoding.JSON.encode(mutableURLRequest, parameters: parameters).0
 		case .ListAllPosts():
 			return Alamofire.ParameterEncoding.URL.encode(mutableURLRequest, parameters: nil).0

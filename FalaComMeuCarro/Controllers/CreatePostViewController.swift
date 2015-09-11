@@ -18,13 +18,15 @@ class CreatePostViewController: UIViewController {
 		let plate = carplateTextField.text
 		let message = messageTextView.text
 
-		let userId = FBSDKProfile.currentProfile().userID
-		let lastName = FBSDKProfile.currentProfile().lastName
+        let profile = FacebookProfile.retrieve()
+        let facebookProfile = profile.facebookProfile
+		let userId = facebookProfile.userID
+		let lastName = facebookProfile.lastName
 		
-		let userName = "\(FBSDKProfile.currentProfile().firstName) \(lastName[lastName.startIndex])."
+		let userName = "\(facebookProfile.firstName) \(lastName[lastName.startIndex])."
 		
 		if isPostValid() {
-			Post.createPost(plate, message: message, userId: userId, userName: userName) { (post) in
+            Post.createPost(plate, message: message, userId: userId, userName: userName, email: profile.email) { (post) in
 				self.navigationController?.popViewControllerAnimated(true)
 				SwiftEventBus.post("postCreated", sender: post)
 			}

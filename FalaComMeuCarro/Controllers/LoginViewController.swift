@@ -45,7 +45,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
 	}
 	
 	private func fetchUserProfile() {
-		FBSDKGraphRequest(graphPath: "me", parameters: ["fields" : "id,first_name,last_name"]).startWithCompletionHandler() {
+		FBSDKGraphRequest(graphPath: "/me", parameters: ["fields" : "id,first_name,last_name,middle_name,name,link,updated_time,email" ]).startWithCompletionHandler() {
 			(connection, result, error) in
 			
 			if error != nil {
@@ -55,16 +55,8 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
 				return
 			}
 			
-			let profile = FBSDKProfile(userID: result["id"] as! String,
-				firstName: result["first_name"] as! String,
-				middleName: nil,
-				lastName: result["last_name"] as! String,
-				name: nil,
-				linkURL: nil,
-				refreshDate: nil)
-			
-			FBSDKProfile.setCurrentProfile(profile)
-			
+            FacebookProfile(result: result as! NSDictionary).save()
+            
 			self.goToHomeViewController()
 		}
 	}

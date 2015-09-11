@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3F3112EEA32221C481D9794F /* Pods_FalaComMeuCarro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 923B12E2842EAB307EE1CFE4 /* Pods_FalaComMeuCarro.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		823343941BA312540021B483 /* FacebookProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823343931BA312540021B483 /* FacebookProfile.swift */; };
 		960CA92B1B98BB9D00023702 /* ResponseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960CA92A1B98BB9D00023702 /* ResponseObject.swift */; };
 		960CA92D1B99CD1F00023702 /* ResponseArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960CA92C1B99CD1F00023702 /* ResponseArray.swift */; };
 		960CA92F1B99E10800023702 /* GoToPlateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960CA92E1B99E10800023702 /* GoToPlateViewController.swift */; };
@@ -39,6 +40,7 @@
 		093811FBB0AA2C486D9CBC38 /* Pods-FalaComMeuCarro.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FalaComMeuCarro.development.xcconfig"; path = "Pods/Target Support Files/Pods-FalaComMeuCarro/Pods-FalaComMeuCarro.development.xcconfig"; sourceTree = "<group>"; };
 		593AEEFCFE510D743254AC6E /* Pods-FalaComMeuCarro.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FalaComMeuCarro.appstore.xcconfig"; path = "Pods/Target Support Files/Pods-FalaComMeuCarro/Pods-FalaComMeuCarro.appstore.xcconfig"; sourceTree = "<group>"; };
 		721E292DBBAE5D1F394E5738 /* Pods-FalaComMeuCarro.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FalaComMeuCarro.staging.xcconfig"; path = "Pods/Target Support Files/Pods-FalaComMeuCarro/Pods-FalaComMeuCarro.staging.xcconfig"; sourceTree = "<group>"; };
+		823343931BA312540021B483 /* FacebookProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookProfile.swift; sourceTree = "<group>"; };
 		923B12E2842EAB307EE1CFE4 /* Pods_FalaComMeuCarro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FalaComMeuCarro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		960CA92A1B98BB9D00023702 /* ResponseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseObject.swift; sourceTree = "<group>"; };
 		960CA92C1B99CD1F00023702 /* ResponseArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseArray.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				960CA92A1B98BB9D00023702 /* ResponseObject.swift */,
 				96CA71981B9BE2180069D655 /* Config.swift */,
 				96B9DA301B9F4BAC00350483 /* DateTransform.swift */,
+				823343931BA312540021B483 /* FacebookProfile.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -401,6 +404,7 @@
 				96C2A0B01B7CCC71007F45E6 /* LoginViewController.swift in Sources */,
 				96C2A0A01B7BBC78007F45E6 /* CreatePostViewController.swift in Sources */,
 				96C2A0B71B7CD88B007F45E6 /* InterStoryboardsPresentSegue.swift in Sources */,
+				823343941BA312540021B483 /* FacebookProfile.swift in Sources */,
 				96CA71991B9BE2180069D655 /* Config.swift in Sources */,
 				96C2A09E1B7BB250007F45E6 /* PostCell.swift in Sources */,
 				96C2A0A61B7BD984007F45E6 /* Storyboards.swift in Sources */,
