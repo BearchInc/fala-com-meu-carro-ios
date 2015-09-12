@@ -5,10 +5,9 @@ import Crashlytics
 
 @objc
 class GoToPlateViewController {
-	
-	let sendButtonIndex = 1
-	
+
 	var alert: UIAlertController!
+    var sendButtonAction: UIAlertAction!
 	var searchCallback: String -> Void
 	
 	init(sentCallback: (String -> Void)) {
@@ -25,9 +24,10 @@ class GoToPlateViewController {
 		let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)
 		alert.addTextFieldWithConfigurationHandler(textFieldChanged)
 		alert.addAction(UIAlertAction(title: cancel, style: UIAlertActionStyle.Cancel, handler: nil))
-		alert.addAction(UIAlertAction(title: ok, style: UIAlertActionStyle.Default, handler: sendButtonAction))
+        sendButtonAction = UIAlertAction(title: ok, style: UIAlertActionStyle.Default, handler: sendButtonAction)
+		alert.addAction(sendButtonAction)
 		
-		(alert.actions[sendButtonIndex] as! UIAlertAction).enabled = false
+		sendButtonAction.enabled = false
 		
 		self.alert = alert
 	}
@@ -41,7 +41,7 @@ class GoToPlateViewController {
 	func textChanged(textField: UITextField) {
 		textField.text = NSStringMask.maskString(textField.text, withPattern: "([A-Z]{3})-([0-9]{4})")
 		let enabled = textField.text.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) == 8
-		(alert.actions[sendButtonIndex] as! UIAlertAction).enabled = enabled
+		sendButtonAction.enabled = enabled
 	}
 	
 	func sendButtonAction(alertAction: UIAlertAction!) {
