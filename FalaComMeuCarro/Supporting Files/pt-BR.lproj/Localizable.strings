@@ -23,7 +23,7 @@ Estaremos sempre fazendo o nosso melhor para melhorar o seu app, se você tem al
 
 "HOME_TITLE" = "Há boatos que…";
 "HOME_ACTION_SHEET_CANCEL" = "Cancelar";
-"HOME_ACTION_SHEET_INAPROPRIATE" = "Inapropriado/SPAM";
+"HOME_ACTION_SHEET_INAPPROPRIATE" = "Inapropriado/SPAM";
 "HOME_ACTION_SHEET_POST_REPORTED" = "Boato Reportado!";
 
 "CREATE_POST_TITLE" = "Criar boato";

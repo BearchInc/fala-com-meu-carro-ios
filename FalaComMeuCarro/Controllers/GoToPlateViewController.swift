@@ -8,10 +8,10 @@ class GoToPlateViewController {
 
 	var alert: UIAlertController!
     var sendButtonAction: UIAlertAction!
-	var searchCallback: String -> Void
+	let searchCallback: String -> Void
 	
 	init(sentCallback: (String -> Void)) {
-		self.searchCallback = sentCallback
+		searchCallback = sentCallback
 		setup()
 	}
     

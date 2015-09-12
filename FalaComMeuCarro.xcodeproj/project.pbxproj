@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3F3112EEA32221C481D9794F /* Pods_FalaComMeuCarro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 923B12E2842EAB307EE1CFE4 /* Pods_FalaComMeuCarro.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		820F0EED1BA4E0A800338CAA /* PostOptionsMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820F0EEC1BA4E0A800338CAA /* PostOptionsMenuViewController.swift */; };
 		823343941BA312540021B483 /* FacebookProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823343931BA312540021B483 /* FacebookProfile.swift */; };
 		823343991BA35BC20021B483 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8233439B1BA35BC20021B483 /* Localizable.strings */; };
 		8233439E1BA36D470021B483 /* TermsOfServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8233439D1BA36D470021B483 /* TermsOfServiceViewController.swift */; };
@@ -43,6 +44,7 @@
 		093811FBB0AA2C486D9CBC38 /* Pods-FalaComMeuCarro.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FalaComMeuCarro.development.xcconfig"; path = "Pods/Target Support Files/Pods-FalaComMeuCarro/Pods-FalaComMeuCarro.development.xcconfig"; sourceTree = "<group>"; };
 		593AEEFCFE510D743254AC6E /* Pods-FalaComMeuCarro.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FalaComMeuCarro.appstore.xcconfig"; path = "Pods/Target Support Files/Pods-FalaComMeuCarro/Pods-FalaComMeuCarro.appstore.xcconfig"; sourceTree = "<group>"; };
 		721E292DBBAE5D1F394E5738 /* Pods-FalaComMeuCarro.staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FalaComMeuCarro.staging.xcconfig"; path = "Pods/Target Support Files/Pods-FalaComMeuCarro/Pods-FalaComMeuCarro.staging.xcconfig"; sourceTree = "<group>"; };
+		820F0EEC1BA4E0A800338CAA /* PostOptionsMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostOptionsMenuViewController.swift; sourceTree = "<group>"; };
 		823343931BA312540021B483 /* FacebookProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookProfile.swift; sourceTree = "<group>"; };
 		8233439A1BA35BC20021B483 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8233439C1BA35BC50021B483 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				96C2A0AF1B7CCC71007F45E6 /* LoginViewController.swift */,
 				960CA92E1B99E10800023702 /* GoToPlateViewController.swift */,
 				8233439D1BA36D470021B483 /* TermsOfServiceViewController.swift */,
+				820F0EEC1BA4E0A800338CAA /* PostOptionsMenuViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 			files = (
 				96C2A0981B7BAA32007F45E6 /* Post.swift in Sources */,
 				96B9DA311B9F4BAC00350483 /* DateTransform.swift in Sources */,
+				820F0EED1BA4E0A800338CAA /* PostOptionsMenuViewController.swift in Sources */,
 				96420B751B7BA4A5004BB424 /* HomeViewController.swift in Sources */,
 				96C2A0B91B7CFF8D007F45E6 /* InterStoryboardsSegue.swift in Sources */,
 				8233439E1BA36D470021B483 /* TermsOfServiceViewController.swift in Sources */,

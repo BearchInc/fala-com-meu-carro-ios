@@ -21,8 +21,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 	var plate = ""
     
     let localizedTitle = "HOME_TITLE".localized
-    let cancel = "HOME_ACTION_SHEET_CANCEL".localized
-    let inapropriate = "HOME_ACTION_SHEET_INAPROPRIATE".localized
     let postReported = "HOME_ACTION_SHEET_POST_REPORTED".localized
 
 	deinit {
@@ -109,17 +107,17 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 	}
     
     private func flagPost(post: Post!) {
-        let postAction = UIAlertController(title: nil, message: nil, preferredStyle: UIAlertControllerStyle.ActionSheet)
-        postAction.addAction(UIAlertAction(title: cancel, style: UIAlertActionStyle.Cancel, handler: nil))
-        postAction.addAction(UIAlertAction(title: inapropriate, style: UIAlertActionStyle.Destructive, handler: { alertAction in
-            Post.flagPost(post) { response in
-                let conrimationAction = UIAlertController(title: self.postReported, message: nil, preferredStyle: UIAlertControllerStyle.Alert)
-                conrimationAction.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Cancel, handler: nil))
-                self.presentViewController(conrimationAction, animated: true, completion: nil)
-            }
-        }))
+        let postAction = PostOptionsMenuViewController(post: post, reportCallback: postFlagged)
         
-        presentViewController(postAction, animated: true, completion: nil)
+        presentViewController(postAction.alert, animated: true, completion: nil)
+    }
+    
+    private func postFlagged(post: Post) {
+        Post.flagPost(post) { response in
+            let conrimationAction = UIAlertController(title: self.postReported, message: nil, preferredStyle: UIAlertControllerStyle.Alert)
+            conrimationAction.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Cancel, handler: nil))
+            self.presentViewController(conrimationAction, animated: true, completion: nil)
+        }
     }
 
 	@IBAction func goToPlate(sender: AnyObject) {
