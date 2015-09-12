@@ -19,11 +19,17 @@ class CreatePostViewController: UIViewController {
     
 	@IBOutlet weak var carplateTextField: UITextFieldMask!
 	@IBOutlet weak var messageTextView: UITextView!
+    
+    let createPostTitle = "CREATE_POST_TITLE".localized
+    let send = "CREATE_POST_SEND_BUTTON".localized
+    let plateInvalid = "CREATE_POST_INVALID_PLATE".localized
+    let messsageEmpty = "CREATE_POST_MESSAGE_CANNOT_BE_EMPTY".localized
+    let oops = "CREATE_POST_OOPS".localized
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-        title = "CREATE_POST_TITLE".localized
-        navigationItem.rightBarButtonItem?.title = "CREATE_POST_SEND_BUTTON".localized
+        title = createPostTitle
+        navigationItem.rightBarButtonItem?.title = send
 		carplateTextField.mask = NSStringMask(pattern: "([A-Z]{3})-([0-9]{4})")
 	}
     
@@ -55,10 +61,10 @@ class CreatePostViewController: UIViewController {
 	private func isPostValid() -> Bool {
 		var isValid = true
 		if count(carplateTextField.text) != 8 {
-			showValidationAlert("Placa inválida")
+			showValidationAlert(plateInvalid)
 			isValid = false
 		} else if messageTextView.text.isEmpty {
-			showValidationAlert("Mensagem não pode ser vazia")
+			showValidationAlert(messsageEmpty)
 			isValid = false
 		}
 		
@@ -66,7 +72,7 @@ class CreatePostViewController: UIViewController {
 	}
 	
 	private func showValidationAlert(message: String) {
-		let alertController = UIAlertController(title: "Ooops", message: message, preferredStyle: UIAlertControllerStyle.Alert)
+		let alertController = UIAlertController(title: oops, message: message, preferredStyle: UIAlertControllerStyle.Alert)
 		alertController.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Default, handler: nil))
 		presentViewController(alertController, animated: true, completion: nil)
 	}

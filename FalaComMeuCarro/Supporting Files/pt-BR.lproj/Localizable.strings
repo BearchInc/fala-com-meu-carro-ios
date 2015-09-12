@@ -30,6 +30,9 @@ Estaremos sempre fazendo o nosso melhor para melhorar o seu app, se você tem al
 "CREATE_POST_CAR_PLATE_LABEL" = "Placa do carro";
 "CREATE_POST_MESSAGE_LABEL" = "Boato";
 "CREATE_POST_SEND_BUTTON" = "Espalhar";
+"CREATE_POST_INVALID_PLATE" = "Placa inválida";
+"CREATE_POST_MESSAGE_CANNOT_BE_EMPTY" = "Mensagem não pode ser vazia";
+"CREATE_POST_OOPS" = "Opa";
 
 "GO_TO_PLATE_TITLE" = "Buscar boatos";
 "GO_TO_PLATE_MESSAGE" = "Ver boatos de qual placa?";
