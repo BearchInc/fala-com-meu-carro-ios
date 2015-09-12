@@ -9,10 +9,10 @@ class GoToPlateViewController {
 	let sendButtonIndex = 1
 	
 	var alert: UIAlertController!
-	var feedBackSent: String -> Void
+	var searchCallback: String -> Void
 	
 	init(sentCallback: (String -> Void)) {
-		self.feedBackSent = sentCallback
+		self.searchCallback = sentCallback
 		setup()
 	}
     
@@ -47,6 +47,6 @@ class GoToPlateViewController {
 	func sendButtonAction(alertAction: UIAlertAction!) {
         let plate = (self.alert.textFields![0] as! UITextField).text
 		Analytics.logPlateSearch(plate)
-		feedBackSent(plate)
+		searchCallback(plate)
 	}
 }
