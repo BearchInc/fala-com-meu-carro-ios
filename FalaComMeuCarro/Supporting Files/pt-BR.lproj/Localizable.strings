@@ -1,3 +1,7 @@
+"LOGIN_WE_NEED_YOU_TO_LOGIN" = "Nós precisamos que você faça login.";
+"LOGIN_SOMETHING_HAPPENED_TRY_AGAIN" = "Algum problema aconteceu, tente de novo por favor :)";
+"LOGIN_TRY_AGAIN" = "Tentar novamente";
+"LOGIN_OOPS" = "Opa";
 "LOGIN_TERMS_AND_CONDITIONS_LABEL" = "Ao fazer login você declara que está de acordo os Termos de Uso";
 "LOGIN_TERMS_AND_CONDITIONS_BUTTON"  = "Clique aqui para ver os Termos de Uso";
 

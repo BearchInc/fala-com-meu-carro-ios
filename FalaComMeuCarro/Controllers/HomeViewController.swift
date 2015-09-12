@@ -19,6 +19,11 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 	
 	var posts = [Post]()
 	var plate = ""
+    
+    let localizedTitle = "HOME_TITLE".localized
+    let cancel = "HOME_ACTION_SHEET_CANCEL".localized
+    let inapropriate = "HOME_ACTION_SHEET_INAPROPRIATE".localized
+    let postReported = "HOME_ACTION_SHEET_POST_REPORTED".localized
 
 	deinit {
 		SwiftEventBus.unregister(self)
@@ -29,9 +34,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 		fetchPosts()
 		setupEvents()
 		setupTableViewLoader()
-        title = "HOME_TITLE".localized
+        title = localizedTitle
 	}
-	
+    
 	override func viewWillAppear(animated: Bool) {
 		super.viewWillAppear(animated)
 		tableViewLoader.redisplay()
@@ -104,15 +109,11 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 	}
     
     private func flagPost(post: Post!) {
-        let cancel = "HOME_ACTION_SHEET_CANCEL".localized
-        let inapropriate = "HOME_ACTION_SHEET_INAPROPRIATE".localized
-        let postReported = "HOME_ACTION_SHEET_POST_REPORTED".localized
-        
         let postAction = UIAlertController(title: nil, message: nil, preferredStyle: UIAlertControllerStyle.ActionSheet)
         postAction.addAction(UIAlertAction(title: cancel, style: UIAlertActionStyle.Cancel, handler: nil))
         postAction.addAction(UIAlertAction(title: inapropriate, style: UIAlertActionStyle.Destructive, handler: { alertAction in
             Post.flagPost(post) { response in
-                let conrimationAction = UIAlertController(title: postReported, message: nil, preferredStyle: UIAlertControllerStyle.Alert)
+                let conrimationAction = UIAlertController(title: self.postReported, message: nil, preferredStyle: UIAlertControllerStyle.Alert)
                 conrimationAction.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.Cancel, handler: nil))
                 self.presentViewController(conrimationAction, animated: true, completion: nil)
             }
