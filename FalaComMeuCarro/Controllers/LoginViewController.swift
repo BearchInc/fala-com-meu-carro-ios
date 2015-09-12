@@ -8,13 +8,13 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     
     @IBOutlet weak var termsAndConditionsLabel: UILabel! {
         didSet {
-            self.termsAndConditionsLabel.text = NSLocalizedString("LOGIN_TERMS_AND_CONDITIONS_LABEL", comment: "")
+            self.termsAndConditionsLabel.text = "LOGIN_TERMS_AND_CONDITIONS_LABEL".localized
         }
     }
     
     @IBOutlet weak var termsAndConditionsButton: UIButton! {
         didSet {
-            self.termsAndConditionsButton.setTitle(NSLocalizedString("LOGIN_TERMS_AND_CONDITIONS_BUTTON", comment: ""), forState: UIControlState.Normal)
+            self.termsAndConditionsButton.setTitle("LOGIN_TERMS_AND_CONDITIONS_BUTTON".localized, forState: UIControlState.Normal)
         }
     }
 	

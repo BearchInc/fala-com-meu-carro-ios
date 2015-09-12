@@ -29,7 +29,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 		fetchPosts()
 		setupEvents()
 		setupTableViewLoader()
-        title = NSLocalizedString("HOME_TITLE", comment: "")
+        title = "HOME_TITLE".localized
 	}
 	
 	override func viewWillAppear(animated: Bool) {
@@ -104,9 +104,9 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 	}
     
     private func flagPost(post: Post!) {
-        let cancel = NSLocalizedString("HOME_ACTION_SHEET_CANCEL", comment: "")
-        let inapropriate = NSLocalizedString("HOME_ACTION_SHEET_INAPROPRIATE", comment: "")
-        let postReported = NSLocalizedString("HOME_ACTION_SHEET_POST_REPORTED", comment: "")
+        let cancel = "HOME_ACTION_SHEET_CANCEL".localized
+        let inapropriate = "HOME_ACTION_SHEET_INAPROPRIATE".localized
+        let postReported = "HOME_ACTION_SHEET_POST_REPORTED".localized
         
         let postAction = UIAlertController(title: nil, message: nil, preferredStyle: UIAlertControllerStyle.ActionSheet)
         postAction.addAction(UIAlertAction(title: cancel, style: UIAlertActionStyle.Cancel, handler: nil))

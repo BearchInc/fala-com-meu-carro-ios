@@ -3,12 +3,12 @@ import Foundation
 class TermsOfServiceViewController: UIViewController {
     @IBOutlet weak var eulaTextView: UITextView! {
         didSet {
-            self.eulaTextView.text = NSLocalizedString("TERMS_OF_SERVICE_EULA", comment: "")
+            self.eulaTextView.text = "TERMS_OF_SERVICE_EULA".localized
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = NSLocalizedString("TERMS_OF_SERVICE_TITLE", comment: "")
+        self.title = "TERMS_OF_SERVICE_TITLE".localized
     }
 }

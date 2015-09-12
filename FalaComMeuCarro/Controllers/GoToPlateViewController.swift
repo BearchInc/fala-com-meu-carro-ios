@@ -17,10 +17,10 @@ class GoToPlateViewController {
 	}
 	
 	func setup() {
-        let title = NSLocalizedString("GO_TO_PLATE_TITLE", comment: "")
-        let message = NSLocalizedString("GO_TO_PLATE_MESSAGE", comment: "")
-        let cancel = NSLocalizedString("GO_TO_PLATE_CANCEL", comment: "")
-        let ok = NSLocalizedString("GO_TO_PLATE_OK", comment: "")
+        let title = "GO_TO_PLATE_TITLE".localized
+        let message = "GO_TO_PLATE_MESSAGE".localized
+        let cancel = "GO_TO_PLATE_CANCEL".localized
+        let ok = "GO_TO_PLATE_OK".localized
         
 		let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)
 		alert.addTextFieldWithConfigurationHandler(textFieldChanged)

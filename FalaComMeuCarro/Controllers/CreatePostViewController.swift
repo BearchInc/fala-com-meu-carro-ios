@@ -7,13 +7,13 @@ class CreatePostViewController: UIViewController {
 	
     @IBOutlet weak var carplateLabel: UILabel! {
         didSet {
-            self.carplateLabel.text = NSLocalizedString("CREATE_POST_CAR_PLATE_LABEL", comment: "")
+            self.carplateLabel.text = "CREATE_POST_CAR_PLATE_LABEL".localized
         }
     }
     
     @IBOutlet weak var messageLabel: UILabel! {
         didSet {
-            self.messageLabel.text = NSLocalizedString("CREATE_POST_MESSAGE_LABEL", comment: "")
+            self.messageLabel.text = "CREATE_POST_MESSAGE_LABEL".localized
         }
     }
     
@@ -22,8 +22,8 @@ class CreatePostViewController: UIViewController {
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
-        title = NSLocalizedString("CREATE_POST_TITLE", comment: "")
-        navigationItem.rightBarButtonItem?.title = NSLocalizedString("CREATE_POST_SEND_BUTTON", comment: "")
+        title = "CREATE_POST_TITLE".localized
+        navigationItem.rightBarButtonItem?.title = "CREATE_POST_SEND_BUTTON".localized
 		carplateTextField.mask = NSStringMask(pattern: "([A-Z]{3})-([0-9]{4})")
 	}
     

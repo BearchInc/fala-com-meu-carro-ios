@@ -11,6 +11,7 @@
 		823343941BA312540021B483 /* FacebookProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823343931BA312540021B483 /* FacebookProfile.swift */; };
 		823343991BA35BC20021B483 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8233439B1BA35BC20021B483 /* Localizable.strings */; };
 		8233439E1BA36D470021B483 /* TermsOfServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8233439D1BA36D470021B483 /* TermsOfServiceViewController.swift */; };
+		823343A61BA4D4800021B483 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823343A51BA4D4800021B483 /* StringExtensions.swift */; };
 		960CA92B1B98BB9D00023702 /* ResponseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960CA92A1B98BB9D00023702 /* ResponseObject.swift */; };
 		960CA92D1B99CD1F00023702 /* ResponseArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960CA92C1B99CD1F00023702 /* ResponseArray.swift */; };
 		960CA92F1B99E10800023702 /* GoToPlateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 960CA92E1B99E10800023702 /* GoToPlateViewController.swift */; };
@@ -45,15 +46,16 @@
 		823343931BA312540021B483 /* FacebookProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FacebookProfile.swift; sourceTree = "<group>"; };
 		8233439A1BA35BC20021B483 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8233439C1BA35BC50021B483 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		8233439D1BA36D470021B483 /* TermsOfServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsOfServiceViewController.swift; sourceTree = "<group>"; };
+		8233439D1BA36D470021B483 /* TermsOfServiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = TermsOfServiceViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		823343A51BA4D4800021B483 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		923B12E2842EAB307EE1CFE4 /* Pods_FalaComMeuCarro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FalaComMeuCarro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		960CA92A1B98BB9D00023702 /* ResponseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseObject.swift; sourceTree = "<group>"; };
 		960CA92C1B99CD1F00023702 /* ResponseArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseArray.swift; sourceTree = "<group>"; };
-		960CA92E1B99E10800023702 /* GoToPlateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoToPlateViewController.swift; sourceTree = "<group>"; };
+		960CA92E1B99E10800023702 /* GoToPlateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = GoToPlateViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		96420B6D1B7BA4A5004BB424 /* Fala de Carro Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fala de Carro Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96420B711B7BA4A5004BB424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96420B721B7BA4A5004BB424 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		96420B741B7BA4A5004BB424 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		96420B741B7BA4A5004BB424 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = HomeViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		96420B771B7BA4A5004BB424 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Onboarding.storyboard; sourceTree = "<group>"; };
 		96420B791B7BA4A5004BB424 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		96420B7C1B7BA4A5004BB424 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -64,12 +66,12 @@
 		96C2A0971B7BAA32007F45E6 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		96C2A09A1B7BAB4D007F45E6 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		96C2A09D1B7BB250007F45E6 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
-		96C2A09F1B7BBC78007F45E6 /* CreatePostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatePostViewController.swift; sourceTree = "<group>"; };
+		96C2A09F1B7BBC78007F45E6 /* CreatePostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = CreatePostViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		96C2A0A51B7BD984007F45E6 /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
 		96C2A0A71B7CCA71007F45E6 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		96C2A0A81B7CCA71007F45E6 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		96C2A0AB1B7CCB1C007F45E6 /* FalaComMeuCarro-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FalaComMeuCarro-Bridging-Header.h"; sourceTree = "<group>"; };
-		96C2A0AF1B7CCC71007F45E6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		96C2A0AF1B7CCC71007F45E6 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = LoginViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		96C2A0B11B7CCDB2007F45E6 /* Cars.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Cars.storyboard; sourceTree = "<group>"; };
 		96C2A0B41B7CD153007F45E6 /* InterStoryboardsPushSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterStoryboardsPushSegue.swift; sourceTree = "<group>"; };
 		96C2A0B61B7CD88B007F45E6 /* InterStoryboardsPresentSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterStoryboardsPresentSegue.swift; sourceTree = "<group>"; };
@@ -91,6 +93,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		823343A41BA4D4800021B483 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				823343A51BA4D4800021B483 /* StringExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		836034216C051BA26474C33C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +145,7 @@
 				96420B721B7BA4A5004BB424 /* AppDelegate.swift */,
 				9656BE3D1BA1BD08001270B2 /* Commons */,
 				96420B921B7BA58D004BB424 /* Controllers */,
+				823343A41BA4D4800021B483 /* Extensions */,
 				96420B931B7BA591004BB424 /* Models */,
 				96C2A0B31B7CD127007F45E6 /* Segue */,
 				96C2A0991B7BAB03007F45E6 /* Services */,
@@ -404,6 +415,7 @@
 				96C2A0B91B7CFF8D007F45E6 /* InterStoryboardsSegue.swift in Sources */,
 				8233439E1BA36D470021B483 /* TermsOfServiceViewController.swift in Sources */,
 				96C2A09B1B7BAB4D007F45E6 /* Router.swift in Sources */,
+				823343A61BA4D4800021B483 /* StringExtensions.swift in Sources */,
 				960CA92D1B99CD1F00023702 /* ResponseArray.swift in Sources */,
 				9656BE411BA2123E001270B2 /* Analytics.swift in Sources */,
 				960CA92B1B98BB9D00023702 /* ResponseObject.swift in Sources */,
