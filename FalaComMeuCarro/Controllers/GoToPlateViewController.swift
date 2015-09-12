@@ -17,10 +17,15 @@ class GoToPlateViewController {
 	}
 	
 	func setup() {
-		let alert = UIAlertController(title: "Busca", message: "Ver boatos de qual placa?", preferredStyle: UIAlertControllerStyle.Alert)
+        let title = NSLocalizedString("GO_TO_PLATE_TITLE", comment: "")
+        let message = NSLocalizedString("GO_TO_PLATE_MESSAGE", comment: "")
+        let cancel = NSLocalizedString("GO_TO_PLATE_CANCEL", comment: "")
+        let ok = NSLocalizedString("GO_TO_PLATE_OK", comment: "")
+        
+		let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)
 		alert.addTextFieldWithConfigurationHandler(textFieldChanged)
-		alert.addAction(UIAlertAction(title: "Cancelar", style: UIAlertActionStyle.Cancel, handler: nil))
-		alert.addAction(UIAlertAction(title: "Ir", style: UIAlertActionStyle.Default, handler: sendButtonAction))
+		alert.addAction(UIAlertAction(title: cancel, style: UIAlertActionStyle.Cancel, handler: nil))
+		alert.addAction(UIAlertAction(title: ok, style: UIAlertActionStyle.Default, handler: sendButtonAction))
 		
 		(alert.actions[sendButtonIndex] as! UIAlertAction).enabled = false
 		

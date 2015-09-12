@@ -27,3 +27,8 @@ We will always be doing our best to improve your app, if you have any ideas on a
 "CREATE_POST_CAR_PLATE_LABEL" = "Car plate";
 "CREATE_POST_MESSAGE_LABEL" = "Rumor";
 "CREATE_POST_SEND_BUTTON" = "Spread";
+
+"GO_TO_PLATE_TITLE" = "Search for rumors";
+"GO_TO_PLATE_MESSAGE" = "Look up plate?";
+"GO_TO_PLATE_CANCEL" = "Cancel";
+"GO_TO_PLATE_OK" = "Go";

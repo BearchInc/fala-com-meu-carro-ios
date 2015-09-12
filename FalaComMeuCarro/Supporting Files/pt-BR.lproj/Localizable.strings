@@ -26,3 +26,8 @@ Estaremos sempre fazendo o nosso melhor para melhorar o seu app, se você tem al
 "CREATE_POST_CAR_PLATE_LABEL" = "Placa do carro";
 "CREATE_POST_MESSAGE_LABEL" = "Boato";
 "CREATE_POST_SEND_BUTTON" = "Espalhar";
+
+"GO_TO_PLATE_TITLE" = "Buscar boatos";
+"GO_TO_PLATE_MESSAGE" = "Ver boatos de qual placa?";
+"GO_TO_PLATE_CANCEL" = "Cancelar";
+"GO_TO_PLATE_OK" = "Ir";
