@@ -54,7 +54,7 @@
 		960CA92A1B98BB9D00023702 /* ResponseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseObject.swift; sourceTree = "<group>"; };
 		960CA92C1B99CD1F00023702 /* ResponseArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseArray.swift; sourceTree = "<group>"; };
 		960CA92E1B99E10800023702 /* GoToPlateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = GoToPlateViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		96420B6D1B7BA4A5004BB424 /* Fala de Carro Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fala de Carro Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		96420B6D1B7BA4A5004BB424 /* Impulse Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Impulse Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96420B711B7BA4A5004BB424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96420B721B7BA4A5004BB424 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96420B741B7BA4A5004BB424 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = HomeViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
@@ -136,7 +136,7 @@
 		96420B6E1B7BA4A5004BB424 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				96420B6D1B7BA4A5004BB424 /* Fala de Carro Dev.app */,
+				96420B6D1B7BA4A5004BB424 /* Impulse Dev.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -265,7 +265,7 @@
 			);
 			name = FalaComMeuCarro;
 			productName = ProjectCarsiOS;
-			productReference = 96420B6D1B7BA4A5004BB424 /* Fala de Carro Dev.app */;
+			productReference = 96420B6D1B7BA4A5004BB424 /* Impulse Dev.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -279,6 +279,7 @@
 				TargetAttributes = {
 					96420B6C1B7BA4A5004BB424 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = ATB5PVNS89;
 					};
 				};
 			};
@@ -471,6 +472,78 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		820F0EEE1BA75ED400338CAA /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Staging;
+		};
+		820F0EEF1BA75ED400338CAA /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 721E292DBBAE5D1F394E5738 /* Pods-FalaComMeuCarro.staging.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				FLAVOR = "\\\"staging\\\"";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"FLAVOR=$FLAVOR",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/FalaComMeuCarro/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D FLAVOR";
+				PRODUCT_NAME = "Impulse Staging";
+				PROVISIONING_PROFILE = "bdc57090-b19a-424e-beaa-4655d150683a";
+				SWIFT_OBJC_BRIDGING_HEADER = "FalaComMeuCarro/Supporting Files/FalaComMeuCarro-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Staging;
+		};
 		96420B8A1B7BA4A5004BB424 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -573,8 +646,8 @@
 				INFOPLIST_FILE = "$(SRCROOT)/FalaComMeuCarro/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D FLAVOR";
-				PRODUCT_NAME = "Fala de Carro Dev";
-				PROVISIONING_PROFILE = "6e435b48-5bfd-4c90-8f09-bef9f824e578";
+				PRODUCT_NAME = "Impulse Dev";
+				PROVISIONING_PROFILE = "77d4b859-cb76-4986-9ac5-f92108a8b4cf";
 				SWIFT_OBJC_BRIDGING_HEADER = "FalaComMeuCarro/Supporting Files/FalaComMeuCarro-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -600,83 +673,11 @@
 				INFOPLIST_FILE = "$(SRCROOT)/FalaComMeuCarro/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D FLAVOR";
-				PRODUCT_NAME = "Fala de Carro";
-				PROVISIONING_PROFILE = "7aa82d2e-0546-4555-88ae-b57a9f1ca4ad";
+				PRODUCT_NAME = Impulse;
+				PROVISIONING_PROFILE = "d1740eb3-c31b-42a9-900c-8278bbe541e1";
 				SWIFT_OBJC_BRIDGING_HEADER = "FalaComMeuCarro/Supporting Files/FalaComMeuCarro-Bridging-Header.h";
 			};
 			name = AppStore;
-		};
-		969D18F81B9A42EF000E1779 /* Staging */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Staging;
-		};
-		969D18F91B9A42EF000E1779 /* Staging */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 721E292DBBAE5D1F394E5738 /* Pods-FalaComMeuCarro.staging.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				FLAVOR = "\\\"staging\\\"";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"$(inherited)",
-					"COCOAPODS=1",
-					"FLAVOR=$FLAVOR",
-				);
-				INFOPLIST_FILE = "$(SRCROOT)/FalaComMeuCarro/Supporting Files/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D FLAVOR";
-				PRODUCT_NAME = "Fala de Carro Staging";
-				PROVISIONING_PROFILE = "6e435b48-5bfd-4c90-8f09-bef9f824e578";
-				SWIFT_OBJC_BRIDGING_HEADER = "FalaComMeuCarro/Supporting Files/FalaComMeuCarro-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-			};
-			name = Staging;
 		};
 /* End XCBuildConfiguration section */
 
@@ -685,7 +686,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				96420B8A1B7BA4A5004BB424 /* Development */,
-				969D18F81B9A42EF000E1779 /* Staging */,
+				820F0EEE1BA75ED400338CAA /* Staging */,
 				96420B8B1B7BA4A5004BB424 /* AppStore */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -695,7 +696,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				96420B8D1B7BA4A5004BB424 /* Development */,
-				969D18F91B9A42EF000E1779 /* Staging */,
+				820F0EEF1BA75ED400338CAA /* Staging */,
 				96420B8E1B7BA4A5004BB424 /* AppStore */,
 			);
 			defaultConfigurationIsVisible = 0;

@@ -5,10 +5,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Há boatos que…-->
+        <!--Recents-->
         <scene sceneID="1PE-mj-8nY">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" id="rpJ-cz-tRw" customClass="HomeViewController" customModule="Fala_de_Carro" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="rpJ-cz-tRw" customClass="HomeViewController" customModule="Impulse" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Bxo-2y-HCA"/>
                         <viewControllerLayoutGuide type="bottom" id="Qxu-dh-tqD"/>
@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" red="0.35102774060000003" green="0.67089942840000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="POST_CELL" rowHeight="76" id="8ov-vZ-z1y" customClass="PostCell" customModule="Fala_de_Carro" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="POST_CELL" rowHeight="76" id="8ov-vZ-z1y" customClass="PostCell" customModule="Impulse" customModuleProvider="target">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8ov-vZ-z1y" id="U6r-gc-b8b">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -122,8 +122,8 @@
                                     <outlet property="delegate" destination="rpJ-cz-tRw" id="yQ7-l6-eW6"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Não foram encontrados boatos :(" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bH-CS-QUz" userLabel="Blank State View">
-                                <rect key="frame" x="33.5" y="274" width="253.5" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No posts found :(" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bH-CS-QUz" userLabel="Blank State View">
+                                <rect key="frame" x="93.5" y="274" width="132.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -154,7 +154,7 @@
                             <constraint firstItem="9yG-RM-iMc" firstAttribute="top" secondItem="DPg-Jf-LeD" secondAttribute="top" id="uKS-Ap-uHu"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Há boatos que…" id="MSS-Z1-Bn1">
+                    <navigationItem key="navigationItem" title="Recents" id="MSS-Z1-Bn1">
                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="J1H-fq-mHM">
                             <connections>
                                 <action selector="goToPlate:" destination="rpJ-cz-tRw" id="LC1-z2-01R"/>
@@ -170,10 +170,10 @@
             </objects>
             <point key="canvasLocation" x="978.66666666666663" y="357.83999999999997"/>
         </scene>
-        <!--Criar um Boato-->
+        <!--Create-->
         <scene sceneID="Ff7-TJ-pTy">
             <objects>
-                <viewController id="DcH-sR-zJc" customClass="CreatePostViewController" customModule="Fala_de_Carro" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="DcH-sR-zJc" customClass="CreatePostViewController" customModule="Impulse" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FNV-7j-Taz"/>
                         <viewControllerLayoutGuide type="bottom" id="mX1-3Q-R1s"/>
@@ -182,30 +182,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Placa do carro" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svc-5K-PQW" userLabel="Car Plate Label">
-                                <rect key="frame" x="16" y="80" width="120" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="120" id="781-8n-uqF"/>
-                                    <constraint firstAttribute="height" constant="30" id="sXZ-um-ZKB"/>
-                                </constraints>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Send message to car with plate" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svc-5K-PQW" userLabel="Car Plate Label">
+                                <rect key="frame" x="16" y="80" width="288" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="AAA-0000" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dYT-Wl-CrB" userLabel="Car Plate TextField">
-                                <rect key="frame" x="144" y="81" width="160" height="30"/>
+                                <rect key="frame" x="16" y="104.5" width="288" height="40"/>
                                 <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="yYt-Bk-HeE"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Boato" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMT-y1-OuL" userLabel="Message Label">
-                                <rect key="frame" x="16" y="117.5" width="120" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMT-y1-OuL" userLabel="Message Label">
+                                <rect key="frame" x="16" y="160.5" width="120" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F0e-yU-Ql0" userLabel="User Message Text View">
-                                <rect key="frame" x="16" y="145.5" width="288" height="406"/>
+                                <rect key="frame" x="16" y="185.5" width="288" height="366.5"/>
                                 <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -214,22 +213,22 @@
                         <color key="backgroundColor" red="0.35102774060000003" green="0.67089942840000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="mX1-3Q-R1s" firstAttribute="top" secondItem="F0e-yU-Ql0" secondAttribute="bottom" constant="16" id="0ws-7d-MU1"/>
-                            <constraint firstItem="dYT-Wl-CrB" firstAttribute="height" secondItem="svc-5K-PQW" secondAttribute="height" id="8WI-bg-c75"/>
-                            <constraint firstItem="dYT-Wl-CrB" firstAttribute="leading" secondItem="svc-5K-PQW" secondAttribute="trailing" constant="8" id="F5y-PU-VxF"/>
+                            <constraint firstItem="svc-5K-PQW" firstAttribute="top" secondItem="FNV-7j-Taz" secondAttribute="bottom" constant="16" id="6hJ-IG-IWT"/>
+                            <constraint firstItem="rMT-y1-OuL" firstAttribute="top" secondItem="dYT-Wl-CrB" secondAttribute="bottom" constant="16" id="96L-Xd-1mo"/>
+                            <constraint firstItem="dYT-Wl-CrB" firstAttribute="leading" secondItem="KzS-Jt-63A" secondAttribute="leadingMargin" id="BNK-Jm-TvY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rMT-y1-OuL" secondAttribute="trailing" constant="168" id="Bz9-Kw-yV7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="svc-5K-PQW" secondAttribute="trailing" id="Kid-3Q-VQz"/>
+                            <constraint firstItem="rMT-y1-OuL" firstAttribute="leading" secondItem="KzS-Jt-63A" secondAttribute="leadingMargin" id="NSD-8p-sCT"/>
                             <constraint firstItem="svc-5K-PQW" firstAttribute="leading" secondItem="KzS-Jt-63A" secondAttribute="leadingMargin" id="S6B-2m-hC2"/>
-                            <constraint firstItem="dYT-Wl-CrB" firstAttribute="top" secondItem="svc-5K-PQW" secondAttribute="top" constant="1.5" id="Tj7-Dd-dRe"/>
                             <constraint firstItem="dYT-Wl-CrB" firstAttribute="trailing" secondItem="KzS-Jt-63A" secondAttribute="trailingMargin" id="Vtb-1T-hKM"/>
-                            <constraint firstItem="rMT-y1-OuL" firstAttribute="top" secondItem="svc-5K-PQW" secondAttribute="bottom" constant="8" id="X5y-HB-GgF"/>
-                            <constraint firstItem="rMT-y1-OuL" firstAttribute="centerX" secondItem="svc-5K-PQW" secondAttribute="centerX" id="c9T-Qx-Zhc"/>
-                            <constraint firstItem="F0e-yU-Ql0" firstAttribute="top" secondItem="rMT-y1-OuL" secondAttribute="bottom" constant="8" id="dUd-UV-3tn"/>
+                            <constraint firstItem="F0e-yU-Ql0" firstAttribute="top" secondItem="rMT-y1-OuL" secondAttribute="bottom" constant="4" id="dUd-UV-3tn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="F0e-yU-Ql0" secondAttribute="trailing" id="hHg-c6-Hsd"/>
-                            <constraint firstItem="rMT-y1-OuL" firstAttribute="width" secondItem="svc-5K-PQW" secondAttribute="width" id="j3J-wV-me3"/>
-                            <constraint firstItem="svc-5K-PQW" firstAttribute="top" secondItem="FNV-7j-Taz" secondAttribute="bottom" constant="16" id="vvK-sd-fiA"/>
+                            <constraint firstItem="dYT-Wl-CrB" firstAttribute="top" secondItem="svc-5K-PQW" secondAttribute="bottom" constant="4" id="mdH-ND-jgP"/>
                             <constraint firstItem="F0e-yU-Ql0" firstAttribute="leading" secondItem="KzS-Jt-63A" secondAttribute="leadingMargin" id="xcT-TM-yXd"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Criar um Boato" id="LOd-Qg-fJW">
-                        <barButtonItem key="rightBarButtonItem" title="Espalhar" id="s0n-Ui-XhY">
+                    <navigationItem key="navigationItem" title="Create" id="LOd-Qg-fJW">
+                        <barButtonItem key="rightBarButtonItem" title="Send" id="s0n-Ui-XhY">
                             <connections>
                                 <action selector="createPostButtonTouched:" destination="DcH-sR-zJc" id="jDB-tF-jjh"/>
                             </connections>
