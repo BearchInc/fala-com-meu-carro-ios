@@ -279,7 +279,6 @@
 				TargetAttributes = {
 					96420B6C1B7BA4A5004BB424 = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = ATB5PVNS89;
 					};
 				};
 			};
@@ -559,7 +558,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FLAVOR = "\\\"dev\\\"";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -575,7 +574,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D FLAVOR";
 				PRODUCT_NAME = "Fala de Carro Dev";
-				PROVISIONING_PROFILE = "65c933f9-bd1b-45f8-ba6d-20f97f224b4f";
+				PROVISIONING_PROFILE = "6e435b48-5bfd-4c90-8f09-bef9f824e578";
 				SWIFT_OBJC_BRIDGING_HEADER = "FalaComMeuCarro/Supporting Files/FalaComMeuCarro-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -587,7 +586,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FLAVOR = "\\\"appstore\\\"";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -657,7 +656,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FLAVOR = "\\\"staging\\\"";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -673,7 +672,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D FLAVOR";
 				PRODUCT_NAME = "Fala de Carro Staging";
-				PROVISIONING_PROFILE = "61519c09-a56d-4a57-97e7-c7cfe37e6850";
+				PROVISIONING_PROFILE = "6e435b48-5bfd-4c90-8f09-bef9f824e578";
 				SWIFT_OBJC_BRIDGING_HEADER = "FalaComMeuCarro/Supporting Files/FalaComMeuCarro-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
