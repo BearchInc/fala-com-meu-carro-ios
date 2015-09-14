@@ -32,7 +32,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 		fetchPosts()
 		setupEvents()
 		setupTableViewLoader()
-        title = localizedTitle
+        title = plate.isEmpty ? localizedTitle : plate
 	}
     
 	override func viewWillAppear(animated: Bool) {

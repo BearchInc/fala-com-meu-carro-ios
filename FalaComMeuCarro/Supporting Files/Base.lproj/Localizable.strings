@@ -6,7 +6,7 @@
 "LOGIN_TERMS_AND_CONDITIONS_BUTTON"  = "Tap here to view our Terms of Service";
 
 "TERMS_OF_SERVICE_TITLE" = "Terms of Use";
-"TERMS_OF_SERVICE_EULA" = "Boatos is a completely different way to interact and spread rumors about cars. We’re a pretty open platform, but we do have rules.
+"TERMS_OF_SERVICE_EULA" = "Impulse is a completely different way to interact with drivers. We’re a pretty open platform, but we do have rules.
 
 The following content will be removed:
 
@@ -21,21 +21,20 @@ Bearch, Inc. is in no way responsible for user-generated content. Content posted
 
 We will always be doing our best to improve your app, if you have any ideas on additional things we can do please contact us at support@getbearch.com anytime!";
 
-"HOME_TITLE" = "Rumors says that…";
+"HOME_TITLE" = "Latest";
 "HOME_ACTION_SHEET_CANCEL" = "Cancel";
 "HOME_ACTION_SHEET_INAPPROPRIATE" = "Inappropriate/SPAM";
-"HOME_ACTION_SHEET_POST_REPORTED" = "Rumor Reported!";
+"HOME_ACTION_SHEET_POST_REPORTED" = "Reported!";
 
 
-"CREATE_POST_TITLE" = "Create rumor";
+"CREATE_POST_TITLE" = "Create";
 "CREATE_POST_CAR_PLATE_LABEL" = "Car plate";
-"CREATE_POST_MESSAGE_LABEL" = "Rumor";
-"CREATE_POST_SEND_BUTTON" = "Spread";
+"CREATE_POST_MESSAGE_LABEL" = "Message";
+"CREATE_POST_SEND_BUTTON" = "Send";
 "CREATE_POST_INVALID_PLATE" = "Invalid Plate";
 "CREATE_POST_MESSAGE_CANNOT_BE_EMPTY" = "Message cannot be empty";
 "CREATE_POST_OOPS" = "Oops";
 
-"GO_TO_PLATE_TITLE" = "Search for rumors";
-"GO_TO_PLATE_MESSAGE" = "Look up plate?";
+"GO_TO_PLATE_TITLE" = "Search for plate";
 "GO_TO_PLATE_CANCEL" = "Cancel";
 "GO_TO_PLATE_OK" = "Go";

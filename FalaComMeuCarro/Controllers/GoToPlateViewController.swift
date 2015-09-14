@@ -16,12 +16,11 @@ class GoToPlateViewController {
 	}
     
     let title = "GO_TO_PLATE_TITLE".localized
-    let message = "GO_TO_PLATE_MESSAGE".localized
     let cancel = "GO_TO_PLATE_CANCEL".localized
     let ok = "GO_TO_PLATE_OK".localized
 	
 	func setup() {
-		let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)
+		let alert = UIAlertController(title: title, message: nil, preferredStyle: UIAlertControllerStyle.Alert)
 		alert.addTextFieldWithConfigurationHandler(textFieldChanged)
 		alert.addAction(UIAlertAction(title: cancel, style: UIAlertActionStyle.Cancel, handler: nil))
         sendButtonAction = UIAlertAction(title: ok, style: UIAlertActionStyle.Default, handler: sendButtonAction)

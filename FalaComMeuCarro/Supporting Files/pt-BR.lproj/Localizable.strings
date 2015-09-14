@@ -6,35 +6,34 @@
 "LOGIN_TERMS_AND_CONDITIONS_BUTTON"  = "Clique aqui para ver os Termos de Uso";
 
 "TERMS_OF_SERVICE_TITLE" = "Termos de Uso";
-"TERMS_OF_SERVICE_EULA" = "Boatos é uma forma completamente diferente de interagir e espalhar informações de carros. Nós somos uma plataforma bastante aberta, mas ainda assim temos regras importantes.
+"TERMS_OF_SERVICE_EULA" = "Impulse é uma forma completamente diferente de interagir com outros motoristas. Nós somos uma plataforma bastante aberta, mas ainda assim temos regras importantes.
 
 O seguinte conteúdo será removido:
 
 - Insultos raciais ou sexuais;
 - Incentivo à violência ou danos auto-infligidos;
-- Criar boatos contendo informações pessoais além da placa;
+- Criar mensagem contendo informações pessoais além da placa;
 - Intenção maliciosa;
 - SPAM ou Propaganda;
 - Solicitação de favores sexuais;
 
-Bearch, Inc. não é de forma alguma responsável por boatos gerados pelos usuários.
+Bearch, Inc. não é de forma alguma responsável por mensagem gerados pelos usuários.
 
 Estaremos sempre fazendo o nosso melhor para melhorar o seu app, se você tem alguma idéia sobre coisas novas que podemos fazer por favor nos contate pelo support@getbearch.com a qualquer momento!";
 
-"HOME_TITLE" = "Há boatos que…";
+"HOME_TITLE" = "Recentes";
 "HOME_ACTION_SHEET_CANCEL" = "Cancelar";
 "HOME_ACTION_SHEET_INAPPROPRIATE" = "Inapropriado/SPAM";
-"HOME_ACTION_SHEET_POST_REPORTED" = "Boato Reportado!";
+"HOME_ACTION_SHEET_POST_REPORTED" = "Reportado!";
 
-"CREATE_POST_TITLE" = "Criar boato";
+"CREATE_POST_TITLE" = "Criar";
 "CREATE_POST_CAR_PLATE_LABEL" = "Placa do carro";
-"CREATE_POST_MESSAGE_LABEL" = "Boato";
-"CREATE_POST_SEND_BUTTON" = "Espalhar";
+"CREATE_POST_MESSAGE_LABEL" = "Mensagem";
+"CREATE_POST_SEND_BUTTON" = "Enviar";
 "CREATE_POST_INVALID_PLATE" = "Placa inválida";
 "CREATE_POST_MESSAGE_CANNOT_BE_EMPTY" = "Mensagem não pode ser vazia";
 "CREATE_POST_OOPS" = "Opa";
 
-"GO_TO_PLATE_TITLE" = "Buscar boatos";
-"GO_TO_PLATE_MESSAGE" = "Ver boatos de qual placa?";
+"GO_TO_PLATE_TITLE" = "Buscar placa";
 "GO_TO_PLATE_CANCEL" = "Cancelar";
 "GO_TO_PLATE_OK" = "Ir";
