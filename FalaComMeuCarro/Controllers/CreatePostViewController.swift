@@ -1,6 +1,5 @@
 import Foundation
 import UIKit
-import NSStringMask
 import SwiftEventBus
 
 class CreatePostViewController: UIViewController {
@@ -17,7 +16,7 @@ class CreatePostViewController: UIViewController {
         }
     }
     
-	@IBOutlet weak var carplateTextField: UITextFieldMask!
+	@IBOutlet weak var carplateTextField: UITextView!
 	@IBOutlet weak var messageTextView: UITextView!
     
     let createPostTitle = "CREATE_POST_TITLE".localized
@@ -30,7 +29,6 @@ class CreatePostViewController: UIViewController {
 		super.viewDidLoad()
         title = createPostTitle
         navigationItem.rightBarButtonItem?.title = send
-		carplateTextField.mask = NSStringMask(pattern: "([A-Z]{3})-([0-9]{4})")
 	}
     
     override func viewDidAppear(animated: Bool) {

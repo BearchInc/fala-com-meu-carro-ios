@@ -1,6 +1,5 @@
 import Foundation
 import Alamofire
-import NSStringMask
 import Crashlytics
 
 @objc
@@ -35,12 +34,6 @@ class GoToPlateViewController {
 		textField.autocapitalizationType = UITextAutocapitalizationType.AllCharacters
 		textField.placeholder = "AAA-0000"
 		textField.addTarget(self, action: "textChanged:", forControlEvents: UIControlEvents.EditingChanged)
-	}
-	
-	func textChanged(textField: UITextField) {
-		textField.text = NSStringMask.maskString(textField.text, withPattern: "([A-Z]{3})-([0-9]{4})")
-		let enabled = textField.text.lengthOfBytesUsingEncoding(NSUTF8StringEncoding) == 8
-		sendButtonAction.enabled = enabled
 	}
 	
 	func sendButtonAction(alertAction: UIAlertAction!) {
