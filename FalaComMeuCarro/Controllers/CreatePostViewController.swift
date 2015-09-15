@@ -53,19 +53,23 @@ class CreatePostViewController: UIViewController {
 		let userName = "\(facebookProfile.firstName) \(lastName[lastName.startIndex])."
 		
 		if isPostValid() {
-            Post.createPost(plate, message: message, userId: userId, userName: userName, email: profile.email) { (post) in
-				self.navigationController?.popViewControllerAnimated(true)
-				SwiftEventBus.post("postCreated", sender: post)
+            Post.createPost(plate, message: message, userId: userId, userName: userName, email: profile.email) { (response, error) in
+				if error != nil {
+					self.showValidationAlert("CREATE_POST_INTERNET_PROBLEM".localized)
+				} else if response!.errorCode != 200 {
+					self.showValidationAlert(self.plateInvalid)
+				} else {
+					self.navigationController?.popViewControllerAnimated(true)
+					SwiftEventBus.post("postCreated", sender: response?.data)
+				}
 			}
 		}
 	}
 	
 	private func isPostValid() -> Bool {
 		var isValid = true
-		if count(carplateTextField.text) != 8 {
-			showValidationAlert(plateInvalid)
-			isValid = false
-		} else if messageTextView.text.isEmpty {
+
+		if messageTextView.text.isEmpty {
 			showValidationAlert(messsageEmpty)
 			isValid = false
 		}

@@ -49,17 +49,9 @@ class Post: Mappable {
 		}
 	}
 	
-    class func createPost(carPlate: String, message: String, userId: String, userName: String, email: String, callback: Post? -> Void) {
+    class func createPost(carPlate: String, message: String, userId: String, userName: String, email: String, callback: (ResponseObject<Post>?, error: NSError?) -> Void) {
 		Alamofire.request(Router.CreatePost(carPlate, message, userId, userName, email))
-			.responseObject { (response: ResponseObject<Post>?, error: NSError?) in
-				if error != nil {
-					println("Error in createPost -> \(error)")
-					callback(nil)
-				} else {
-					Analytics.logPostCreated(carPlate)
-					callback(response!.data)
-				}
-		}
+			.responseObject(callback)
 	}
 
     class func flagPost(post: Post, callback: (post: Post?) -> Void) {
