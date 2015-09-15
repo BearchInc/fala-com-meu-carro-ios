@@ -674,7 +674,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D FLAVOR";
 				PRODUCT_NAME = Impulse;
-				PROVISIONING_PROFILE = "49fd5d17-2566-4034-8c24-8275a808455c";
+				PROVISIONING_PROFILE = "d1740eb3-c31b-42a9-900c-8278bbe541e1";
 				SWIFT_OBJC_BRIDGING_HEADER = "FalaComMeuCarro/Supporting Files/FalaComMeuCarro-Bridging-Header.h";
 			};
 			name = AppStore;

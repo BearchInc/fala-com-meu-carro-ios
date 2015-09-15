@@ -32,6 +32,8 @@ class TableViewLoader {
 	
 	private func reloadTableView() {
 		tableView.reloadData()
+		tableView.layoutIfNeeded()
+		tableView.reloadData()
 	}
 	
 	private func getLoadingViewFrame() -> CGRect {

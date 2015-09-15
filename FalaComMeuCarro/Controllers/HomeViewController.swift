@@ -8,7 +8,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 		didSet {
 			self.refreshControl = UIRefreshControl()
 			self.refreshControl.addTarget(self, action: "refresh", forControlEvents: UIControlEvents.ValueChanged)
-			self.postsTableView.estimatedRowHeight = 120
+			self.postsTableView.estimatedRowHeight = 140
 			self.postsTableView.rowHeight = UITableViewAutomaticDimension
 			self.postsTableView.addSubview(self.refreshControl)
 		}
@@ -108,7 +108,6 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     private func flagPost(post: Post!) {
         let postAction = PostOptionsMenuViewController(post: post, reportCallback: postFlagged)
-        
         presentViewController(postAction.alert, animated: true, completion: nil)
     }
     
