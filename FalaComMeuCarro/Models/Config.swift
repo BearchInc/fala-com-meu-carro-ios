@@ -14,7 +14,7 @@ class Config {
     ]
     
     private static let appstore: [ConfigKey:String] = [
-        .BaseUrl: "https://production.com",
+        .BaseUrl: "https://fala-com-meu-carro-dot-api-getunseen.appspot.com",
     ]
     
     private static let configurations = [
