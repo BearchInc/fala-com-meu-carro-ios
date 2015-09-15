@@ -162,10 +162,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Send message to car with plate" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svc-5K-PQW" userLabel="Car Plate Label">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Send message to car with plate:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svc-5K-PQW" userLabel="Car Plate Label">
                                 <rect key="frame" x="16" y="80" width="288" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="AAA-0000" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dYT-Wl-CrB" userLabel="Car Plate TextField">
@@ -177,10 +177,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMT-y1-OuL" userLabel="Message Label">
-                                <rect key="frame" x="16" y="160.5" width="120" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMT-y1-OuL" userLabel="Message Label">
+                                <rect key="frame" x="16" y="160.5" width="288" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F0e-yU-Ql0" userLabel="User Message Text View">
@@ -190,13 +190,13 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
-                        <color key="backgroundColor" red="0.35102774060000003" green="0.67089942840000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.4823529412" green="0.69019607839999997" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="mX1-3Q-R1s" firstAttribute="top" secondItem="F0e-yU-Ql0" secondAttribute="bottom" constant="16" id="0ws-7d-MU1"/>
                             <constraint firstItem="svc-5K-PQW" firstAttribute="top" secondItem="FNV-7j-Taz" secondAttribute="bottom" constant="16" id="6hJ-IG-IWT"/>
                             <constraint firstItem="rMT-y1-OuL" firstAttribute="top" secondItem="dYT-Wl-CrB" secondAttribute="bottom" constant="16" id="96L-Xd-1mo"/>
                             <constraint firstItem="dYT-Wl-CrB" firstAttribute="leading" secondItem="KzS-Jt-63A" secondAttribute="leadingMargin" id="BNK-Jm-TvY"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="rMT-y1-OuL" secondAttribute="trailing" constant="168" id="Bz9-Kw-yV7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rMT-y1-OuL" secondAttribute="trailing" id="Bz9-Kw-yV7"/>
                             <constraint firstAttribute="trailingMargin" secondItem="svc-5K-PQW" secondAttribute="trailing" id="Kid-3Q-VQz"/>
                             <constraint firstItem="rMT-y1-OuL" firstAttribute="leading" secondItem="KzS-Jt-63A" secondAttribute="leadingMargin" id="NSD-8p-sCT"/>
                             <constraint firstItem="svc-5K-PQW" firstAttribute="leading" secondItem="KzS-Jt-63A" secondAttribute="leadingMargin" id="S6B-2m-hC2"/>

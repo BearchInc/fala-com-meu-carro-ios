@@ -7,7 +7,7 @@
         <!--Login-->
         <scene sceneID="Y4A-5d-YCP">
             <objects>
-                <viewController id="JgK-VF-XJx" customClass="LoginViewController" customModule="Fala_de_Carro" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="JgK-VF-XJx" customClass="LoginViewController" customModule="Impulse" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cuR-VW-0LB"/>
                         <viewControllerLayoutGuide type="bottom" id="JNP-aw-d3U"/>
@@ -27,13 +27,13 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ao fazer login você declara que está de acordo os termos de uso" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDp-rV-f4D" userLabel="Instruction">
                                 <rect key="frame" x="8" y="290" width="304" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JfW-BR-az1" userLabel="Terms and Conditions Button">
                                 <rect key="frame" x="27" y="371" width="266" height="30"/>
                                 <state key="normal" title="Clique aqui para ver os Termos de Uso">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -41,7 +41,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.31764705879999999" green="0.63137254899999995" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.4823529412" green="0.69019607839999997" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="JfW-BR-az1" firstAttribute="top" secondItem="QDp-rV-f4D" secondAttribute="bottom" constant="40" id="1ux-Rl-iPr"/>
                             <constraint firstAttribute="centerX" secondItem="1I7-AI-K8f" secondAttribute="centerX" id="ApA-IU-avA"/>
@@ -57,7 +57,7 @@
                         <outlet property="loginButton" destination="1I7-AI-K8f" id="oy2-oA-bQd"/>
                         <outlet property="termsAndConditionsButton" destination="JfW-BR-az1" id="YpD-d7-enh"/>
                         <outlet property="termsAndConditionsLabel" destination="QDp-rV-f4D" id="0ba-i0-2Hh"/>
-                        <segue destination="FfP-Xc-6Fn" kind="custom" identifier="_Cars" customClass="InterStoryboardsPresentSegue" customModule="Fala_de_Carro" customModuleProvider="target" id="Pqe-bW-28L"/>
+                        <segue destination="FfP-Xc-6Fn" kind="custom" identifier="_Cars" customClass="InterStoryboardsPresentSegue" customModule="Impulse" customModuleProvider="target" id="Pqe-bW-28L"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7zc-0k-n4s" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -67,7 +67,7 @@
         <!--Termos de Uso-->
         <scene sceneID="3Vr-cl-B2h">
             <objects>
-                <viewController title="Termos de Uso" id="EhQ-7o-VN4" customClass="TermsOfServiceViewController" customModule="Fala_de_Carro" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Termos de Uso" id="EhQ-7o-VN4" customClass="TermsOfServiceViewController" customModule="Impulse" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="toD-gw-XHc"/>
                         <viewControllerLayoutGuide type="bottom" id="1sP-kX-OFe"/>
@@ -78,7 +78,7 @@
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9n-kW-o9x">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="567.5"/>
-                                <color key="backgroundColor" red="0.35102774060000003" green="0.67089942840000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.4823529412" green="0.69019607839999997" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Boatos é uma forma completamente diferente de interagir e espalhar informações de carros. Nós somos uma plataforma bastante aberta, mas ainda assim temos regras importantes.
 
 O seguinte conteúdo será removido:
@@ -92,6 +92,7 @@ O seguinte conteúdo será removido:
  Bearch, Inc. não é de forma alguma responsável por boatos gerados pelos usuários.
 
 Estaremos sempre fazendo o nosso melhor para melhorar o seu app, se você tem alguma idéia sobre coisas novas que podemos fazer por favor nos contate pelo support@getbearch.com a qualquer momento!</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -111,7 +112,7 @@ Estaremos sempre fazendo o nosso melhor para melhorar o seu app, se você tem al
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6De-z1-nfX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1195.7333333333333" y="-419.37333333333333"/>
+            <point key="canvasLocation" x="1253" y="-422"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Kbd-g7-IAA">
@@ -129,7 +130,7 @@ Estaremos sempre fazendo o nosso melhor para melhorar o seu app, se você tem al
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Agu-gz-otO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1195.7333333333333" y="345.5333333333333"/>
+            <point key="canvasLocation" x="1263" y="345"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jGg-3Z-AWe">
