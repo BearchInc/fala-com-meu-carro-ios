@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "96420B6C1B7BA4A5004BB424"
-               BuildableName = "Fala de Carro.app"
+               BuildableName = "Impulse.app"
                BlueprintName = "FalaComMeuCarro"
                ReferencedContainer = "container:FalaComMeuCarro.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "96420B6C1B7BA4A5004BB424"
-            BuildableName = "Fala de Carro.app"
+            BuildableName = "Impulse.app"
             BlueprintName = "FalaComMeuCarro"
             ReferencedContainer = "container:FalaComMeuCarro.xcodeproj">
          </BuildableReference>
@@ -48,13 +48,13 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES"
-      language = "en">
+      language = "pt-BR">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "96420B6C1B7BA4A5004BB424"
-            BuildableName = "Fala de Carro.app"
+            BuildableName = "Impulse.app"
             BlueprintName = "FalaComMeuCarro"
             ReferencedContainer = "container:FalaComMeuCarro.xcodeproj">
          </BuildableReference>
@@ -73,7 +73,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "96420B6C1B7BA4A5004BB424"
-            BuildableName = "Fala de Carro.app"
+            BuildableName = "Impulse.app"
             BlueprintName = "FalaComMeuCarro"
             ReferencedContainer = "container:FalaComMeuCarro.xcodeproj">
          </BuildableReference>
