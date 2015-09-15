@@ -25,6 +25,7 @@ We will always be doing our best to improve your app, if you have any ideas on a
 "HOME_ACTION_SHEET_CANCEL" = "Cancel";
 "HOME_ACTION_SHEET_INAPPROPRIATE" = "Inappropriate/SPAM";
 "HOME_ACTION_SHEET_POST_REPORTED" = "Reported!";
+"HOME_ACTION_SHEET_SENT_BY" = "Sent by";
 
 
 "CREATE_POST_TITLE" = "Create";

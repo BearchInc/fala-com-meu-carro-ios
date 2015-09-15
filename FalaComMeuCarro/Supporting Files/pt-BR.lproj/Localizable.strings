@@ -25,6 +25,7 @@ Estaremos sempre fazendo o nosso melhor para melhorar o seu app, se você tem al
 "HOME_ACTION_SHEET_CANCEL" = "Cancelar";
 "HOME_ACTION_SHEET_INAPPROPRIATE" = "Inapropriado/SPAM";
 "HOME_ACTION_SHEET_POST_REPORTED" = "Reportado!";
+"HOME_ACTION_SHEET_SENT_BY" = "Enviado por";
 
 "CREATE_POST_TITLE" = "Criar";
 "CREATE_POST_CAR_PLATE_LABEL" = "Enviar mensagem para carro de placa:";
