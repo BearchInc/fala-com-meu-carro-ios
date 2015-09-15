@@ -12,5 +12,6 @@ target 'FalaComMeuCarro' do
 	pod 'Fabric', '~> 1.4'
 	pod 'Crashlytics', '~> 3.2'
 	pod 'SwiftEventBus', :git => 'https://github.com/cesarferreira/SwiftEventBus.git'
-    pod 'DateTools'
+    pod 'DateTools', '~> 1.7'
+	pod 'IQKeyboardManagerSwift', '~> 3.3'
 end

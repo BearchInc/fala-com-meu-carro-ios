@@ -29,7 +29,7 @@ We will always be doing our best to improve your app, if you have any ideas on a
 
 
 "CREATE_POST_TITLE" = "Create";
-"CREATE_POST_CAR_PLATE_LABEL" = "Send message to car with plate:";
+"CREATE_POST_CAR_PLATE_LABEL" = "Recipient Plate Number:";
 "CREATE_POST_MESSAGE_LABEL" = "Message:";
 "CREATE_POST_SEND_BUTTON" = "Send";
 "CREATE_POST_INVALID_PLATE" = "Invalid Plate";

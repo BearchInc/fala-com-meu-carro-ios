@@ -1,6 +1,7 @@
 import UIKit
 import Fabric
 import Crashlytics
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -11,6 +12,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 		FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
 		Fabric.with([Crashlytics()])
+		IQKeyboardManager.sharedManager().enable = true
 		
 		if (FBSDKAccessToken.currentAccessToken() != nil) {
 			Analytics.logFacebookLogin()

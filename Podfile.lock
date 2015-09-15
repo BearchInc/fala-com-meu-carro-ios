@@ -8,14 +8,16 @@ PODS:
   - Fabric (1.4.1):
     - Fabric/Base (= 1.4.1)
   - Fabric/Base (1.4.1)
+  - IQKeyboardManagerSwift (3.3.1)
   - ObjectMapper (0.15)
   - SwiftEventBus (1.1.0)
 
 DEPENDENCIES:
   - AlamofireObjectMapper (~> 0.7)
   - Crashlytics (~> 3.2)
-  - DateTools
+  - DateTools (~> 1.7)
   - Fabric (~> 1.4)
+  - IQKeyboardManagerSwift (~> 3.3)
   - SwiftEventBus (from `https://github.com/cesarferreira/SwiftEventBus.git`)
 
 EXTERNAL SOURCES:
@@ -33,6 +35,7 @@ SPEC CHECKSUMS:
   Crashlytics: 6524671d48a4c3f4100b8c56ee8dd7e34aac820a
   DateTools: 53288ee8b905fdc75897a1e6b5cc0144b14cba60
   Fabric: 4f718eeca4c02c7d6f6f4e5f0e5f87c63aa38458
+  IQKeyboardManagerSwift: aa053e83dd53cb50aa8c9c1fde78d74d9400657e
   ObjectMapper: 0656dc1c155825897e5acfcd25362c6b61786dcb
   SwiftEventBus: d334f7aecbddbd995c3de5c262cf35c72db550f3
 

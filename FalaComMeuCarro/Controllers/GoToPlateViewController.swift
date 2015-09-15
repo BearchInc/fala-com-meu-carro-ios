@@ -24,20 +24,16 @@ class GoToPlateViewController {
 		alert.addAction(UIAlertAction(title: cancel, style: UIAlertActionStyle.Cancel, handler: nil))
         sendButtonAction = UIAlertAction(title: ok, style: UIAlertActionStyle.Default, handler: sendButtonAction)
 		alert.addAction(sendButtonAction)
-		
-		sendButtonAction.enabled = false
-		
 		self.alert = alert
 	}
 	
 	func textFieldChanged(textField: UITextField!) {
 		textField.autocapitalizationType = UITextAutocapitalizationType.AllCharacters
 		textField.placeholder = "AAA-0000"
-		textField.addTarget(self, action: "textChanged:", forControlEvents: UIControlEvents.EditingChanged)
 	}
 	
 	func sendButtonAction(alertAction: UIAlertAction!) {
-        let plate = (self.alert.textFields![0] as! UITextField).text
+        let plate = (self.alert.textFields![0] as! UITextField).text.uppercaseString
 		Analytics.logPlateSearch(plate)
 		searchCallback(plate)
 	}

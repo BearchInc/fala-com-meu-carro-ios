@@ -16,7 +16,7 @@ class CreatePostViewController: UIViewController {
         }
     }
     
-	@IBOutlet weak var carplateTextField: UITextView!
+	@IBOutlet weak var carplateTextField: UITextField!
 	@IBOutlet weak var messageTextView: UITextView!
     
     let createPostTitle = "CREATE_POST_TITLE".localized
@@ -29,6 +29,10 @@ class CreatePostViewController: UIViewController {
 		super.viewDidLoad()
         title = createPostTitle
         navigationItem.rightBarButtonItem?.title = send
+		
+		let paddingView = UIView(frame: CGRectMake(0, 0, 5, 20))
+		carplateTextField.leftView = paddingView;
+		carplateTextField.leftViewMode = .Always
 	}
     
     override func viewDidAppear(animated: Bool) {

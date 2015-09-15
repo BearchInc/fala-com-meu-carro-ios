@@ -184,15 +184,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F0e-yU-Ql0" userLabel="User Message Text View">
-                                <rect key="frame" x="16" y="185.5" width="288" height="366.5"/>
+                                <rect key="frame" x="16" y="185" width="288" height="64"/>
                                 <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="P0J-Le-wxz"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" red="0.4823529412" green="0.69019607839999997" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="mX1-3Q-R1s" firstAttribute="top" secondItem="F0e-yU-Ql0" secondAttribute="bottom" constant="16" id="0ws-7d-MU1"/>
                             <constraint firstItem="svc-5K-PQW" firstAttribute="top" secondItem="FNV-7j-Taz" secondAttribute="bottom" constant="16" id="6hJ-IG-IWT"/>
                             <constraint firstItem="rMT-y1-OuL" firstAttribute="top" secondItem="dYT-Wl-CrB" secondAttribute="bottom" constant="16" id="96L-Xd-1mo"/>
                             <constraint firstItem="dYT-Wl-CrB" firstAttribute="leading" secondItem="KzS-Jt-63A" secondAttribute="leadingMargin" id="BNK-Jm-TvY"/>
@@ -223,7 +225,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qOw-e0-EoE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1366" y="357"/>
+            <point key="canvasLocation" x="1430" y="357"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Iig-Xi-BUc">
