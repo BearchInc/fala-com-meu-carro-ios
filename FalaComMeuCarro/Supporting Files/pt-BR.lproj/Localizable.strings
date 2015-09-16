@@ -2,8 +2,10 @@
 "LOGIN_SOMETHING_HAPPENED_TRY_AGAIN" = "Algum problema aconteceu, tente de novo por favor :)";
 "LOGIN_TRY_AGAIN" = "Tentar novamente";
 "LOGIN_OOPS" = "Opa";
-"LOGIN_TERMS_AND_CONDITIONS_LABEL" = "Ao fazer login você declara que está de acordo os Termos de Uso";
-"LOGIN_TERMS_AND_CONDITIONS_BUTTON"  = "Clique aqui para ver os Termos de Uso";
+"LOGIN_TERMS_AND_CONDITIONS_BUTTON"  = "Ao fazer login você aceita os Termos de Uso >";
+"LOGIN_WELCOME" = "Bem-vindo ao Impulse";
+"LOGIN_LETS_GET_STARTED" = "Vamos começar fazendo login";
+"LOGIN_WILL_NEVER_POST" = "(Impulse nunca vai postar no seu Facebook sem sua permissão)";
 
 "TERMS_OF_SERVICE_TITLE" = "Termos de Uso";
 "TERMS_OF_SERVICE_EULA" = "Impulse é uma forma completamente diferente de interagir com outros motoristas. Nós somos uma plataforma bastante aberta, mas ainda assim temos regras importantes.

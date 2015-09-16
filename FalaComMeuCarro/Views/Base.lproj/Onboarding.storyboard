@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="CUt-Uc-XU3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Login-->
@@ -16,24 +17,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1I7-AI-K8f" customClass="FBSDKLoginButton">
-                                <rect key="frame" x="72" y="164" width="175" height="30"/>
-                                <color key="backgroundColor" red="0.24313725489999999" green="0.61568627450000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="175" id="5nB-fY-5UA"/>
-                                    <constraint firstAttribute="height" constant="30" id="O5Y-EL-833"/>
-                                </constraints>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ao fazer login você declara que está de acordo os termos de uso" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDp-rV-f4D" userLabel="Instruction">
-                                <rect key="frame" x="8" y="290" width="304" height="41"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome To Impulse" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BDp-Zp-mTj">
+                                <rect key="frame" x="24" y="80" width="272" height="32.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JfW-BR-az1" userLabel="Terms and Conditions Button">
-                                <rect key="frame" x="27" y="371" width="266" height="30"/>
-                                <state key="normal" title="Clique aqui para ver os Termos de Uso">
-                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zig-4F-2c9" userLabel="Centerization View">
+                                <rect key="frame" x="16" y="112.5" width="288" height="327.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's get started by logging in" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDp-rV-f4D" userLabel="Let's start login in">
+                                        <rect key="frame" x="0.0" y="154" width="288" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="QDp-rV-f4D" secondAttribute="trailing" id="2Sh-TO-eGU"/>
+                                    <constraint firstItem="QDp-rV-f4D" firstAttribute="leading" secondItem="Zig-4F-2c9" secondAttribute="leading" id="URb-fE-rWr"/>
+                                    <constraint firstAttribute="centerY" secondItem="QDp-rV-f4D" secondAttribute="centerY" id="naa-OA-9fg"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Impulse will never post to Facebook without your permission)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mG-CW-O7O" userLabel="Will never post">
+                                <rect key="frame" x="16" y="440" width="288" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1I7-AI-K8f" customClass="FBSDKLoginButton">
+                                <rect key="frame" x="72" y="477" width="175" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="175" id="9Tb-Np-EbN"/>
+                                    <constraint firstAttribute="height" constant="30" id="Jp7-6K-bzf"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="JfW-BR-az1" userLabel="Terms and Conditions Button">
+                                <rect key="frame" x="16" y="512" width="288" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="wbo-BD-brk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="By logging in you agree to accept our Terms of Service &gt;">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -43,20 +71,30 @@
                         </subviews>
                         <color key="backgroundColor" red="0.4823529412" green="0.69019607839999997" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="JfW-BR-az1" firstAttribute="top" secondItem="QDp-rV-f4D" secondAttribute="bottom" constant="40" id="1ux-Rl-iPr"/>
-                            <constraint firstAttribute="centerX" secondItem="1I7-AI-K8f" secondAttribute="centerX" id="ApA-IU-avA"/>
-                            <constraint firstAttribute="trailing" secondItem="QDp-rV-f4D" secondAttribute="trailing" constant="8" id="Avp-qh-RJ9"/>
-                            <constraint firstItem="1I7-AI-K8f" firstAttribute="top" secondItem="cuR-VW-0LB" secondAttribute="bottom" constant="100" id="Enz-JN-Qbg"/>
-                            <constraint firstAttribute="centerX" secondItem="JfW-BR-az1" secondAttribute="centerX" id="Kiz-ma-jAt"/>
-                            <constraint firstItem="QDp-rV-f4D" firstAttribute="leading" secondItem="chp-59-bUQ" secondAttribute="leading" constant="8" id="cab-iz-Jj2"/>
-                            <constraint firstItem="QDp-rV-f4D" firstAttribute="top" secondItem="1I7-AI-K8f" secondAttribute="bottom" constant="96" id="yOb-oW-4OT"/>
+                            <constraint firstItem="BDp-Zp-mTj" firstAttribute="leading" secondItem="chp-59-bUQ" secondAttribute="leadingMargin" constant="8" id="0U1-bA-dTQ"/>
+                            <constraint firstItem="3mG-CW-O7O" firstAttribute="leading" secondItem="chp-59-bUQ" secondAttribute="leadingMargin" id="28v-qu-yBo"/>
+                            <constraint firstItem="Zig-4F-2c9" firstAttribute="leading" secondItem="chp-59-bUQ" secondAttribute="leadingMargin" id="4JI-Pj-nTi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Zig-4F-2c9" secondAttribute="trailing" id="B0H-8e-iGR"/>
+                            <constraint firstItem="Zig-4F-2c9" firstAttribute="top" secondItem="BDp-Zp-mTj" secondAttribute="bottom" id="ITX-Ek-nt5"/>
+                            <constraint firstItem="JfW-BR-az1" firstAttribute="top" secondItem="1I7-AI-K8f" secondAttribute="bottom" constant="5" id="JoH-Oh-Ybk"/>
+                            <constraint firstItem="1I7-AI-K8f" firstAttribute="top" secondItem="3mG-CW-O7O" secondAttribute="bottom" constant="10" id="Jw4-cB-6in"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JfW-BR-az1" secondAttribute="trailing" id="VlR-xL-slk"/>
+                            <constraint firstItem="3mG-CW-O7O" firstAttribute="top" secondItem="Zig-4F-2c9" secondAttribute="bottom" id="YKf-Lk-WdX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BDp-Zp-mTj" secondAttribute="trailing" constant="8" id="eZl-fZ-eUS"/>
+                            <constraint firstItem="JNP-aw-d3U" firstAttribute="top" secondItem="JfW-BR-az1" secondAttribute="bottom" constant="16" id="exs-LK-77r"/>
+                            <constraint firstAttribute="centerX" secondItem="1I7-AI-K8f" secondAttribute="centerX" constant="0.5" id="fjL-Pt-VXA"/>
+                            <constraint firstItem="JfW-BR-az1" firstAttribute="leading" secondItem="chp-59-bUQ" secondAttribute="leadingMargin" id="ocF-Wv-p0p"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3mG-CW-O7O" secondAttribute="trailing" id="xGW-xs-XXS"/>
+                            <constraint firstItem="BDp-Zp-mTj" firstAttribute="top" secondItem="cuR-VW-0LB" secondAttribute="bottom" constant="16" id="ziZ-ME-lq7"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="i7x-bo-3lQ"/>
                     <connections>
+                        <outlet property="letsLoginLabel" destination="QDp-rV-f4D" id="hu1-jl-eRM"/>
                         <outlet property="loginButton" destination="1I7-AI-K8f" id="oy2-oA-bQd"/>
                         <outlet property="termsAndConditionsButton" destination="JfW-BR-az1" id="YpD-d7-enh"/>
-                        <outlet property="termsAndConditionsLabel" destination="QDp-rV-f4D" id="0ba-i0-2Hh"/>
+                        <outlet property="weWillNeverPostLabel" destination="3mG-CW-O7O" id="9ph-tQ-rAD"/>
+                        <outlet property="welcomeLabel" destination="BDp-Zp-mTj" id="lut-i6-BgM"/>
                         <segue destination="FfP-Xc-6Fn" kind="custom" identifier="_Cars" customClass="InterStoryboardsPresentSegue" customModule="Impulse" customModuleProvider="target" id="Pqe-bW-28L"/>
                     </connections>
                 </viewController>

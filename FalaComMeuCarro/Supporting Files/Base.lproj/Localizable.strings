@@ -2,8 +2,10 @@
 "LOGIN_SOMETHING_HAPPENED_TRY_AGAIN" = "Something weird happened, please try again :)";
 "LOGIN_TRY_AGAIN" = "Try again";
 "LOGIN_OOPS" = "Ooops";
-"LOGIN_TERMS_AND_CONDITIONS_LABEL" = "By login in you are accepting our Terms of Service";
-"LOGIN_TERMS_AND_CONDITIONS_BUTTON"  = "Tap here to view our Terms of Service";
+"LOGIN_TERMS_AND_CONDITIONS_BUTTON"  = "By logging in you agree to accept our Terms of Service >";
+"LOGIN_WELCOME" = "Welcome to Impulse";
+"LOGIN_LETS_GET_STARTED" = "Let's get started by logging in";
+"LOGIN_WILL_NEVER_POST" = "(Impulse will never post to Facebook without your permission)";
 
 "TERMS_OF_SERVICE_TITLE" = "Terms of Use";
 "TERMS_OF_SERVICE_EULA" = "Impulse is a completely different way to interact with drivers. We’re a pretty open platform, but we do have rules.

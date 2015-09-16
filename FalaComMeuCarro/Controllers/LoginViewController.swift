@@ -6,9 +6,21 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
 	
 	@IBOutlet weak var loginButton: FBSDKLoginButton!
     
-    @IBOutlet weak var termsAndConditionsLabel: UILabel! {
+    @IBOutlet weak var welcomeLabel: UILabel! {
         didSet {
-            self.termsAndConditionsLabel.text = "LOGIN_TERMS_AND_CONDITIONS_LABEL".localized
+            self.welcomeLabel.text = "LOGIN_WELCOME".localized
+        }
+    }
+    
+    @IBOutlet weak var letsLoginLabel: UILabel! {
+        didSet {
+            self.letsLoginLabel.text = "LOGIN_LETS_GET_STARTED".localized
+        }
+    }
+    
+    @IBOutlet weak var weWillNeverPostLabel: UILabel! {
+        didSet {
+            self.weWillNeverPostLabel.text = "LOGIN_WILL_NEVER_POST".localized
         }
     }
     
