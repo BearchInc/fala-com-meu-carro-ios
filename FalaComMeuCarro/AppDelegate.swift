@@ -10,6 +10,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        FBSDKSettings.setAppID(Config.get(.FacebookAppID))
+        
 		FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
 		Fabric.with([Crashlytics()])
 		IQKeyboardManager.sharedManager().enable = true
