@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="CUt-Uc-XU3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -24,11 +25,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zig-4F-2c9" userLabel="Centerization View">
-                                <rect key="frame" x="16" y="112.5" width="288" height="327.5"/>
+                                <rect key="frame" x="16" y="112" width="288" height="312.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's get started by logging in" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDp-rV-f4D" userLabel="Let's start login in">
-                                        <rect key="frame" x="0.0" y="154" width="288" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="0.0" y="145.5" width="288" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -41,17 +42,17 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Impulse will never post to Facebook without your permission)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mG-CW-O7O" userLabel="Will never post">
-                                <rect key="frame" x="16" y="440" width="288" height="26.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <rect key="frame" x="16" y="425" width="288" height="31.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1I7-AI-K8f" customClass="FBSDKLoginButton">
-                                <rect key="frame" x="72" y="477" width="175" height="30"/>
+                                <rect key="frame" x="43" y="467" width="233" height="40"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="175" id="9Tb-Np-EbN"/>
-                                    <constraint firstAttribute="height" constant="30" id="Jp7-6K-bzf"/>
+                                    <constraint firstAttribute="height" constant="40" id="Jp7-6K-bzf"/>
+                                    <constraint firstAttribute="width" secondItem="1I7-AI-K8f" secondAttribute="height" multiplier="35:6" id="rtX-3K-HRc"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="JfW-BR-az1" userLabel="Terms and Conditions Button">
@@ -59,7 +60,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="wbo-BD-brk"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" title="By logging in you agree to accept our Terms of Service &gt;">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -82,7 +83,7 @@
                             <constraint firstItem="3mG-CW-O7O" firstAttribute="top" secondItem="Zig-4F-2c9" secondAttribute="bottom" id="YKf-Lk-WdX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="BDp-Zp-mTj" secondAttribute="trailing" constant="8" id="eZl-fZ-eUS"/>
                             <constraint firstItem="JNP-aw-d3U" firstAttribute="top" secondItem="JfW-BR-az1" secondAttribute="bottom" constant="16" id="exs-LK-77r"/>
-                            <constraint firstAttribute="centerX" secondItem="1I7-AI-K8f" secondAttribute="centerX" constant="0.5" id="fjL-Pt-VXA"/>
+                            <constraint firstAttribute="centerX" secondItem="1I7-AI-K8f" secondAttribute="centerX" id="fjL-Pt-VXA"/>
                             <constraint firstItem="JfW-BR-az1" firstAttribute="leading" secondItem="chp-59-bUQ" secondAttribute="leadingMargin" id="ocF-Wv-p0p"/>
                             <constraint firstAttribute="trailingMargin" secondItem="3mG-CW-O7O" secondAttribute="trailing" id="xGW-xs-XXS"/>
                             <constraint firstItem="BDp-Zp-mTj" firstAttribute="top" secondItem="cuR-VW-0LB" secondAttribute="bottom" constant="16" id="ziZ-ME-lq7"/>
