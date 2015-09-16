@@ -56,7 +56,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="JfW-BR-az1" userLabel="Terms and Conditions Button">
-                                <rect key="frame" x="16" y="512" width="288" height="40"/>
+                                <rect key="frame" x="26" y="512" width="268" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="wbo-BD-brk"/>
                                 </constraints>
@@ -79,12 +79,12 @@
                             <constraint firstItem="Zig-4F-2c9" firstAttribute="top" secondItem="BDp-Zp-mTj" secondAttribute="bottom" id="ITX-Ek-nt5"/>
                             <constraint firstItem="JfW-BR-az1" firstAttribute="top" secondItem="1I7-AI-K8f" secondAttribute="bottom" constant="5" id="JoH-Oh-Ybk"/>
                             <constraint firstItem="1I7-AI-K8f" firstAttribute="top" secondItem="3mG-CW-O7O" secondAttribute="bottom" constant="10" id="Jw4-cB-6in"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="JfW-BR-az1" secondAttribute="trailing" id="VlR-xL-slk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="JfW-BR-az1" secondAttribute="trailing" constant="10" id="VlR-xL-slk"/>
                             <constraint firstItem="3mG-CW-O7O" firstAttribute="top" secondItem="Zig-4F-2c9" secondAttribute="bottom" id="YKf-Lk-WdX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="BDp-Zp-mTj" secondAttribute="trailing" constant="8" id="eZl-fZ-eUS"/>
                             <constraint firstItem="JNP-aw-d3U" firstAttribute="top" secondItem="JfW-BR-az1" secondAttribute="bottom" constant="16" id="exs-LK-77r"/>
                             <constraint firstAttribute="centerX" secondItem="1I7-AI-K8f" secondAttribute="centerX" id="fjL-Pt-VXA"/>
-                            <constraint firstItem="JfW-BR-az1" firstAttribute="leading" secondItem="chp-59-bUQ" secondAttribute="leadingMargin" id="ocF-Wv-p0p"/>
+                            <constraint firstItem="JfW-BR-az1" firstAttribute="leading" secondItem="chp-59-bUQ" secondAttribute="leadingMargin" constant="10" id="ocF-Wv-p0p"/>
                             <constraint firstAttribute="trailingMargin" secondItem="3mG-CW-O7O" secondAttribute="trailing" id="xGW-xs-XXS"/>
                             <constraint firstItem="BDp-Zp-mTj" firstAttribute="top" secondItem="cuR-VW-0LB" secondAttribute="bottom" constant="16" id="ziZ-ME-lq7"/>
                         </constraints>
@@ -118,7 +118,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9n-kW-o9x">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="567.5"/>
                                 <color key="backgroundColor" red="0.4823529412" green="0.69019607839999997" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <mutableString key="text">Boatos é uma forma completamente diferente de interagir e espalhar informações de carros. Nós somos uma plataforma bastante aberta, mas ainda assim temos regras importantes.
+                                <string key="text">Boatos é uma forma completamente diferente de interagir e espalhar informações de carros. Nós somos uma plataforma bastante aberta, mas ainda assim temos regras importantes.
 
 O seguinte conteúdo será removido:
 
@@ -130,7 +130,7 @@ O seguinte conteúdo será removido:
 - Solicitação de favores sexuais;
  Bearch, Inc. não é de forma alguma responsável por boatos gerados pelos usuários.
 
-Estaremos sempre fazendo o nosso melhor para melhorar o seu app, se você tem alguma idéia sobre coisas novas que podemos fazer por favor nos contate pelo support@getbearch.com a qualquer momento!</mutableString>
+Estaremos sempre fazendo o nosso melhor para melhorar o seu app, se você tem alguma idéia sobre coisas novas que podemos fazer por favor nos contate pelo support@getbearch.com a qualquer momento!</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
