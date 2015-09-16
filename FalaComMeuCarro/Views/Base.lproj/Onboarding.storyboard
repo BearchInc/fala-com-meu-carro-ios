@@ -25,10 +25,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zig-4F-2c9" userLabel="Centerization View">
-                                <rect key="frame" x="16" y="112" width="288" height="312.5"/>
+                                <rect key="frame" x="16" y="112" width="288" height="318.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let's get started by logging in" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDp-rV-f4D" userLabel="Let's start login in">
-                                        <rect key="frame" x="0.0" y="145.5" width="288" height="23"/>
+                                        <rect key="frame" x="0.0" y="148" width="288" height="23"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -42,13 +42,13 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Impulse will never post to Facebook without your permission)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mG-CW-O7O" userLabel="Will never post">
-                                <rect key="frame" x="16" y="425" width="288" height="31.5"/>
+                                <rect key="frame" x="16" y="480.5" width="288" height="31.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1I7-AI-K8f" customClass="FBSDKLoginButton">
-                                <rect key="frame" x="43" y="467" width="233" height="40"/>
+                                <rect key="frame" x="43" y="430.5" width="233" height="40"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Jp7-6K-bzf"/>
@@ -74,18 +74,18 @@
                         <constraints>
                             <constraint firstItem="BDp-Zp-mTj" firstAttribute="leading" secondItem="chp-59-bUQ" secondAttribute="leadingMargin" constant="8" id="0U1-bA-dTQ"/>
                             <constraint firstItem="3mG-CW-O7O" firstAttribute="leading" secondItem="chp-59-bUQ" secondAttribute="leadingMargin" id="28v-qu-yBo"/>
+                            <constraint firstItem="1I7-AI-K8f" firstAttribute="top" secondItem="Zig-4F-2c9" secondAttribute="bottom" id="38X-tm-OQe"/>
                             <constraint firstItem="Zig-4F-2c9" firstAttribute="leading" secondItem="chp-59-bUQ" secondAttribute="leadingMargin" id="4JI-Pj-nTi"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Zig-4F-2c9" secondAttribute="trailing" id="B0H-8e-iGR"/>
                             <constraint firstItem="Zig-4F-2c9" firstAttribute="top" secondItem="BDp-Zp-mTj" secondAttribute="bottom" id="ITX-Ek-nt5"/>
-                            <constraint firstItem="JfW-BR-az1" firstAttribute="top" secondItem="1I7-AI-K8f" secondAttribute="bottom" constant="5" id="JoH-Oh-Ybk"/>
-                            <constraint firstItem="1I7-AI-K8f" firstAttribute="top" secondItem="3mG-CW-O7O" secondAttribute="bottom" constant="10" id="Jw4-cB-6in"/>
+                            <constraint firstItem="3mG-CW-O7O" firstAttribute="top" secondItem="1I7-AI-K8f" secondAttribute="bottom" constant="10" id="Jia-lZ-wfS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="JfW-BR-az1" secondAttribute="trailing" constant="10" id="VlR-xL-slk"/>
-                            <constraint firstItem="3mG-CW-O7O" firstAttribute="top" secondItem="Zig-4F-2c9" secondAttribute="bottom" id="YKf-Lk-WdX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="BDp-Zp-mTj" secondAttribute="trailing" constant="8" id="eZl-fZ-eUS"/>
                             <constraint firstItem="JNP-aw-d3U" firstAttribute="top" secondItem="JfW-BR-az1" secondAttribute="bottom" constant="16" id="exs-LK-77r"/>
                             <constraint firstAttribute="centerX" secondItem="1I7-AI-K8f" secondAttribute="centerX" id="fjL-Pt-VXA"/>
                             <constraint firstItem="JfW-BR-az1" firstAttribute="leading" secondItem="chp-59-bUQ" secondAttribute="leadingMargin" constant="10" id="ocF-Wv-p0p"/>
                             <constraint firstAttribute="trailingMargin" secondItem="3mG-CW-O7O" secondAttribute="trailing" id="xGW-xs-XXS"/>
+                            <constraint firstItem="JfW-BR-az1" firstAttribute="top" secondItem="3mG-CW-O7O" secondAttribute="bottom" id="yCX-JN-Emi"/>
                             <constraint firstItem="BDp-Zp-mTj" firstAttribute="top" secondItem="cuR-VW-0LB" secondAttribute="bottom" constant="16" id="ziZ-ME-lq7"/>
                         </constraints>
                     </view>
