@@ -3,7 +3,8 @@ import Foundation
 class TermsOfServiceViewController: UIViewController {
     @IBOutlet weak var eulaTextView: UITextView! {
         didSet {
-            self.eulaTextView.text = "TERMS_OF_SERVICE_EULA".localized
+            let text = NSAttributedString(string: "TERMS_OF_SERVICE_EULA".localized, attributes: [NSForegroundColorAttributeName: UIColor.whiteColor(), NSFontAttributeName: UIFont.systemFontOfSize(16)])
+            self.eulaTextView.attributedText = text
         }
     }
     
